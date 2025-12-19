@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Transaction Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --success: #4cc9f0;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+        
+        body {
+            background-color: #f5f7fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            border: none;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            background-color: white;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            border-radius: 12px 12px 0 0 !important;
+        }
+        
+        .upload-area {
+            border: 2px dashed #ced4da;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            background-color: #f8f9fa;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .upload-area:hover {
+            border-color: var(--primary);
+            background-color: #eef2ff;
+        }
+        
+        .upload-area i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .filter-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .transaction-table th {
+            background-color: #f1f3f9;
+            font-weight: 600;
+        }
+        
+        .balance-positive {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .balance-negative {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        
+        .property-badge {
+            background-color: #e0e7ff;
+            color: var(--primary);
+            font-weight: 500;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .category-badge {
+            background-color: #e0f7fa;
+            color: #00838f;
+            font-weight: 500;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .summary-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .summary-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .total-income i {
+            color: #28a745;
+        }
+        
+        .total-expense i {
+            color: #dc3545;
+        }
+        
+        .net-balance i {
+            color: var(--primary);
+        }
+        
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        
+        .table-responsive {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .property-balances {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .property-balance-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .property-balance-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+        
+        .property-balance-card.active {
+            border-color: var(--primary);
+            background-color: #eef2ff;
+        }
+        
+        .property-balance-card h5 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .property-balance-amount {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .upload-controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .notes-column {
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+        }
+        
+        /* Global tooltip styles - positioned at document root */
+        #global-tooltip {
+            position: fixed;
+            background-color: #333;
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px 14px;
+            z-index: 99999;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.85rem;
+            max-width: 300px;
+            white-space: normal;
+            word-wrap: break-word;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            line-height: 1.4;
+            pointer-events: none;
+        }
+        
+        #global-tooltip.visible {
+            opacity: 1;
+        }
+        
+        #global-tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+        }
+        
+        /* Mobile-friendly tooltip for small screens */
+        @media (max-width: 768px) {
+            #global-tooltip {
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+                max-width: 90vw;
+                width: auto;
+                font-size: 1rem;
+                padding: 15px 20px;
+                text-align: center;
+            }
+            
+            #global-tooltip::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1><i class="fas fa-file-invoice-dollar me-2"></i>Property Transaction Tracker</h1>
+                    <p class="lead mb-0">Upload, filter, and analyze property transactions with running balances</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <button class="btn btn-light btn-lg">
+                        <i class="fas fa-download me-2"></i>Export Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Global Tooltip Container -->
+    <div id="global-tooltip"></div>
+
+    <div class="container">
+        <!-- Property Balances Section -->
+        <div class="property-balances fade-in" id="propertyBalancesSection" style="display: none;">
+            <!-- Property balance cards will be populated here -->
+        </div>
+
+        <!-- Upload Section -->
+        <div class="card fade-in">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-cloud-upload-alt me-2"></i>Upload Transactions</h5>
+            </div>
+            <div class="card-body">
+                <div class="upload-area" id="dropZone">
+                    <i class="fas fa-file-csv"></i>
+                    <h4>Upload CSV File</h4>
+                    <p class="text-muted">Drag & drop your transaction CSV file here or click to browse</p>
+                    <button class="btn btn-primary" id="browseBtn">Browse Files</button>
+                    <input type="file" id="fileInput" accept=".csv" class="d-none">
+                    <div class="upload-controls">
+                        <button class="btn btn-outline-secondary" id="loadDefaultBtn">
+                            <i class="fas fa-sync me-1"></i> Load Default
+                        </button>
+                        <button class="btn btn-outline-primary" id="uploadNewBtn">
+                            <i class="fas fa-file-upload me-1"></i> Upload New
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-3" id="fileInfo" style="display: none;">
+                    <div class="alert alert-success mb-0">
+                        <i class="fas fa-check-circle me-2"></i>
+                        <span id="fileName"></span> loaded successfully!
+                    </div>
+                </div>
+                <div class="loading" id="loadingIndicator">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2">Processing your CSV file...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filter-section fade-in" id="filtersSection" style="display: none;">
+            <h5 class="mb-4"><i class="fas fa-filter me-2"></i>Filter Transactions</h5>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Property</label>
+                    <select class="form-select" id="propertyFilter">
+                        <option value="">All Properties</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Category</label>
+                    <select class="form-select" id="categoryFilter">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Date Range</label>
+                    <input type="text" class="form-control" id="dateRange" placeholder="Select date range">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Search</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search transactions...">
+                        <button class="btn btn-outline-secondary" type="button" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-outline-secondary me-2" id="resetFilters">
+                    <i class="fas fa-redo me-1"></i> Reset
+                </button>
+                <button class="btn btn-primary" id="applyFilters">
+                    <i class="fas fa-filter me-1"></i> Apply Filters
+                </button>
+            </div>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="row fade-in" id="summarySection" style="display: none;">
+            <div class="col-md-4 mb-4">
+                <div class="card summary-card total-income">
+                    <i class="fas fa-arrow-circle-down"></i>
+                    <h3 id="totalIncome">$0.00</h3>
+                    <p class="text-muted">Total Income</p>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card summary-card total-expense">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <h3 id="totalExpense">$0.00</h3>
+                    <p class="text-muted">Total Expenses</p>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card summary-card net-balance">
+                    <i class="fas fa-wallet"></i>
+                    <h3 id="netBalance">$0.00</h3>
+                    <p class="text-muted">Net Balance</p>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transactions Table -->
+        <div class="card fade-in" id="transactionsSection" style="display: none;">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0"><i class="fas fa-list me-2"></i>Transaction History</h5>
+                <div>
+                    <span class="me-3">Showing <span id="transactionCount">0</span> transactions</span>
+                    <button class="btn btn-sm btn-outline-primary">
+                        <i class="fas fa-download me-1"></i> Export
+                    </button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover transaction-table mb-0">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Property</th>
+                            <th>Merchant</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Notes</th>
+                            <th>Amount</th>
+                            <th>Running Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionBody">
+                        <!-- Transactions will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-0">Property Transaction Tracker &copy; <span id="currentYear"></span> | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // DOM Elements
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const browseBtn = document.getElementById('browseBtn');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const filtersSection = document.getElementById('filtersSection');
+        const summarySection = document.getElementById('summarySection');
+        const transactionsSection = document.getElementById('transactionsSection');
+        const transactionBody = document.getElementById('transactionBody');
+        const transactionCount = document.getElementById('transactionCount');
+        const totalIncome = document.getElementById('totalIncome');
+        const totalExpense = document.getElementById('totalExpense');
+        const netBalance = document.getElementById('netBalance');
+        const propertyFilter = document.getElementById('propertyFilter');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const applyFiltersBtn = document.getElementById('applyFilters');
+        const resetFiltersBtn = document.getElementById('resetFilters');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const propertyBalancesSection = document.getElementById('propertyBalancesSection');
+        const loadDefaultBtn = document.getElementById('loadDefaultBtn');
+        const uploadNewBtn = document.getElementById('uploadNewBtn');
+        const currentYear = document.getElementById('currentYear');
+        const globalTooltip = document.getElementById('global-tooltip');
+
+        // Global variables
+        let allTransactions = [];
+        let filteredTransactions = [];
+        let properties = new Set();
+        let categories = new Set();
+
+        // Update copyright year
+        currentYear.textContent = new Date().getFullYear();
+
+        // Event Listeners
+        browseBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', handleFileUpload);
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('border-primary');
+        });
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('border-primary');
+        });
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-primary');
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                handleFileUpload();
+            }
+        });
+
+        // Filter event listeners
+        searchBtn.addEventListener('click', applyFilters);
+        applyFiltersBtn.addEventListener('click', applyFilters);
+        resetFiltersBtn.addEventListener('click', resetFilters);
+        loadDefaultBtn.addEventListener('click', loadDefaultFile);
+        uploadNewBtn.addEventListener('click', () => fileInput.click());
+
+        // Handle file upload
+        function handleFileUpload() {
+            if (fileInput.files.length === 0) return;
+            
+            const file = fileInput.files[0];
+            fileName.textContent = file.name;
+            fileInfo.style.display = 'block';
+            loadingIndicator.style.display = 'block';
+            
+            // Hide sections while processing
+            filtersSection.style.display = 'none';
+            summarySection.style.display = 'none';
+            transactionsSection.style.display = 'none';
+            propertyBalancesSection.style.display = 'none';
+            
+            // Parse CSV file
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const csvData = e.target.result;
+                parseCSV(csvData);
+            };
+            reader.readAsText(file);
+        }
+
+        // Parse CSV data
+        function parseCSV(csvData) {
+            const lines = csvData.split('\n');
+            const headers = lines[0].split(',').map(header => header.trim().replace(/^"|"$/g, ''));
+            
+            // Reset data structures
+            allTransactions = [];
+            properties.clear();
+            categories.clear();
+            
+            // Process each line (skip header)
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (!line) continue;
+                
+                // Split by comma but handle quoted fields
+                const values = parseCSVLine(line);
+                
+                if (values.length < headers.length) continue;
+                
+                // Create transaction object
+                const transaction = {};
+                for (let j = 0; j < headers.length; j++) {
+                    transaction[headers[j]] = values[j].replace(/^"|"$/g, '').trim();
+                }
+                
+                // Convert amount to number
+                transaction.Amount = parseFloat(transaction.Amount) || 0;
+                
+                // Convert date to Date object for sorting
+                transaction.dateObj = parseDate(transaction.Date);
+                
+                // Add to collections
+                allTransactions.push(transaction);
+                if (transaction.Property) properties.add(transaction.Property);
+                if (transaction.Category) categories.add(transaction.Category);
+            }
+            
+            // Update filter dropdowns
+            updateFilterDropdowns();
+            
+            // Process and display transactions
+            filteredTransactions = [...allTransactions];
+            processTransactions(filteredTransactions);
+            
+            // Show sections
+            filtersSection.style.display = 'block';
+            summarySection.style.display = 'flex';
+            transactionsSection.style.display = 'block';
+            propertyBalancesSection.style.display = 'flex';
+            loadingIndicator.style.display = 'none';
+        }
+
+        // Parse a single CSV line handling quoted fields
+        function parseCSVLine(line) {
+            const result = [];
+            let current = '';
+            let inQuotes = false;
+            
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    result.push(current);
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            
+            result.push(current);
+            return result;
+        }
+
+        // Parse date string to Date object
+        function parseDate(dateString) {
+            // Handle format like "November 13, 2025"
+            const months = {
+                'January': 0, 'February': 1, 'March': 2, 'April': 3,
+                'May': 4, 'June': 5, 'July': 6, 'August': 7,
+                'September': 8, 'October': 9, 'November': 10, 'December': 11
+            };
+            
+            const parts = dateString.split(' ');
+            if (parts.length !== 3) return new Date();
+            
+            const month = months[parts[0]];
+            const day = parseInt(parts[1].replace(',', ''));
+            const year = parseInt(parts[2]);
+            
+            return new Date(year, month, day);
+        }
+
+        // Update filter dropdowns with unique values
+        function updateFilterDropdowns() {
+            // Clear existing options
+            propertyFilter.innerHTML = '<option value="">All Properties</option>';
+            categoryFilter.innerHTML = '<option value="">All Categories</option>';
+            
+            // Add properties
+            Array.from(properties).sort().forEach(property => {
+                const option = document.createElement('option');
+                option.value = property;
+                option.textContent = property;
+                propertyFilter.appendChild(option);
+            });
+            
+            // Add categories
+            Array.from(categories).sort().forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = category;
+                categoryFilter.appendChild(option);
+            });
+        }
+
+        // Calculate running balances for all properties
+        function calculatePropertyBalances(transactions) {
+            // Group transactions by property
+            const propertyTransactions = {};
+            
+            transactions.forEach(transaction => {
+                const prop = transaction.Property || 'Unknown';
+                if (!propertyTransactions[prop]) {
+                    propertyTransactions[prop] = [];
+                }
+                propertyTransactions[prop].push(transaction);
+            });
+            
+            // Calculate running balances for each property
+            const propertyBalances = {};
+            
+            for (const prop in propertyTransactions) {
+                // Sort by date (oldest first)
+                const sortedTransactions = [...propertyTransactions[prop]].sort((a, b) => a.dateObj - b.dateObj);
+                
+                // Calculate running balance
+                let runningBalance = 0;
+                sortedTransactions.forEach(transaction => {
+                    runningBalance += transaction.Amount;
+                    transaction.runningBalance = runningBalance;
+                });
+                
+                // Store final balance for this property
+                propertyBalances[prop] = runningBalance;
+            }
+            
+            return propertyBalances;
+        }
+
+        // Display property balances at the top as filter buttons
+        function displayPropertyBalances(propertyBalances) {
+            propertyBalancesSection.innerHTML = '';
+            
+            // Add "All Properties" button
+            const allButton = document.createElement('div');
+            allButton.className = 'property-balance-card';
+            if (!propertyFilter.value) {
+                allButton.classList.add('active');
+            }
+            allButton.innerHTML = `
+                <h5>All Properties</h5>
+                <div class="property-balance-amount">
+                    Filter
+                </div>
+                <div class="mt-2">
+                    <small class="text-muted">View all transactions</small>
+                </div>
+            `;
+            allButton.addEventListener('click', function() {
+                propertyFilter.value = '';
+                applyFilters();
+                updatePropertyCardActiveState('');
+            });
+            propertyBalancesSection.appendChild(allButton);
+            
+            // Add property buttons
+            for (const prop in propertyBalances) {
+                const balance = propertyBalances[prop];
+                const balanceClass = balance >= 0 ? 'balance-positive' : 'balance-negative';
+                const formattedBalance = `$${Math.abs(balance).toFixed(2)}`;
+                
+                const card = document.createElement('div');
+                card.className = 'property-balance-card';
+                if (propertyFilter.value === prop) {
+                    card.classList.add('active');
+                }
+                card.innerHTML = `
+                    <h5>${prop}</h5>
+                    <div class="property-balance-amount ${balanceClass}">
+                        ${balance >= 0 ? '+' : '-'}${formattedBalance}
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-muted">Click to filter</small>
+                    </div>
+                `;
+                
+                // Add click event to filter by this property
+                card.addEventListener('click', function() {
+                    propertyFilter.value = prop;
+                    applyFilters();
+                    updatePropertyCardActiveState(prop);
+                });
+                
+                propertyBalancesSection.appendChild(card);
+            }
+        }
+
+        // Update active state of property cards
+        function updatePropertyCardActiveState(activeProperty) {
+            const cards = propertyBalancesSection.querySelectorAll('.property-balance-card');
+            cards.forEach(card => {
+                card.classList.remove('active');
+                
+                // Check if this is the "All Properties" card
+                const isAllCard = card.querySelector('h5').textContent === 'All Properties';
+                
+                if (isAllCard && !activeProperty) {
+                    card.classList.add('active');
+                } else if (!isAllCard && card.querySelector('h5').textContent === activeProperty) {
+                    card.classList.add('active');
+                }
+            });
+        }
+
+        // Process transactions and calculate running balances
+        function processTransactions(transactions) {
+            // Get the selected property filter
+            const selectedProperty = propertyFilter.value;
+            
+            // Calculate balances for all properties
+            const propertyBalances = calculatePropertyBalances(transactions);
+            
+            // Display property balances at the top
+            displayPropertyBalances(propertyBalances);
+            
+            // Filter transactions by property first
+            let propertyTransactions = transactions;
+            if (selectedProperty) {
+                propertyTransactions = transactions.filter(t => t.Property === selectedProperty);
+            }
+            
+            // Sort transactions by date (oldest first) for balance calculation
+            const sortedTransactions = [...propertyTransactions].sort((a, b) => a.dateObj - b.dateObj);
+            
+            // Calculate running balances for the filtered property only
+            let runningBalance = 0;
+            sortedTransactions.forEach(transaction => {
+                runningBalance += transaction.Amount;
+                transaction.runningBalance = runningBalance;
+            });
+            
+            // Sort for display (newest first)
+            const displayTransactions = [...sortedTransactions].sort((a, b) => b.dateObj - a.dateObj);
+            
+            // Calculate summary values
+            let income = 0;
+            let expense = 0;
+            
+            displayTransactions.forEach(transaction => {
+                if (transaction.Amount > 0) {
+                    income += transaction.Amount;
+                } else {
+                    expense += Math.abs(transaction.Amount);
+                }
+            });
+            
+            const net = income - expense;
+            
+            // Update summary cards
+            totalIncome.textContent = `$${income.toFixed(2)}`;
+            totalExpense.textContent = `$${expense.toFixed(2)}`;
+            netBalance.textContent = `$${net.toFixed(2)}`;
+            netBalance.className = net >= 0 ? 'balance-positive' : 'balance-negative';
+            
+            // Update transaction count
+            transactionCount.textContent = displayTransactions.length;
+            
+            // Render transactions
+            renderTransactions(displayTransactions);
+        }
+
+        // Render transactions to table
+        function renderTransactions(transactions) {
+            transactionBody.innerHTML = '';
+            
+            transactions.forEach(transaction => {
+                const row = document.createElement('tr');
+                
+                // Format date
+                const formattedDate = isNaN(transaction.dateObj) ? 
+                    transaction.Date : 
+                    transaction.dateObj.toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                    });
+                
+                // Format amount
+                const amountClass = transaction.Amount >= 0 ? 'balance-positive' : 'balance-negative';
+                const formattedAmount = `$${Math.abs(transaction.Amount).toFixed(2)}`;
+                
+                // Format running balance
+                const balanceClass = transaction.runningBalance >= 0 ? 'balance-positive' : 'balance-negative';
+                const formattedBalance = `$${Math.abs(transaction.runningBalance).toFixed(2)}`;
+                
+                // Handle empty notes
+                const notes = transaction.Notes || '';
+                
+                // Create tooltip for notes
+                let notesCell = '';
+                if (notes) {
+                    notesCell = `
+                        <td class="notes-column">
+                            <span class="note-text" data-note="${notes}">
+                                ${notes.substring(0, 30)}${notes.length > 30 ? '...' : ''}
+                            </span>
+                        </td>
+                    `;
+                } else {
+                    notesCell = '<td class="notes-column"></td>';
+                }
+                
+                row.innerHTML = `
+                    <td>${formattedDate}</td>
+                    <td><span class="property-badge">${transaction.Property || 'N/A'}</span></td>
+                    <td>${transaction.Merchant || 'N/A'}</td>
+                    <td><span class="category-badge">${transaction.Category || 'N/A'}</span></td>
+                    <td>${transaction.Description || 'N/A'}</td>
+                    ${notesCell}
+                    <td class="${amountClass}">${transaction.Amount >= 0 ? '+' : '-'}${formattedAmount}</td>
+                    <td class="${balanceClass}">${transaction.runningBalance >= 0 ? '+' : '-'}${formattedBalance}</td>
+                `;
+                
+                transactionBody.appendChild(row);
+            });
+            
+            // Add event listeners for tooltips after rendering
+            addTooltipListeners();
+        }
+
+        // Add event listeners for tooltip functionality
+        function addTooltipListeners() {
+            const noteElements = document.querySelectorAll('.note-text');
+            
+            noteElements.forEach(element => {
+                element.addEventListener('mouseenter', function(e) {
+                    const noteText = this.getAttribute('data-note');
+                    showTooltip(e, noteText);
+                });
+                
+                element.addEventListener('mouseleave', function() {
+                    hideTooltip();
+                });
+                
+                element.addEventListener('mousemove', function(e) {
+                    updateTooltipPosition(e);
+                });
+            });
+        }
+
+        // Show tooltip with note text
+        function showTooltip(event, text) {
+            globalTooltip.textContent = text;
+            globalTooltip.classList.add('visible');
+            updateTooltipPosition(event);
+        }
+
+        // Hide tooltip
+        function hideTooltip() {
+            globalTooltip.classList.remove('visible');
+        }
+
+        // Update tooltip position based on mouse
+        function updateTooltipPosition(event) {
+            if (!globalTooltip.classList.contains('visible')) return;
+            
+            // For mobile, show centered
+            if (window.innerWidth <= 768) {
+                globalTooltip.style.top = '50%';
+                globalTooltip.style.left = '50%';
+                globalTooltip.style.transform = 'translate(-50%, -50%)';
+                return;
+            }
+            
+            // For desktop, show near mouse
+            const x = event.clientX;
+            const y = event.clientY;
+            
+            globalTooltip.style.top = (y - 10) + 'px';
+            globalTooltip.style.left = (x + 15) + 'px';
+            globalTooltip.style.transform = 'none';
+        }
+
+        // Apply filters
+        function applyFilters() {
+            const propertyValue = propertyFilter.value;
+            const categoryValue = categoryFilter.value;
+            const searchValue = searchInput.value.toLowerCase();
+            
+            filteredTransactions = allTransactions.filter(transaction => {
+                // Property filter
+                if (propertyValue && transaction.Property !== propertyValue) {
+                    return false;
+                }
+                
+                // Category filter
+                if (categoryValue && transaction.Category !== categoryValue) {
+                    return false;
+                }
+                
+                // Search filter
+                if (searchValue) {
+                    const searchableText = 
+                        `${transaction.Merchant} ${transaction.Description} ${transaction.Notes}`.toLowerCase();
+                    if (!searchableText.includes(searchValue)) {
+                        return false;
+                    }
+                }
+                
+                return true;
+            });
+            
+            processTransactions(filteredTransactions);
+        }
+
+        // Reset filters
+        function resetFilters() {
+            propertyFilter.value = '';
+            categoryFilter.value = '';
+            searchInput.value = '';
+            filteredTransactions = [...allTransactions];
+            processTransactions(filteredTransactions);
+            updatePropertyCardActiveState('');
+        }
+
+        // Function to load default CSV file
+        function loadDefaultFile() {
+            const defaultFilePath = './ECO Systems General Ledger.csv';
+            
+            // Show loading indicator
+            loadingIndicator.style.display = 'block';
+            fileInfo.style.display = 'none';
+            
+            // Hide sections while processing
+            filtersSection.style.display = 'none';
+            summarySection.style.display = 'none';
+            transactionsSection.style.display = 'none';
+            propertyBalancesSection.style.display = 'none';
+            
+            fetch(defaultFilePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('File not found');
+                    }
+                    return response.text();
+                })
+                .then(csvData => {
+                    fileName.textContent = 'ECO Systems General Ledger.csv';
+                    fileInfo.style.display = 'block';
+                    parseCSV(csvData);
+                })
+                .catch(error => {
+                    console.error('Error loading default file:', error);
+                    loadingIndicator.style.display = 'none';
+                    alert('Could not load default file. Please upload a CSV file manually.');
+                });
+        }
+
+        // Load default file on page load
+        window.addEventListener('load', function() {
+            // Try to load default file, but don't show error if not found
+            const defaultFilePath = './ECO Systems General Ledger.csv';
+            
+            fetch(defaultFilePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('File not found');
+                    }
+                    return response.text();
+                })
+                .then(csvData => {
+                    fileName.textContent = 'ECO Systems General Ledger.csv';
+                    fileInfo.style.display = 'block';
+                    parseCSV(csvData);
+                })
+                .catch(error => {
+                    console.log('Default file not found, waiting for user upload');
+                    loadingIndicator.style.display = 'none';
+                });
+        });
+    </script>
+</body>
+</html>
