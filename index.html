@@ -370,6 +370,47 @@
             font-size: 1.25rem;
             font-weight: 600;
         }
+        
+        /* Monthly income statement table */
+        .monthly-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .monthly-table th, .monthly-table td {
+            border: 1px solid #dee2e6;
+            padding: 0.75rem;
+            text-align: right;
+        }
+        
+        .monthly-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        
+        .monthly-table th:first-child, .monthly-table td:first-child {
+            text-align: left;
+        }
+        
+        .monthly-table .category-row {
+            background-color: #fff;
+        }
+        
+        .monthly-table .total-row {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+        
+        .monthly-table .section-header {
+            background-color: #f1f3f9;
+            font-weight: 600;
+        }
+        
+        .monthly-table-container {
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
     </style>
 </head>
 <body>
@@ -479,7 +520,7 @@
         <div class="financial-reports fade-in" id="financialReportsSection" style="display: none;">
             <div class="report-controls">
                 <button class="btn btn-outline-primary" id="generateIncomeStatement">
-                    <i class="fas fa-file-invoice me-1"></i> Income Statement
+                    <i class="fas fa-file-invoice me-1"></i> Monthly Income Statement
                 </button>
                 <button class="btn btn-outline-success" id="generateBalanceSheet">
                     <i class="fas fa-balance-scale me-1"></i> Balance Sheet
@@ -648,7 +689,7 @@
         uploadNewBtn.addEventListener('click', () => fileInput.click());
         
         // Report generation event listeners
-        generateIncomeStatementBtn.addEventListener('click', generateIncomeStatement);
+        generateIncomeStatementBtn.addEventListener('click', generateMonthlyIncomeStatement);
         generateBalanceSheetBtn.addEventListener('click', generateBalanceSheet);
         generateAllReportsBtn.addEventListener('click', generateAllReports);
 
@@ -1183,109 +1224,203 @@
             balanceSheet.style.display = 'none';
         }
 
-        // Generate income statement
-        function generateIncomeStatement() {
+        // Generate monthly income statement
+        function generateMonthlyIncomeStatement() {
             const selectedProperty = propertyFilter.value;
             const propertyName = selectedProperty || 'All Properties';
             
-            // Calculate income and expenses by category
-            const incomeCategories = {};
-            const expenseCategories = {};
+            // Get date range
+            const dateRange = getTransactionDateRange();
+            
+            // Group transactions by month and category
+            const monthlyData = {};
+            const allMonths = new Set();
             
             filteredTransactions.forEach(transaction => {
+                const date = transaction.dateObj;
+                if (isNaN(date)) return;
+                
+                // Format month as "YYYY-MM"
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                const monthName = date.toLocaleString('default', { month: 'short', year: 'numeric' });
+                
+                allMonths.add({ key: monthKey, name: monthName });
+                
                 const category = transaction.Category || 'Uncategorized';
                 const amount = transaction.Amount;
                 
+                if (!monthlyData[monthKey]) {
+                    monthlyData[monthKey] = { income: {}, expense: {} };
+                }
+                
                 if (amount > 0) {
                     // Income
-                    if (!incomeCategories[category]) {
-                        incomeCategories[category] = 0;
+                    if (!monthlyData[monthKey].income[category]) {
+                        monthlyData[monthKey].income[category] = 0;
                     }
-                    incomeCategories[category] += amount;
+                    monthlyData[monthKey].income[category] += amount;
                 } else {
                     // Expense
-                    if (!expenseCategories[category]) {
-                        expenseCategories[category] = 0;
+                    if (!monthlyData[monthKey].expense[category]) {
+                        monthlyData[monthKey].expense[category] = 0;
                     }
-                    expenseCategories[category] += Math.abs(amount);
+                    monthlyData[monthKey].expense[category] += Math.abs(amount);
                 }
             });
             
-            // Calculate totals
+            // Convert set to sorted array
+            const sortedMonths = Array.from(allMonths).sort((a, b) => a.key.localeCompare(b.key));
+            
+            // Calculate totals for each month
+            const monthlyTotals = {};
+            sortedMonths.forEach(month => {
+                const monthKey = month.key;
+                const data = monthlyData[monthKey] || { income: {}, expense: {} };
+                
+                let incomeTotal = 0;
+                let expenseTotal = 0;
+                
+                Object.values(data.income).forEach(amount => incomeTotal += amount);
+                Object.values(data.expense).forEach(amount => expenseTotal += amount);
+                
+                monthlyTotals[monthKey] = {
+                    income: incomeTotal,
+                    expense: expenseTotal,
+                    net: incomeTotal - expenseTotal
+                };
+            });
+            
+            // Calculate overall totals
             let totalIncome = 0;
             let totalExpenses = 0;
             
-            Object.values(incomeCategories).forEach(amount => totalIncome += amount);
-            Object.values(expenseCategories).forEach(amount => totalExpenses += amount);
+            Object.values(monthlyTotals).forEach(totals => {
+                totalIncome += totals.income;
+                totalExpenses += totals.expense;
+            });
             
             const netIncome = totalIncome - totalExpenses;
             
-            // Generate HTML for income statement
+            // Get all unique categories
+            const allIncomeCategories = new Set();
+            const allExpenseCategories = new Set();
+            
+            Object.values(monthlyData).forEach(data => {
+                Object.keys(data.income).forEach(cat => allIncomeCategories.add(cat));
+                Object.keys(data.expense).forEach(cat => allExpenseCategories.add(cat));
+            });
+            
+            // Generate HTML for monthly income statement
             let incomeStatementHTML = `
                 <div class="report-header">
-                    <h4 class="mb-0">Income Statement</h4>
+                    <h4 class="mb-0">Monthly Income Statement</h4>
                     <p class="text-muted mb-0">${propertyName}</p>
-                    <p class="text-muted">${getTransactionDateRange()}</p>
+                    <p class="text-muted">${dateRange}</p>
                 </div>
                 
-                <div class="report-section">
-                    <h5>Revenue</h5>
+                <div class="monthly-table-container">
+                    <table class="monthly-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
             `;
+            
+            // Add month headers
+            sortedMonths.forEach(month => {
+                incomeStatementHTML += `<th>${month.name}</th>`;
+            });
+            
+            incomeStatementHTML += `<th>Total</th></tr></thead><tbody>`;
+            
+            // Add income section
+            incomeStatementHTML += `<tr class="section-header"><td colspan="${sortedMonths.length + 2}">Revenue</td></tr>`;
             
             // Add income categories
-            for (const category in incomeCategories) {
-                const amount = incomeCategories[category];
-                incomeStatementHTML += `
-                    <div class="report-row indent">
-                        <span>${category}</span>
-                        <span class="positive-amount">$${amount.toFixed(2)}</span>
-                    </div>
-                `;
-            }
-            
-            incomeStatementHTML += `
-                    <div class="report-row total">
-                        <span>Total Revenue</span>
-                        <span class="positive-amount">$${totalIncome.toFixed(2)}</span>
-                    </div>
-                </div>
+            Array.from(allIncomeCategories).sort().forEach(category => {
+                incomeStatementHTML += `<tr class="category-row"><td>${category}</td>`;
                 
-                <div class="report-section">
-                    <h5>Expenses</h5>
-            `;
+                let categoryTotal = 0;
+                
+                // Add monthly amounts
+                sortedMonths.forEach(month => {
+                    const monthKey = month.key;
+                    const amount = monthlyData[monthKey]?.income[category] || 0;
+                    categoryTotal += amount;
+                    incomeStatementHTML += `<td class="positive-amount">$${amount.toFixed(2)}</td>`;
+                });
+                
+                // Add category total
+                incomeStatementHTML += `<td class="positive-amount">$${categoryTotal.toFixed(2)}</td></tr>`;
+            });
+            
+            // Add income totals row
+            incomeStatementHTML += `<tr class="total-row"><td>Total Revenue</td>`;
+            
+            let totalRevenue = 0;
+            sortedMonths.forEach(month => {
+                const monthKey = month.key;
+                const monthTotal = monthlyTotals[monthKey]?.income || 0;
+                totalRevenue += monthTotal;
+                incomeStatementHTML += `<td class="positive-amount">$${monthTotal.toFixed(2)}</td>`;
+            });
+            
+            incomeStatementHTML += `<td class="positive-amount">$${totalRevenue.toFixed(2)}</td></tr>`;
+            
+            // Add expense section
+            incomeStatementHTML += `<tr class="section-header"><td colspan="${sortedMonths.length + 2}">Expenses</td></tr>`;
             
             // Add expense categories
-            for (const category in expenseCategories) {
-                const amount = expenseCategories[category];
-                incomeStatementHTML += `
-                    <div class="report-row indent">
-                        <span>${category}</span>
-                        <span class="negative-amount">$${amount.toFixed(2)}</span>
-                    </div>
-                `;
-            }
-            
-            incomeStatementHTML += `
-                    <div class="report-row total">
-                        <span>Total Expenses</span>
-                        <span class="negative-amount">$${totalExpenses.toFixed(2)}</span>
-                    </div>
-                </div>
+            Array.from(allExpenseCategories).sort().forEach(category => {
+                incomeStatementHTML += `<tr class="category-row"><td>${category}</td>`;
                 
-                <div class="report-row total">
-                    <span>Net Income</span>
-                    <span class="${netIncome >= 0 ? 'positive-amount' : 'negative-amount'}">
-                        $${Math.abs(netIncome).toFixed(2)}
-                    </span>
-                </div>
-            `;
+                let categoryTotal = 0;
+                
+                // Add monthly amounts
+                sortedMonths.forEach(month => {
+                    const monthKey = month.key;
+                    const amount = monthlyData[monthKey]?.expense[category] || 0;
+                    categoryTotal += amount;
+                    incomeStatementHTML += `<td class="negative-amount">$${amount.toFixed(2)}</td>`;
+                });
+                
+                // Add category total
+                incomeStatementHTML += `<td class="negative-amount">$${categoryTotal.toFixed(2)}</td></tr>`;
+            });
+            
+            // Add expense totals row
+            incomeStatementHTML += `<tr class="total-row"><td>Total Expenses</td>`;
+            
+            let totalExpenseAmount = 0;
+            sortedMonths.forEach(month => {
+                const monthKey = month.key;
+                const monthTotal = monthlyTotals[monthKey]?.expense || 0;
+                totalExpenseAmount += monthTotal;
+                incomeStatementHTML += `<td class="negative-amount">$${monthTotal.toFixed(2)}</td>`;
+            });
+            
+            incomeStatementHTML += `<td class="negative-amount">$${totalExpenseAmount.toFixed(2)}</td></tr>`;
+            
+            // Add net income row
+            incomeStatementHTML += `<tr class="total-row"><td>Net Income</td>`;
+            
+            sortedMonths.forEach(month => {
+                const monthKey = month.key;
+                const net = monthlyTotals[monthKey]?.net || 0;
+                const amountClass = net >= 0 ? 'positive-amount' : 'negative-amount';
+                incomeStatementHTML += `<td class="${amountClass}">$${Math.abs(net).toFixed(2)}</td>`;
+            });
+            
+            incomeStatementHTML += `<td class="${netIncome >= 0 ? 'positive-amount' : 'negative-amount'}">
+                $${Math.abs(netIncome).toFixed(2)}</td></tr>`;
+            
+            incomeStatementHTML += `</tbody></table></div>`;
             
             incomeStatement.innerHTML = incomeStatementHTML;
             incomeStatement.style.display = 'block';
             balanceSheet.style.display = 'none';
             
             // Show financial summary
-            displayFinancialSummary(totalIncome, totalExpenses, netIncome);
+            displayFinancialSummary(totalRevenue, totalExpenseAmount, netIncome);
         }
 
         // Generate balance sheet
@@ -1370,7 +1505,7 @@
 
         // Generate all reports
         function generateAllReports() {
-            generateIncomeStatement();
+            generateMonthlyIncomeStatement();
             generateBalanceSheet();
             incomeStatement.style.display = 'block';
             balanceSheet.style.display = 'block';
