@@ -286,6 +286,90 @@
                 display: none;
             }
         }
+        
+        /* Financial reports styling */
+        .financial-report {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .report-header {
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .report-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .report-section h5 {
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .report-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+        }
+        
+        .report-row.total {
+            font-weight: bold;
+            border-top: 1px solid #e9ecef;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+        }
+        
+        .report-row.indent {
+            padding-left: 1.5rem;
+        }
+        
+        .positive-amount {
+            color: #28a745;
+        }
+        
+        .negative-amount {
+            color: #dc3545;
+        }
+        
+        .report-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .financial-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .summary-item {
+            flex: 1;
+            min-width: 200px;
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .summary-item h6 {
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+        
+        .summary-item .amount {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -391,6 +475,33 @@
             </div>
         </div>
 
+        <!-- Financial Reports Section -->
+        <div class="financial-reports fade-in" id="financialReportsSection" style="display: none;">
+            <div class="report-controls">
+                <button class="btn btn-outline-primary" id="generateIncomeStatement">
+                    <i class="fas fa-file-invoice me-1"></i> Income Statement
+                </button>
+                <button class="btn btn-outline-success" id="generateBalanceSheet">
+                    <i class="fas fa-balance-scale me-1"></i> Balance Sheet
+                </button>
+                <button class="btn btn-outline-secondary" id="generateAllReports">
+                    <i class="fas fa-file-alt me-1"></i> All Reports
+                </button>
+            </div>
+            
+            <div class="financial-summary" id="financialSummary" style="display: none;">
+                <!-- Summary items will be populated here -->
+            </div>
+            
+            <div class="financial-report" id="incomeStatement" style="display: none;">
+                <!-- Income statement will be populated here -->
+            </div>
+            
+            <div class="financial-report" id="balanceSheet" style="display: none;">
+                <!-- Balance sheet will be populated here -->
+            </div>
+        </div>
+
         <!-- Summary Cards -->
         <div class="row fade-in" id="summarySection" style="display: none;">
             <div class="col-md-4 mb-4">
@@ -493,6 +604,13 @@
         const uploadNewBtn = document.getElementById('uploadNewBtn');
         const currentYear = document.getElementById('currentYear');
         const globalTooltip = document.getElementById('global-tooltip');
+        const financialReportsSection = document.getElementById('financialReportsSection');
+        const financialSummary = document.getElementById('financialSummary');
+        const incomeStatement = document.getElementById('incomeStatement');
+        const balanceSheet = document.getElementById('balanceSheet');
+        const generateIncomeStatementBtn = document.getElementById('generateIncomeStatement');
+        const generateBalanceSheetBtn = document.getElementById('generateBalanceSheet');
+        const generateAllReportsBtn = document.getElementById('generateAllReports');
 
         // Global variables
         let allTransactions = [];
@@ -528,6 +646,11 @@
         resetFiltersBtn.addEventListener('click', resetFilters);
         loadDefaultBtn.addEventListener('click', loadDefaultFile);
         uploadNewBtn.addEventListener('click', () => fileInput.click());
+        
+        // Report generation event listeners
+        generateIncomeStatementBtn.addEventListener('click', generateIncomeStatement);
+        generateBalanceSheetBtn.addEventListener('click', generateBalanceSheet);
+        generateAllReportsBtn.addEventListener('click', generateAllReports);
 
         // Handle file upload
         function handleFileUpload() {
@@ -543,6 +666,7 @@
             summarySection.style.display = 'none';
             transactionsSection.style.display = 'none';
             propertyBalancesSection.style.display = 'none';
+            financialReportsSection.style.display = 'none';
             
             // Parse CSV file
             const reader = new FileReader();
@@ -603,6 +727,7 @@
             summarySection.style.display = 'flex';
             transactionsSection.style.display = 'block';
             propertyBalancesSection.style.display = 'flex';
+            financialReportsSection.style.display = 'block';
             loadingIndicator.style.display = 'none';
         }
 
@@ -835,6 +960,9 @@
             
             // Render transactions
             renderTransactions(displayTransactions);
+            
+            // Hide financial reports when filters change
+            hideFinancialReports();
         }
 
         // Render transactions to table
@@ -1004,6 +1132,7 @@
             summarySection.style.display = 'none';
             transactionsSection.style.display = 'none';
             propertyBalancesSection.style.display = 'none';
+            financialReportsSection.style.display = 'none';
             
             fetch(defaultFilePath)
                 .then(response => {
@@ -1046,6 +1175,240 @@
                     loadingIndicator.style.display = 'none';
                 });
         });
+
+        // Hide financial reports
+        function hideFinancialReports() {
+            financialSummary.style.display = 'none';
+            incomeStatement.style.display = 'none';
+            balanceSheet.style.display = 'none';
+        }
+
+        // Generate income statement
+        function generateIncomeStatement() {
+            const selectedProperty = propertyFilter.value;
+            const propertyName = selectedProperty || 'All Properties';
+            
+            // Calculate income and expenses by category
+            const incomeCategories = {};
+            const expenseCategories = {};
+            
+            filteredTransactions.forEach(transaction => {
+                const category = transaction.Category || 'Uncategorized';
+                const amount = transaction.Amount;
+                
+                if (amount > 0) {
+                    // Income
+                    if (!incomeCategories[category]) {
+                        incomeCategories[category] = 0;
+                    }
+                    incomeCategories[category] += amount;
+                } else {
+                    // Expense
+                    if (!expenseCategories[category]) {
+                        expenseCategories[category] = 0;
+                    }
+                    expenseCategories[category] += Math.abs(amount);
+                }
+            });
+            
+            // Calculate totals
+            let totalIncome = 0;
+            let totalExpenses = 0;
+            
+            Object.values(incomeCategories).forEach(amount => totalIncome += amount);
+            Object.values(expenseCategories).forEach(amount => totalExpenses += amount);
+            
+            const netIncome = totalIncome - totalExpenses;
+            
+            // Generate HTML for income statement
+            let incomeStatementHTML = `
+                <div class="report-header">
+                    <h4 class="mb-0">Income Statement</h4>
+                    <p class="text-muted mb-0">${propertyName}</p>
+                    <p class="text-muted">${getTransactionDateRange()}</p>
+                </div>
+                
+                <div class="report-section">
+                    <h5>Revenue</h5>
+            `;
+            
+            // Add income categories
+            for (const category in incomeCategories) {
+                const amount = incomeCategories[category];
+                incomeStatementHTML += `
+                    <div class="report-row indent">
+                        <span>${category}</span>
+                        <span class="positive-amount">$${amount.toFixed(2)}</span>
+                    </div>
+                `;
+            }
+            
+            incomeStatementHTML += `
+                    <div class="report-row total">
+                        <span>Total Revenue</span>
+                        <span class="positive-amount">$${totalIncome.toFixed(2)}</span>
+                    </div>
+                </div>
+                
+                <div class="report-section">
+                    <h5>Expenses</h5>
+            `;
+            
+            // Add expense categories
+            for (const category in expenseCategories) {
+                const amount = expenseCategories[category];
+                incomeStatementHTML += `
+                    <div class="report-row indent">
+                        <span>${category}</span>
+                        <span class="negative-amount">$${amount.toFixed(2)}</span>
+                    </div>
+                `;
+            }
+            
+            incomeStatementHTML += `
+                    <div class="report-row total">
+                        <span>Total Expenses</span>
+                        <span class="negative-amount">$${totalExpenses.toFixed(2)}</span>
+                    </div>
+                </div>
+                
+                <div class="report-row total">
+                    <span>Net Income</span>
+                    <span class="${netIncome >= 0 ? 'positive-amount' : 'negative-amount'}">
+                        $${Math.abs(netIncome).toFixed(2)}
+                    </span>
+                </div>
+            `;
+            
+            incomeStatement.innerHTML = incomeStatementHTML;
+            incomeStatement.style.display = 'block';
+            balanceSheet.style.display = 'none';
+            
+            // Show financial summary
+            displayFinancialSummary(totalIncome, totalExpenses, netIncome);
+        }
+
+        // Generate balance sheet
+        function generateBalanceSheet() {
+            const selectedProperty = propertyFilter.value;
+            const propertyName = selectedProperty || 'All Properties';
+            
+            // Calculate current balance
+            let currentAssets = 0;
+            let totalIncome = 0;
+            let totalExpenses = 0;
+            
+            filteredTransactions.forEach(transaction => {
+                const amount = transaction.Amount;
+                if (amount > 0) {
+                    totalIncome += amount;
+                } else {
+                    totalExpenses += Math.abs(amount);
+                }
+            });
+            
+            const netIncome = totalIncome - totalExpenses;
+            currentAssets = netIncome; // Simplified for this example
+            
+            // Generate HTML for balance sheet
+            let balanceSheetHTML = `
+                <div class="report-header">
+                    <h4 class="mb-0">Balance Sheet</h4>
+                    <p class="text-muted mb-0">${propertyName}</p>
+                    <p class="text-muted">${getTransactionDateRange()}</p>
+                </div>
+                
+                <div class="report-section">
+                    <h5>Assets</h5>
+                    <div class="report-row indent">
+                        <span>Current Assets</span>
+                        <span class="positive-amount">$${currentAssets.toFixed(2)}</span>
+                    </div>
+                    <div class="report-row total">
+                        <span>Total Assets</span>
+                        <span class="positive-amount">$${currentAssets.toFixed(2)}</span>
+                    </div>
+                </div>
+                
+                <div class="report-section">
+                    <h5>Liabilities</h5>
+                    <div class="report-row indent">
+                        <span>Total Liabilities</span>
+                        <span class="negative-amount">$0.00</span>
+                    </div>
+                    <div class="report-row total">
+                        <span>Total Liabilities</span>
+                        <span class="negative-amount">$0.00</span>
+                    </div>
+                </div>
+                
+                <div class="report-section">
+                    <h5>Equity</h5>
+                    <div class="report-row indent">
+                        <span>Retained Earnings</span>
+                        <span class="positive-amount">$${netIncome.toFixed(2)}</span>
+                    </div>
+                    <div class="report-row total">
+                        <span>Total Equity</span>
+                        <span class="positive-amount">$${netIncome.toFixed(2)}</span>
+                    </div>
+                </div>
+                
+                <div class="report-row total">
+                    <span>Total Liabilities and Equity</span>
+                    <span class="positive-amount">$${netIncome.toFixed(2)}</span>
+                </div>
+            `;
+            
+            balanceSheet.innerHTML = balanceSheetHTML;
+            balanceSheet.style.display = 'block';
+            incomeStatement.style.display = 'none';
+            
+            // Show financial summary
+            displayFinancialSummary(totalIncome, totalExpenses, netIncome);
+        }
+
+        // Generate all reports
+        function generateAllReports() {
+            generateIncomeStatement();
+            generateBalanceSheet();
+            incomeStatement.style.display = 'block';
+            balanceSheet.style.display = 'block';
+        }
+
+        // Display financial summary
+        function displayFinancialSummary(income, expenses, net) {
+            financialSummary.innerHTML = `
+                <div class="summary-item">
+                    <h6>Total Revenue</h6>
+                    <div class="amount positive-amount">$${income.toFixed(2)}</div>
+                </div>
+                <div class="summary-item">
+                    <h6>Total Expenses</h6>
+                    <div class="amount negative-amount">$${expenses.toFixed(2)}</div>
+                </div>
+                <div class="summary-item">
+                    <h6>Net Income</h6>
+                    <div class="amount ${net >= 0 ? 'positive-amount' : 'negative-amount'}">
+                        $${Math.abs(net).toFixed(2)}
+                    </div>
+                </div>
+            `;
+            financialSummary.style.display = 'flex';
+        }
+
+        // Get transaction date range for reports
+        function getTransactionDateRange() {
+            if (filteredTransactions.length === 0) return 'No transactions';
+            
+            const dates = filteredTransactions.map(t => t.dateObj).filter(d => !isNaN(d));
+            if (dates.length === 0) return 'Unknown date range';
+            
+            const minDate = new Date(Math.min(...dates));
+            const maxDate = new Date(Math.max(...dates));
+            
+            return `${minDate.toLocaleDateString()} - ${maxDate.toLocaleDateString()}`;
+        }
     </script>
 </body>
 </html>
