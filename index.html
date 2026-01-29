@@ -1162,7 +1162,7 @@
 
         // Function to load default CSV file
         function loadDefaultFile() {
-            const defaultFilePath = './ECO Systems General Ledger.csv';
+            const defaultFilePath = 'ECO Systems General Ledger.csv';
             
             // Show loading indicator
             loadingIndicator.style.display = 'block';
@@ -1197,7 +1197,7 @@
         // Load default file on page load
         window.addEventListener('load', function() {
             // Try to load default file, but don't show error if not found
-            const defaultFilePath = './ECO Systems General Ledger.csv';
+            const defaultFilePath = 'ECO Systems General Ledger.csv';
             
             fetch(defaultFilePath)
                 .then(response => {
