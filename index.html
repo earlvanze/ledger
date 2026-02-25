@@ -959,11 +959,18 @@
 
         function normalizeAddress(value) {
             if (!value) return '';
-            const normalized = value
+            let normalized = value
+                .split(',')[0]
                 .toLowerCase()
                 .replace(/[.,]/g, '')
+                .replace(/\b(apartment|apt|unit|suite|ste|#)\b\s*\w*/g, '')
                 .replace(/\s+/g, ' ')
                 .trim();
+            normalized = normalized
+                .replace(/\bnorth\b/g, 'n')
+                .replace(/\bsouth\b/g, 's')
+                .replace(/\beast\b/g, 'e')
+                .replace(/\bwest\b/g, 'w');
             return normalized
                 .replace(/\bstreet\b/g, 'st')
                 .replace(/\bavenue\b/g, 'ave')
@@ -1014,6 +1021,10 @@
             const threshold = 0.8;
 
             for (const [key, value] of propertyInvestmentMap.entries()) {
+                if (key.includes(normalizedAddress) || normalizedAddress.includes(key)) {
+                    investmentMatchCache.set(normalizedAddress, value);
+                    return value;
+                }
                 const maxLen = Math.max(key.length, normalizedAddress.length);
                 if (!maxLen) continue;
                 const distance = levenshteinDistance(key, normalizedAddress);
