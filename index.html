@@ -435,6 +435,48 @@
     <div id="global-tooltip"></div>
 
     <div class="container">
+        <!-- Filters Section -->
+        <div class="filter-section fade-in" id="filtersSection" style="display: none;">
+            <h5 class="mb-4"><i class="fas fa-filter me-2"></i>Filter Transactions</h5>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Property</label>
+                    <input type="text" class="form-control mb-2" id="propertySearch" placeholder="Search properties...">
+                    <select class="form-select" id="propertyFilter" multiple>
+                        <option value="">All Properties</option>
+                    </select>
+                    <small class="text-muted">Hold Ctrl/Cmd to select multiple</small>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Category</label>
+                    <select class="form-select" id="categoryFilter">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Date Range</label>
+                    <input type="text" class="form-control" id="dateRange" placeholder="Select date range">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Search</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search transactions...">
+                        <button class="btn btn-outline-secondary" type="button" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-outline-secondary me-2" id="resetFilters">
+                    <i class="fas fa-redo me-1"></i> Reset
+                </button>
+                <button class="btn btn-primary" id="applyFilters">
+                    <i class="fas fa-filter me-1"></i> Apply Filters
+                </button>
+            </div>
+        </div>
+
         <!-- Property Balances Section -->
         <div class="property-balances fade-in" id="propertyBalancesSection" style="display: none;">
             <!-- Property balance cards will be populated here -->
@@ -473,47 +515,6 @@
                     </div>
                     <p class="mt-2">Processing your CSV file...</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Filters Section -->
-        <div class="filter-section fade-in" id="filtersSection" style="display: none;">
-            <h5 class="mb-4"><i class="fas fa-filter me-2"></i>Filter Transactions</h5>
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label class="form-label">Property</label>
-                    <input type="text" class="form-control mb-2" id="propertySearch" placeholder="Search properties...">
-                    <select class="form-select" id="propertyFilter">
-                        <option value="">All Properties</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label class="form-label">Category</label>
-                    <select class="form-select" id="categoryFilter">
-                        <option value="">All Categories</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label class="form-label">Date Range</label>
-                    <input type="text" class="form-control" id="dateRange" placeholder="Select date range">
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label class="form-label">Search</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="searchInput" placeholder="Search transactions...">
-                        <button class="btn btn-outline-secondary" type="button" id="searchBtn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-end">
-                <button class="btn btn-outline-secondary me-2" id="resetFilters">
-                    <i class="fas fa-redo me-1"></i> Reset
-                </button>
-                <button class="btn btn-primary" id="applyFilters">
-                    <i class="fas fa-filter me-1"></i> Apply Filters
-                </button>
             </div>
         </div>
 
@@ -846,6 +847,12 @@
             return propertySearchInput.value.trim().toLowerCase();
         }
 
+        function getSelectedProperties() {
+            return Array.from(propertyFilter.selectedOptions)
+                .map(option => option.value)
+                .filter(value => value);
+        }
+
         function filterPropertyOptions() {
             const searchValue = getPropertySearchValue();
             const options = propertyFilter.querySelectorAll('option');
@@ -856,7 +863,7 @@
                     return;
                 }
                 const matches = !searchValue || option.textContent.toLowerCase().includes(searchValue);
-                const isSelected = option.value === propertyFilter.value;
+                const isSelected = option.selected;
                 option.hidden = !matches && !isSelected;
                 option.disabled = !matches && !isSelected;
             });
@@ -894,10 +901,10 @@
 
             if (matches.length === 1) {
                 const matchValue = matches[0].value;
-                if (propertyFilter.value !== matchValue) {
-                    propertyFilter.value = matchValue;
+                if (!matches[0].selected) {
+                    matches[0].selected = true;
                     applyFilters();
-                    updatePropertyCardActiveState(matchValue);
+                    updatePropertyCardActiveState(getSelectedProperties());
                 }
             }
         }
@@ -939,11 +946,12 @@
         // Display property balances at the top as filter buttons
         function displayPropertyBalances(propertyBalances) {
             propertyBalancesSection.innerHTML = '';
+            const selectedProperties = new Set(getSelectedProperties());
             
             // Add "All Properties" button
             const allButton = document.createElement('div');
             allButton.className = 'property-balance-card';
-            if (!propertyFilter.value) {
+            if (selectedProperties.size === 0) {
                 allButton.classList.add('active');
             }
             allButton.innerHTML = `
@@ -956,21 +964,23 @@
                 </div>
             `;
             allButton.addEventListener('click', function() {
-                propertyFilter.value = '';
+                Array.from(propertyFilter.options).forEach(option => {
+                    option.selected = false;
+                });
                 applyFilters();
-                updatePropertyCardActiveState('');
+                updatePropertyCardActiveState([]);
             });
             propertyBalancesSection.appendChild(allButton);
             
             // Add property buttons
-            for (const prop in propertyBalances) {
+            Object.keys(propertyBalances).sort().forEach(prop => {
                 const balance = propertyBalances[prop];
                 const balanceClass = balance >= 0 ? 'balance-positive' : 'balance-negative';
                 const formattedBalance = `$${Math.abs(balance).toFixed(2)}`;
                 
                 const card = document.createElement('div');
                 card.className = 'property-balance-card';
-                if (propertyFilter.value === prop) {
+                if (selectedProperties.has(prop)) {
                     card.classList.add('active');
                 }
                 card.innerHTML = `
@@ -985,19 +995,24 @@
                 
                 // Add click event to filter by this property
                 card.addEventListener('click', function() {
-                    propertyFilter.value = prop;
+                    const options = Array.from(propertyFilter.options);
+                    const optionToToggle = options.find(option => option.value === prop);
+                    if (optionToToggle) {
+                        optionToToggle.selected = !optionToToggle.selected;
+                    }
                     applyFilters();
-                    updatePropertyCardActiveState(prop);
+                    updatePropertyCardActiveState(getSelectedProperties());
                 });
                 
                 propertyBalancesSection.appendChild(card);
-            }
+            });
 
             filterPropertyCards();
         }
 
         // Update active state of property cards
         function updatePropertyCardActiveState(activeProperty) {
+            const activeSet = new Set(activeProperty);
             const cards = propertyBalancesSection.querySelectorAll('.property-balance-card');
             cards.forEach(card => {
                 card.classList.remove('active');
@@ -1005,9 +1020,9 @@
                 // Check if this is the "All Properties" card
                 const isAllCard = card.querySelector('h5').textContent === 'All Properties';
                 
-                if (isAllCard && !activeProperty) {
+                if (isAllCard && activeSet.size === 0) {
                     card.classList.add('active');
-                } else if (!isAllCard && card.querySelector('h5').textContent === activeProperty) {
+                } else if (!isAllCard && activeSet.has(card.querySelector('h5').textContent)) {
                     card.classList.add('active');
                 }
             });
@@ -1015,8 +1030,7 @@
 
         // Process transactions and calculate running balances
         function processTransactions(transactions) {
-            // Get the selected property filter
-            const selectedProperty = propertyFilter.value;
+            const selectedProperties = getSelectedProperties();
             
             // Calculate balances for all properties
             const propertyBalances = calculatePropertyBalances(transactions);
@@ -1024,24 +1038,43 @@
             // Display property balances at the top
             displayPropertyBalances(propertyBalances);
             
-            // Filter transactions by property first
+            // Calculate running balances
             let propertyTransactions = transactions;
-            if (selectedProperty) {
+            if (selectedProperties.length === 1) {
+                const selectedProperty = selectedProperties[0];
                 propertyTransactions = transactions.filter(t => t.Property === selectedProperty);
+                
+                // Sort transactions by date (oldest first) for balance calculation
+                const sortedTransactions = [...propertyTransactions].sort((a, b) => a.dateObj - b.dateObj);
+                
+                // Calculate running balances for the filtered property only
+                let runningBalance = 0;
+                sortedTransactions.forEach(transaction => {
+                    runningBalance += transaction.Amount;
+                    transaction.runningBalance = runningBalance;
+                });
+            } else {
+                const propertyGroups = {};
+                propertyTransactions.forEach(transaction => {
+                    const prop = transaction.Property || 'Unknown';
+                    if (!propertyGroups[prop]) {
+                        propertyGroups[prop] = [];
+                    }
+                    propertyGroups[prop].push(transaction);
+                });
+                
+                for (const prop in propertyGroups) {
+                    const sortedTransactions = [...propertyGroups[prop]].sort((a, b) => a.dateObj - b.dateObj);
+                    let runningBalance = 0;
+                    sortedTransactions.forEach(transaction => {
+                        runningBalance += transaction.Amount;
+                        transaction.runningBalance = runningBalance;
+                    });
+                }
             }
             
-            // Sort transactions by date (oldest first) for balance calculation
-            const sortedTransactions = [...propertyTransactions].sort((a, b) => a.dateObj - b.dateObj);
-            
-            // Calculate running balances for the filtered property only
-            let runningBalance = 0;
-            sortedTransactions.forEach(transaction => {
-                runningBalance += transaction.Amount;
-                transaction.runningBalance = runningBalance;
-            });
-            
             // Sort for display (newest first)
-            const displayTransactions = [...sortedTransactions].sort((a, b) => b.dateObj - a.dateObj);
+            const displayTransactions = [...propertyTransactions].sort((a, b) => b.dateObj - a.dateObj);
             
             // Calculate summary values
             let income = 0;
@@ -1187,13 +1220,13 @@
 
         // Apply filters
         function applyFilters() {
-            const propertyValue = propertyFilter.value;
+            const selectedProperties = getSelectedProperties();
             const categoryValue = categoryFilter.value;
             const searchValue = searchInput.value.toLowerCase();
             
             filteredTransactions = allTransactions.filter(transaction => {
                 // Property filter
-                if (propertyValue && transaction.Property !== propertyValue) {
+                if (selectedProperties.length && !selectedProperties.includes(transaction.Property)) {
                     return false;
                 }
                 
@@ -1215,17 +1248,20 @@
             });
             
             processTransactions(filteredTransactions);
+            updatePropertyCardActiveState(selectedProperties);
         }
 
         // Reset filters
         function resetFilters() {
-            propertyFilter.value = '';
+            Array.from(propertyFilter.options).forEach(option => {
+                option.selected = false;
+            });
             categoryFilter.value = '';
             searchInput.value = '';
             propertySearchInput.value = '';
             filteredTransactions = [...allTransactions];
             processTransactions(filteredTransactions);
-            updatePropertyCardActiveState('');
+            updatePropertyCardActiveState([]);
             filterPropertyLists();
         }
 
@@ -1293,10 +1329,20 @@
             balanceSheet.style.display = 'none';
         }
 
+        function getSelectedPropertyLabel() {
+            const selectedProperties = getSelectedProperties();
+            if (selectedProperties.length === 0) {
+                return 'All Properties';
+            }
+            if (selectedProperties.length === 1) {
+                return selectedProperties[0];
+            }
+            return `${selectedProperties.length} Properties`;
+        }
+
         // Generate monthly income statement
         function generateMonthlyIncomeStatement() {
-            const selectedProperty = propertyFilter.value;
-            const propertyName = selectedProperty || 'All Properties';
+            const propertyName = getSelectedPropertyLabel();
             
             // Get date range
             const dateRange = getTransactionDateRange();
@@ -1497,8 +1543,7 @@
 
         // Generate balance sheet
         function generateBalanceSheet() {
-            const selectedProperty = propertyFilter.value;
-            const propertyName = selectedProperty || 'All Properties';
+            const propertyName = getSelectedPropertyLabel();
             
             // Calculate current balance
             let currentAssets = 0;
