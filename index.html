@@ -482,6 +482,7 @@
             <div class="row">
                 <div class="col-md-3 mb-3">
                     <label class="form-label">Property</label>
+                    <input type="text" class="form-control mb-2" id="propertySearch" placeholder="Search properties...">
                     <select class="form-select" id="propertyFilter">
                         <option value="">All Properties</option>
                     </select>
@@ -634,6 +635,7 @@
         const totalExpense = document.getElementById('totalExpense');
         const netBalance = document.getElementById('netBalance');
         const propertyFilter = document.getElementById('propertyFilter');
+        const propertySearchInput = document.getElementById('propertySearch');
         const categoryFilter = document.getElementById('categoryFilter');
         const searchInput = document.getElementById('searchInput');
         const searchBtn = document.getElementById('searchBtn');
@@ -685,6 +687,7 @@
         searchBtn.addEventListener('click', applyFilters);
         applyFiltersBtn.addEventListener('click', applyFilters);
         resetFiltersBtn.addEventListener('click', resetFilters);
+        propertySearchInput.addEventListener('input', filterPropertyLists);
         loadDefaultBtn.addEventListener('click', loadDefaultFile);
         uploadNewBtn.addEventListener('click', () => fileInput.click());
         
@@ -835,6 +838,68 @@
                 option.textContent = category;
                 categoryFilter.appendChild(option);
             });
+
+            filterPropertyOptions();
+        }
+
+        function getPropertySearchValue() {
+            return propertySearchInput.value.trim().toLowerCase();
+        }
+
+        function filterPropertyOptions() {
+            const searchValue = getPropertySearchValue();
+            const options = propertyFilter.querySelectorAll('option');
+            options.forEach((option, index) => {
+                if (index === 0) {
+                    option.hidden = false;
+                    option.disabled = false;
+                    return;
+                }
+                const matches = !searchValue || option.textContent.toLowerCase().includes(searchValue);
+                const isSelected = option.value === propertyFilter.value;
+                option.hidden = !matches && !isSelected;
+                option.disabled = !matches && !isSelected;
+            });
+        }
+
+        function filterPropertyCards() {
+            const searchValue = getPropertySearchValue();
+            const cards = propertyBalancesSection.querySelectorAll('.property-balance-card');
+            cards.forEach(card => {
+                const title = card.querySelector('h5')?.textContent || '';
+                const isAllCard = title === 'All Properties';
+                if (isAllCard) {
+                    card.style.display = '';
+                    return;
+                }
+                const matches = !searchValue || title.toLowerCase().includes(searchValue);
+                card.style.display = matches ? '' : 'none';
+            });
+        }
+
+        function filterPropertyLists() {
+            filterPropertyOptions();
+            filterPropertyCards();
+            autoApplySinglePropertyMatch();
+        }
+
+        function autoApplySinglePropertyMatch() {
+            const searchValue = getPropertySearchValue();
+            if (!searchValue) return;
+
+            const options = Array.from(propertyFilter.querySelectorAll('option')).slice(1);
+            const matches = options.filter(option =>
+                option.textContent.toLowerCase().includes(searchValue)
+            );
+
+            if (matches.length === 1) {
+                const matchValue = matches[0].value;
+                if (propertyFilter.value !== matchValue) {
+                    propertyFilter.value = matchValue;
+                    applyFilters();
+                    updatePropertyCardActiveState(matchValue);
+                }
+            }
         }
 
         // Calculate running balances for all properties
@@ -927,6 +992,8 @@
                 
                 propertyBalancesSection.appendChild(card);
             }
+
+            filterPropertyCards();
         }
 
         // Update active state of property cards
@@ -1155,9 +1222,11 @@
             propertyFilter.value = '';
             categoryFilter.value = '';
             searchInput.value = '';
+            propertySearchInput.value = '';
             filteredTransactions = [...allTransactions];
             processTransactions(filteredTransactions);
             updatePropertyCardActiveState('');
+            filterPropertyLists();
         }
 
         // Function to load default CSV file
