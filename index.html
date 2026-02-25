@@ -497,7 +497,10 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <label class="form-label">Date Range</label>
-                    <input type="text" class="form-control" id="dateRange" placeholder="Select date range">
+                    <div class="d-flex gap-2">
+                        <input type="date" class="form-control" id="dateStart">
+                        <input type="date" class="form-control" id="dateEnd">
+                    </div>
                 </div>
                 <div class="col-md-3 mb-3">
                     <label class="form-label">Search</label>
@@ -719,6 +722,8 @@
         const searchBtn = document.getElementById('searchBtn');
         const applyFiltersBtn = document.getElementById('applyFilters');
         const resetFiltersBtn = document.getElementById('resetFilters');
+        const dateStartInput = document.getElementById('dateStart');
+        const dateEndInput = document.getElementById('dateEnd');
         const loadingIndicator = document.getElementById('loadingIndicator');
         const propertyBalancesSection = document.getElementById('propertyBalancesSection');
         const loadDefaultBtn = document.getElementById('loadDefaultBtn');
@@ -790,6 +795,8 @@
         exportCsvInlineBtn.addEventListener('click', exportFilteredCsv);
         printPdfBtn.addEventListener('click', printReport);
         toggleInvestorViewBtn.addEventListener('click', toggleInvestorView);
+        dateStartInput.addEventListener('change', applyFilters);
+        dateEndInput.addEventListener('change', applyFilters);
         
         // Report generation event listeners
         generateIncomeStatementBtn.addEventListener('click', generateMonthlyIncomeStatement);
@@ -1682,6 +1689,8 @@
             const expandedSelected = expandSelectedProperties(selectedProperties);
             const categoryValue = categoryFilter.value;
             const searchValue = searchInput.value.toLowerCase();
+            const dateStartValue = dateStartInput.value ? new Date(dateStartInput.value + 'T00:00:00') : null;
+            const dateEndValue = dateEndInput.value ? new Date(dateEndInput.value + 'T23:59:59') : null;
             
             filteredTransactions = allTransactions.filter(transaction => {
                 // Property filter
@@ -1702,6 +1711,14 @@
                         return false;
                     }
                 }
+
+                // Date range filter
+                if (dateStartValue || dateEndValue) {
+                    const txDate = transaction.dateObj;
+                    if (isNaN(txDate)) return false;
+                    if (dateStartValue && txDate < dateStartValue) return false;
+                    if (dateEndValue && txDate > dateEndValue) return false;
+                }
                 
                 return true;
             });
@@ -1717,6 +1734,8 @@
             });
             categoryFilter.value = '';
             searchInput.value = '';
+            dateStartInput.value = '';
+            dateEndInput.value = '';
             propertySearchInput.value = '';
             filteredTransactions = [...allTransactions];
             processTransactions(filteredTransactions);
