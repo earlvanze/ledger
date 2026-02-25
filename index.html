@@ -656,6 +656,16 @@
         const generateIncomeStatementBtn = document.getElementById('generateIncomeStatement');
         const generateBalanceSheetBtn = document.getElementById('generateBalanceSheet');
         const generateAllReportsBtn = document.getElementById('generateAllReports');
+        const customPropertyGroups = [
+            {
+                label: '7542 & 7656 S Colfax Ave',
+                parts: ['7542 S Colfax Ave', '7656 S Colfax Ave']
+            },
+            {
+                label: 'Ohio 3-Property Package',
+                parts: ['1258 Lily St', '1321 Allendale Ave', '1518 Dille Rd']
+            }
+        ];
 
         // Global variables
         let allTransactions = [];
@@ -833,6 +843,18 @@
                 propertyFilter.appendChild(option);
             });
             
+            const presentProperties = new Set(properties);
+            customPropertyGroups.forEach(group => {
+                const shouldShowGroup = group.parts.some(part => presentProperties.has(part));
+                if (!shouldShowGroup) {
+                    return;
+                }
+                const customOption = document.createElement('option');
+                customOption.value = group.label;
+                customOption.textContent = group.label;
+                propertyFilter.appendChild(customOption);
+            });
+            
             // Add categories
             Array.from(categories).sort().forEach(category => {
                 const option = document.createElement('option');
@@ -852,6 +874,19 @@
             return Array.from(propertyFilter.selectedOptions)
                 .map(option => option.value)
                 .filter(value => value);
+        }
+
+        function expandSelectedProperties(selectedValues) {
+            const expanded = new Set();
+            selectedValues.forEach(value => {
+                const group = customPropertyGroups.find(item => item.label === value);
+                if (group) {
+                    group.parts.forEach(part => expanded.add(part));
+                    return;
+                }
+                expanded.add(value);
+            });
+            return expanded;
         }
 
         function filterPropertyOptions() {
@@ -973,6 +1008,44 @@
                 updatePropertyCardActiveState([]);
             });
             propertyBalancesSection.appendChild(allButton);
+
+            const presentProperties = new Set(Object.keys(propertyBalances));
+            customPropertyGroups.forEach(group => {
+                const shouldShowGroup = group.parts.some(part => presentProperties.has(part));
+                if (!shouldShowGroup) {
+                    return;
+                }
+                const customBalance = group.parts.reduce((sum, prop) => {
+                    const balance = propertyBalances[prop];
+                    return sum + (typeof balance === 'number' ? balance : 0);
+                }, 0);
+                const customBalanceClass = customBalance >= 0 ? 'balance-positive' : 'balance-negative';
+                const customFormattedBalance = `$${Math.abs(customBalance).toFixed(2)}`;
+                const customCard = document.createElement('div');
+                customCard.className = 'property-balance-card';
+                if (selectedProperties.has(group.label)) {
+                    customCard.classList.add('active');
+                }
+                customCard.innerHTML = `
+                    <h5>${group.label}</h5>
+                    <div class="property-balance-amount ${customBalanceClass}">
+                        ${customBalance >= 0 ? '+' : '-'}${customFormattedBalance}
+                    </div>
+                    <div class="mt-2">
+                        <small class="text-muted">Click to filter</small>
+                    </div>
+                `;
+                customCard.addEventListener('click', function() {
+                    const options = Array.from(propertyFilter.options);
+                    const optionToToggle = options.find(option => option.value === group.label);
+                    if (optionToToggle) {
+                        optionToToggle.selected = !optionToToggle.selected;
+                    }
+                    applyFilters();
+                    updatePropertyCardActiveState(getSelectedProperties());
+                });
+                propertyBalancesSection.appendChild(customCard);
+            });
             
             // Add property buttons
             Object.keys(propertyBalances).sort().forEach(prop => {
@@ -1032,7 +1105,8 @@
 
         // Process transactions and calculate running balances
         function processTransactions(transactions) {
-            const selectedProperties = getSelectedProperties();
+            const selectedValues = getSelectedProperties();
+            const expandedSelected = expandSelectedProperties(selectedValues);
             
             // Calculate balances for all properties
             const propertyBalances = calculatePropertyBalances(transactions);
@@ -1042,8 +1116,8 @@
             
             // Calculate running balances
             let propertyTransactions = transactions;
-            if (selectedProperties.length === 1) {
-                const selectedProperty = selectedProperties[0];
+            if (expandedSelected.size === 1) {
+                const selectedProperty = Array.from(expandedSelected)[0];
                 propertyTransactions = transactions.filter(t => t.Property === selectedProperty);
                 
                 // Sort transactions by date (oldest first) for balance calculation
@@ -1223,12 +1297,13 @@
         // Apply filters
         function applyFilters() {
             const selectedProperties = getSelectedProperties();
+            const expandedSelected = expandSelectedProperties(selectedProperties);
             const categoryValue = categoryFilter.value;
             const searchValue = searchInput.value.toLowerCase();
             
             filteredTransactions = allTransactions.filter(transaction => {
                 // Property filter
-                if (selectedProperties.length && !selectedProperties.includes(transaction.Property)) {
+                if (expandedSelected.size && !expandedSelected.has(transaction.Property)) {
                     return false;
                 }
                 
