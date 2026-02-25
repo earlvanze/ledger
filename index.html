@@ -755,6 +755,7 @@
         let csvHeaders = [];
         let propertyInvestmentMap = new Map();
         let isInvestorView = false;
+        const investmentMatchCache = new Map();
 
         // Update copyright year
         currentYear.textContent = new Date().getFullYear();
@@ -976,8 +977,61 @@
                 .replace(/\bhighway\b/g, 'hwy');
         }
 
+        function levenshteinDistance(a, b) {
+            const matrix = Array.from({ length: b.length + 1 }, () => []);
+            for (let i = 0; i <= b.length; i++) matrix[i][0] = i;
+            for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+            for (let i = 1; i <= b.length; i++) {
+                for (let j = 1; j <= a.length; j++) {
+                    if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                        matrix[i][j] = matrix[i - 1][j - 1];
+                    } else {
+                        matrix[i][j] = Math.min(
+                            matrix[i - 1][j - 1] + 1,
+                            matrix[i][j - 1] + 1,
+                            matrix[i - 1][j] + 1
+                        );
+                    }
+                }
+            }
+            return matrix[b.length][a.length];
+        }
+
+        function getFuzzyInvestmentMatch(normalizedAddress) {
+            if (!normalizedAddress) return null;
+            if (investmentMatchCache.has(normalizedAddress)) {
+                return investmentMatchCache.get(normalizedAddress);
+            }
+
+            if (propertyInvestmentMap.has(normalizedAddress)) {
+                const exact = propertyInvestmentMap.get(normalizedAddress);
+                investmentMatchCache.set(normalizedAddress, exact);
+                return exact;
+            }
+
+            let bestScore = 0;
+            let bestValue = null;
+            const threshold = 0.8;
+
+            for (const [key, value] of propertyInvestmentMap.entries()) {
+                const maxLen = Math.max(key.length, normalizedAddress.length);
+                if (!maxLen) continue;
+                const distance = levenshteinDistance(key, normalizedAddress);
+                const score = 1 - distance / maxLen;
+                if (score > bestScore) {
+                    bestScore = score;
+                    bestValue = value;
+                }
+            }
+
+            const finalValue = bestScore >= threshold ? bestValue : null;
+            investmentMatchCache.set(normalizedAddress, finalValue);
+            return finalValue;
+        }
+
         function buildPropertyInvestmentMapFromCsv(rows) {
             propertyInvestmentMap = new Map();
+            investmentMatchCache.clear();
             rows.forEach(row => {
                 const addressLine = row.Property || '';
                 const normalizedAddress = normalizeAddress(addressLine);
@@ -1026,7 +1080,7 @@
             let matched = 0;
             propertySet.forEach(propertyName => {
                 const normalized = normalizeAddress(propertyName);
-                const investment = propertyInvestmentMap.get(normalized);
+                const investment = getFuzzyInvestmentMatch(normalized);
                 if (Number.isFinite(investment)) {
                     total += investment;
                     matched += 1;
