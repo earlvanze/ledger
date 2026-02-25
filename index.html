@@ -132,6 +132,39 @@
         .net-balance i {
             color: var(--primary);
         }
+
+        .kpi-card i {
+            color: #17a2b8;
+        }
+
+        .kpi-subtext {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        body.investor-view #uploadSection,
+        body.investor-view #filtersSection,
+        body.investor-view .report-controls,
+        body.investor-view #financialReportsSection {
+            display: none !important;
+        }
+
+        body.print-view #uploadSection,
+        body.print-view #filtersSection,
+        body.print-view .report-controls,
+        body.print-view #financialReportsSection,
+        body.print-view #headerActions {
+            display: none !important;
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+            .card {
+                box-shadow: none !important;
+            }
+        }
         
         .progress {
             height: 10px;
@@ -423,10 +456,18 @@
                     <h1><i class="fas fa-file-invoice-dollar me-2"></i>Assetrail</h1>
                     <p class="lead mb-0">Upload, filter, and analyze property transactions with running balances</p>
                 </div>
-                <div class="col-md-4 text-md-end">
-                    <button class="btn btn-light btn-lg">
-                        <i class="fas fa-download me-2"></i>Export Report
-                    </button>
+                <div class="col-md-4 text-md-end" id="headerActions">
+                    <div class="btn-group">
+                        <button class="btn btn-light btn-lg" id="exportCsvBtn">
+                            <i class="fas fa-file-csv me-2"></i>Export CSV
+                        </button>
+                        <button class="btn btn-light btn-lg" id="printPdfBtn">
+                            <i class="fas fa-print me-2"></i>Print / PDF
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" id="toggleInvestorView">
+                            <i class="fas fa-eye me-2"></i>Investor View
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -484,7 +525,7 @@
         </div>
 
         <!-- Upload Section -->
-        <div class="card fade-in">
+        <div class="card fade-in" id="uploadSection">
             <div class="card-header">
                 <h5 class="mb-0"><i class="fas fa-cloud-upload-alt me-2"></i>Upload Transactions</h5>
             </div>
@@ -580,13 +621,41 @@
             </div>
         </div>
 
+        <!-- KPI Section -->
+        <div class="row fade-in" id="kpiSection" style="display: none;">
+            <div class="col-md-4 mb-4">
+                <div class="card summary-card kpi-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3 id="noiValue">$0.00</h3>
+                    <p class="text-muted">NOI (Period)</p>
+                    <div class="kpi-subtext" id="noiRange">-</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card summary-card kpi-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3 id="capRateValue">N/A</h3>
+                    <p class="text-muted">Cap Rate (Annualized)</p>
+                    <div class="kpi-subtext" id="capRateBasis">-</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card summary-card kpi-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3 id="investmentValue">N/A</h3>
+                    <p class="text-muted">Total Investment</p>
+                    <div class="kpi-subtext" id="investmentCount">-</div>
+                </div>
+            </div>
+        </div>
+
         <!-- Transactions Table -->
         <div class="card fade-in" id="transactionsSection" style="display: none;">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="mb-0"><i class="fas fa-list me-2"></i>Transaction History</h5>
                 <div>
                     <span class="me-3">Showing <span id="transactionCount">0</span> transactions</span>
-                    <button class="btn btn-sm btn-outline-primary">
+                    <button class="btn btn-sm btn-outline-primary" id="exportCsvInline">
                         <i class="fas fa-download me-1"></i> Export
                     </button>
                 </div>
@@ -630,12 +699,19 @@
         const fileName = document.getElementById('fileName');
         const filtersSection = document.getElementById('filtersSection');
         const summarySection = document.getElementById('summarySection');
+        const kpiSection = document.getElementById('kpiSection');
         const transactionsSection = document.getElementById('transactionsSection');
         const transactionBody = document.getElementById('transactionBody');
         const transactionCount = document.getElementById('transactionCount');
         const totalIncome = document.getElementById('totalIncome');
         const totalExpense = document.getElementById('totalExpense');
         const netBalance = document.getElementById('netBalance');
+        const noiValue = document.getElementById('noiValue');
+        const noiRange = document.getElementById('noiRange');
+        const capRateValue = document.getElementById('capRateValue');
+        const capRateBasis = document.getElementById('capRateBasis');
+        const investmentValue = document.getElementById('investmentValue');
+        const investmentCount = document.getElementById('investmentCount');
         const propertyFilter = document.getElementById('propertyFilter');
         const propertySearchInput = document.getElementById('propertySearch');
         const categoryFilter = document.getElementById('categoryFilter');
@@ -656,6 +732,10 @@
         const generateIncomeStatementBtn = document.getElementById('generateIncomeStatement');
         const generateBalanceSheetBtn = document.getElementById('generateBalanceSheet');
         const generateAllReportsBtn = document.getElementById('generateAllReports');
+        const exportCsvBtn = document.getElementById('exportCsvBtn');
+        const exportCsvInlineBtn = document.getElementById('exportCsvInline');
+        const printPdfBtn = document.getElementById('printPdfBtn');
+        const toggleInvestorViewBtn = document.getElementById('toggleInvestorView');
         const customPropertyGroups = [
             {
                 label: '7542 & 7656 S Colfax Ave',
@@ -672,6 +752,10 @@
         let filteredTransactions = [];
         let properties = new Set();
         let categories = new Set();
+        let csvHeaders = [];
+        let marketplaceProperties = [];
+        let propertyInvestmentMap = new Map();
+        let isInvestorView = false;
 
         // Update copyright year
         currentYear.textContent = new Date().getFullYear();
@@ -702,6 +786,10 @@
         propertySearchInput.addEventListener('input', filterPropertyLists);
         loadDefaultBtn.addEventListener('click', loadDefaultFile);
         uploadNewBtn.addEventListener('click', () => fileInput.click());
+        exportCsvBtn.addEventListener('click', exportFilteredCsv);
+        exportCsvInlineBtn.addEventListener('click', exportFilteredCsv);
+        printPdfBtn.addEventListener('click', printReport);
+        toggleInvestorViewBtn.addEventListener('click', toggleInvestorView);
         
         // Report generation event listeners
         generateIncomeStatementBtn.addEventListener('click', generateMonthlyIncomeStatement);
@@ -723,6 +811,7 @@
             transactionsSection.style.display = 'none';
             propertyBalancesSection.style.display = 'none';
             financialReportsSection.style.display = 'none';
+            kpiSection.style.display = 'none';
             
             // Parse CSV file
             const reader = new FileReader();
@@ -736,7 +825,8 @@
         // Parse CSV data
         function parseCSV(csvData) {
             const lines = csvData.split('\n');
-            const headers = lines[0].split(',').map(header => header.trim().replace(/^"|"$/g, ''));
+            const headers = lines[0].split(',').map(header => header.trim().replace(/^\uFEFF/, '').replace(/^"|"$/g, ''));
+            csvHeaders = headers;
             
             // Reset data structures
             allTransactions = [];
@@ -784,6 +874,7 @@
             transactionsSection.style.display = 'block';
             propertyBalancesSection.style.display = 'flex';
             financialReportsSection.style.display = 'block';
+            kpiSection.style.display = 'flex';
             loadingIndicator.style.display = 'none';
         }
 
@@ -864,6 +955,217 @@
             });
 
             filterPropertyOptions();
+        }
+
+        function normalizeAddress(value) {
+            if (!value) return '';
+            const normalized = value
+                .toLowerCase()
+                .replace(/[.,]/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+            return normalized
+                .replace(/\bstreet\b/g, 'st')
+                .replace(/\bavenue\b/g, 'ave')
+                .replace(/\broad\b/g, 'rd')
+                .replace(/\bdrive\b/g, 'dr')
+                .replace(/\bcourt\b/g, 'ct')
+                .replace(/\bboulevard\b/g, 'blvd')
+                .replace(/\bplace\b/g, 'pl')
+                .replace(/\blane\b/g, 'ln')
+                .replace(/\bterrace\b/g, 'ter')
+                .replace(/\bhighway\b/g, 'hwy');
+        }
+
+        function buildPropertyInvestmentMap() {
+            propertyInvestmentMap = new Map();
+            marketplaceProperties.forEach(property => {
+                const addressLine = property.address_line1 || property.address || '';
+                const normalizedAddress = normalizeAddress(addressLine);
+                if (!normalizedAddress) return;
+                const totalInvestment = Number(property.total_investment);
+                if (Number.isFinite(totalInvestment)) {
+                    propertyInvestmentMap.set(normalizedAddress, totalInvestment);
+                }
+            });
+        }
+
+        function loadMarketplaceData() {
+            return fetch('marketplace.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('marketplace.json not found');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    marketplaceProperties = data?.data?.properties || [];
+                    buildPropertyInvestmentMap();
+                })
+                .catch(error => {
+                    console.log('Marketplace data not available:', error);
+                    marketplaceProperties = [];
+                    propertyInvestmentMap = new Map();
+                });
+        }
+
+        function getTotalInvestmentForProperties(propertySet) {
+            let total = 0;
+            let matched = 0;
+            propertySet.forEach(propertyName => {
+                const normalized = normalizeAddress(propertyName);
+                const investment = propertyInvestmentMap.get(normalized);
+                if (Number.isFinite(investment)) {
+                    total += investment;
+                    matched += 1;
+                }
+            });
+            return { total, matched };
+        }
+
+        function isExcludedFromOpEx(transaction) {
+            const fields = [
+                transaction.Type,
+                transaction.Category,
+                transaction['Sub-category']
+            ].filter(Boolean).join(' ').toLowerCase();
+
+            const excludedKeywords = [
+                'transfer',
+                'owner contributions',
+                'distributions',
+                'capital expenditures',
+                'capex',
+                'loan payments',
+                'loan',
+                'mortgage',
+                'principal',
+                'interest'
+            ];
+
+            return excludedKeywords.some(keyword => fields.includes(keyword));
+        }
+
+        function calculateNoi(transactions) {
+            let income = 0;
+            let opEx = 0;
+
+            transactions.forEach(transaction => {
+                const amount = Number(transaction.Amount) || 0;
+                if (amount > 0) {
+                    income += amount;
+                    return;
+                }
+                if (amount < 0 && !isExcludedFromOpEx(transaction)) {
+                    opEx += Math.abs(amount);
+                }
+            });
+
+            return { income, opEx, noi: income - opEx };
+        }
+
+        function updateKpis(transactions) {
+            if (!transactions.length) {
+                noiValue.textContent = '$0.00';
+                noiRange.textContent = 'No transactions';
+                capRateValue.textContent = 'N/A';
+                capRateBasis.textContent = '-';
+                investmentValue.textContent = 'N/A';
+                investmentCount.textContent = '-';
+                return;
+            }
+
+            const { noi } = calculateNoi(transactions);
+            const dates = transactions.map(t => t.dateObj).filter(d => !isNaN(d));
+            const dateRange = getTransactionDateRange();
+            let annualizedNoi = noi;
+            let days = 0;
+            if (dates.length > 1) {
+                const minDate = new Date(Math.min(...dates));
+                const maxDate = new Date(Math.max(...dates));
+                days = Math.max(1, Math.round((maxDate - minDate) / (1000 * 60 * 60 * 24)) + 1);
+                annualizedNoi = (noi / days) * 365;
+            }
+
+            const selectedValues = getSelectedProperties();
+            const expandedSelected = expandSelectedProperties(selectedValues);
+            const propertiesForCapRate = expandedSelected.size
+                ? expandedSelected
+                : new Set(transactions.map(t => t.Property).filter(Boolean));
+
+            const { total, matched } = getTotalInvestmentForProperties(propertiesForCapRate);
+            const capRate = total > 0 ? annualizedNoi / total : null;
+
+            noiValue.textContent = `$${Math.abs(noi).toFixed(2)}`;
+            noiValue.className = noi >= 0 ? 'balance-positive' : 'balance-negative';
+            noiRange.textContent = dateRange;
+
+            if (capRate !== null) {
+                capRateValue.textContent = `${(capRate * 100).toFixed(2)}%`;
+            } else {
+                capRateValue.textContent = 'N/A';
+            }
+            capRateBasis.textContent = total > 0
+                ? `Based on $${total.toFixed(2)} total investment`
+                : 'No investment data matched';
+
+            investmentValue.textContent = total > 0 ? `$${total.toFixed(2)}` : 'N/A';
+            investmentCount.textContent = matched > 0
+                ? `${matched} property${matched === 1 ? '' : 'ies'} matched`
+                : 'No matches';
+        }
+
+        function exportFilteredCsv() {
+            if (!filteredTransactions.length || !csvHeaders.length) {
+                alert('No transactions available to export.');
+                return;
+            }
+
+            const rows = [csvHeaders.join(',')];
+            filteredTransactions.forEach(transaction => {
+                const row = csvHeaders.map(header => {
+                    const value = transaction[header] ?? '';
+                    const stringValue = String(value).replace(/"/g, '""');
+                    return `"${stringValue}"`;
+                });
+                rows.push(row.join(','));
+            });
+
+            const csvContent = rows.join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `assetrail-export-${new Date().toISOString().slice(0, 10)}.csv`;
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function setInvestorView(enabled) {
+            isInvestorView = enabled;
+            document.body.classList.toggle('investor-view', enabled);
+            toggleInvestorViewBtn.innerHTML = enabled
+                ? '<i class="fas fa-eye-slash me-2"></i>Exit Investor View'
+                : '<i class="fas fa-eye me-2"></i>Investor View';
+        }
+
+        function toggleInvestorView() {
+            setInvestorView(!isInvestorView);
+        }
+
+        function printReport() {
+            const wasInvestorView = isInvestorView;
+            document.body.classList.add('print-view');
+            setInvestorView(true);
+
+            const finalize = () => {
+                document.body.classList.remove('print-view');
+                setInvestorView(wasInvestorView);
+                window.onafterprint = null;
+            };
+
+            window.onafterprint = finalize;
+            setTimeout(() => window.print(), 0);
         }
 
         function getPropertySearchValue() {
@@ -1177,6 +1479,9 @@
             
             // Render transactions
             renderTransactions(displayTransactions);
+
+            // Update KPI section
+            updateKpis(displayTransactions);
             
             // Hide financial reports when filters change
             hideFinancialReports();
@@ -1356,6 +1661,7 @@
             transactionsSection.style.display = 'none';
             propertyBalancesSection.style.display = 'none';
             financialReportsSection.style.display = 'none';
+            kpiSection.style.display = 'none';
             
             fetch(defaultFilePath)
                 .then(response => {
@@ -1380,7 +1686,9 @@
         window.addEventListener('load', function() {
             // Try to load default file, but don't show error if not found
             const defaultFilePath = 'ECO Systems General Ledger.csv';
-            
+
+            loadMarketplaceData();
+
             fetch(defaultFilePath)
                 .then(response => {
                     if (!response.ok) {
