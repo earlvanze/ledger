@@ -753,7 +753,6 @@
         let properties = new Set();
         let categories = new Set();
         let csvHeaders = [];
-        let marketplaceProperties = [];
         let propertyInvestmentMap = new Map();
         let isInvestorView = false;
 
@@ -977,34 +976,47 @@
                 .replace(/\bhighway\b/g, 'hwy');
         }
 
-        function buildPropertyInvestmentMap() {
+        function buildPropertyInvestmentMapFromCsv(rows) {
             propertyInvestmentMap = new Map();
-            marketplaceProperties.forEach(property => {
-                const addressLine = property.address_line1 || property.address || '';
+            rows.forEach(row => {
+                const addressLine = row.Property || '';
                 const normalizedAddress = normalizeAddress(addressLine);
                 if (!normalizedAddress) return;
-                const totalInvestment = Number(property.total_investment);
+                const totalInvestment = Number(row.total_investment);
                 if (Number.isFinite(totalInvestment)) {
                     propertyInvestmentMap.set(normalizedAddress, totalInvestment);
                 }
             });
         }
 
-        function loadMarketplaceData() {
-            return fetch('marketplace.json')
+        function loadInvestmentData() {
+            return fetch('property_investments.csv')
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('marketplace.json not found');
+                        throw new Error('property_investments.csv not found');
                     }
-                    return response.json();
+                    return response.text();
                 })
-                .then(data => {
-                    marketplaceProperties = data?.data?.properties || [];
-                    buildPropertyInvestmentMap();
+                .then(csvData => {
+                    const lines = csvData.split('\n');
+                    if (!lines.length) return;
+                    const headers = lines[0].split(',').map(header => header.trim().replace(/^\uFEFF/, '').replace(/^"|"$/g, ''));
+                    const rows = [];
+                    for (let i = 1; i < lines.length; i++) {
+                        const line = lines[i].trim();
+                        if (!line) continue;
+                        const values = parseCSVLine(line);
+                        if (values.length < headers.length) continue;
+                        const row = {};
+                        for (let j = 0; j < headers.length; j++) {
+                            row[headers[j]] = values[j].replace(/^"|"$/g, '').trim();
+                        }
+                        rows.push(row);
+                    }
+                    buildPropertyInvestmentMapFromCsv(rows);
                 })
                 .catch(error => {
-                    console.log('Marketplace data not available:', error);
-                    marketplaceProperties = [];
+                    console.log('Investment data not available:', error);
                     propertyInvestmentMap = new Map();
                 });
         }
@@ -1687,7 +1699,7 @@
             // Try to load default file, but don't show error if not found
             const defaultFilePath = 'ECO Systems General Ledger.csv';
 
-            loadMarketplaceData();
+            loadInvestmentData();
 
             fetch(defaultFilePath)
                 .then(response => {
