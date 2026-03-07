@@ -1,2 +1,13 @@
 .idea
 .DS_Store
+
+# Baselane export artifacts (keep local, never commit)
+ECO Systems General Ledger.*.bak.csv
+ECO Systems General Ledger.filtered.*.csv
+ECO Systems General Ledger.postfilter-backup.*.csv
+downloaded-export-*.csv
+
+# Local analysis scratch outputs
+utilities_trailing_*.csv
+utility_overage*.csv
+utility_overage*.py
