@@ -748,7 +748,8 @@
         const customPropertyGroups = [
             {
                 label: '7542 & 7656 S Colfax Ave',
-                parts: ['7542 S Colfax Ave', '7656 S Colfax Ave']
+                parts: ['7542 S Colfax Ave', '7656 S Colfax Ave'],
+                aliases: ['7542 & 7656 S Colfax Avenue']
             },
             {
                 label: 'Ohio 3-Property Package',
@@ -947,7 +948,8 @@
             
             const presentProperties = new Set(properties);
             customPropertyGroups.forEach(group => {
-                const shouldShowGroup = group.parts.some(part => presentProperties.has(part));
+                const matchingProperties = getMatchingPropertyValuesForGroup(group, presentProperties);
+                const shouldShowGroup = matchingProperties.size > 0 && !presentProperties.has(group.label);
                 if (!shouldShowGroup) {
                     return;
                 }
@@ -993,6 +995,31 @@
                 .replace(/\blane\b/g, 'ln')
                 .replace(/\bterrace\b/g, 'ter')
                 .replace(/\bhighway\b/g, 'hwy');
+        }
+
+        function getGroupPropertyCandidates(group) {
+            return [group.label, ...(group.parts || []), ...(group.aliases || [])].filter(Boolean);
+        }
+
+        function getMatchingPropertyValuesForGroup(group, availableProperties = properties) {
+            const availableValues = new Set(availableProperties || []);
+            const matchingValues = new Set();
+            const candidates = getGroupPropertyCandidates(group);
+            const normalizedCandidates = new Set(candidates.map(normalizeAddress).filter(Boolean));
+
+            candidates.forEach(candidate => {
+                if (availableValues.has(candidate)) {
+                    matchingValues.add(candidate);
+                }
+            });
+
+            availableValues.forEach(property => {
+                if (normalizedCandidates.has(normalizeAddress(property))) {
+                    matchingValues.add(property);
+                }
+            });
+
+            return matchingValues;
         }
 
         function levenshteinDistance(a, b) {
@@ -1271,7 +1298,12 @@
             selectedValues.forEach(value => {
                 const group = customPropertyGroups.find(item => item.label === value);
                 if (group) {
-                    group.parts.forEach(part => expanded.add(part));
+                    const matchingValues = getMatchingPropertyValuesForGroup(group);
+                    if (matchingValues.size) {
+                        matchingValues.forEach(property => expanded.add(property));
+                    } else {
+                        getGroupPropertyCandidates(group).forEach(property => expanded.add(property));
+                    }
                     return;
                 }
                 expanded.add(value);
@@ -1401,11 +1433,12 @@
 
             const presentProperties = new Set(Object.keys(propertyBalances));
             customPropertyGroups.forEach(group => {
-                const shouldShowGroup = group.parts.some(part => presentProperties.has(part));
+                const matchingProperties = getMatchingPropertyValuesForGroup(group, presentProperties);
+                const shouldShowGroup = matchingProperties.size > 0;
                 if (!shouldShowGroup) {
                     return;
                 }
-                const customBalance = group.parts.reduce((sum, prop) => {
+                const customBalance = Array.from(matchingProperties).reduce((sum, prop) => {
                     const balance = propertyBalances[prop];
                     return sum + (typeof balance === 'number' ? balance : 0);
                 }, 0);
@@ -1439,6 +1472,10 @@
             
             // Add property buttons
             Object.keys(propertyBalances).sort().forEach(prop => {
+                const isExactCustomGroup = customPropertyGroups.some(group => group.label === prop);
+                if (isExactCustomGroup) {
+                    return;
+                }
                 const balance = propertyBalances[prop];
                 const balanceClass = balance >= 0 ? 'balance-positive' : 'balance-negative';
                 const formattedBalance = `$${Math.abs(balance).toFixed(2)}`;
