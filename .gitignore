@@ -11,3 +11,6 @@ downloaded-export-*.csv
 utilities_trailing_*.csv
 utility_overage*.csv
 utility_overage*.py
+
+# Property-specific Colfax audit and reconciliation artifacts stay private.
+*[Cc]olfax*
