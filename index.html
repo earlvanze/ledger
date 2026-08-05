@@ -836,7 +836,7 @@
 
         // Parse CSV data
         function parseCSV(csvData) {
-            const lines = csvData.split('\n');
+            const lines = csvData.split(/\r?\n/);
             const headers = lines[0].split(',').map(header => header.trim().replace(/^\uFEFF/, '').replace(/^"|"$/g, ''));
             csvHeaders = headers;
             
@@ -853,7 +853,15 @@
                 // Split by comma but handle quoted fields
                 const values = parseCSVLine(line);
                 
-                if (values.length < headers.length) continue;
+                // Tolerate column mismatches in the ledger (e.g. the Account
+                // column removed from the source). Pad short rows and truncate
+                // overlong rows so a single bad line no longer silently drops
+                // the rest of the ledger from the view.
+                if (values.length < headers.length) {
+                    while (values.length < headers.length) values.push('');
+                } else if (values.length > headers.length) {
+                    values.length = headers.length;
+                }
                 
                 // Create transaction object
                 const transaction = {};
@@ -900,7 +908,13 @@
                 const char = line[i];
                 
                 if (char === '"') {
-                    inQuotes = !inQuotes;
+                    if (inQuotes && line[i + 1] === '"') {
+                        // Escaped quote ("" inside a quoted field)
+                        current += '"';
+                        i++;
+                    } else {
+                        inQuotes = !inQuotes;
+                    }
                 } else if (char === ',' && !inQuotes) {
                     result.push(current);
                     current = '';
@@ -915,6 +929,15 @@
 
         // Parse date string to Date object
         function parseDate(dateString) {
+            const value = (dateString || '').trim();
+            if (!value) return new Date();
+
+            // ISO format like "2026-08-04"
+            if (/^\d{4}-\d{2}-\d{2}/.test(value)) {
+                const isoParts = value.split('-');
+                return new Date(parseInt(isoParts[0]), parseInt(isoParts[1]) - 1, parseInt(isoParts[2]));
+            }
+
             // Handle format like "November 13, 2025"
             const months = {
                 'January': 0, 'February': 1, 'March': 2, 'April': 3,
@@ -922,7 +945,7 @@
                 'September': 8, 'October': 9, 'November': 10, 'December': 11
             };
             
-            const parts = dateString.split(' ');
+            const parts = value.split(' ');
             if (parts.length !== 3) return new Date();
             
             const month = months[parts[0]];
