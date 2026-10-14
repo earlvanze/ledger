@@ -312,6 +312,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 359721536,"September 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  63IKFM3JQ6,276.97,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 359720667,"September 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  YIMW2A3J6Z,540.96,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 359719639,"September 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  GEIKK5VN3C,1638.24,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
+359715180,"September 29, 2026",HEMLANE,HEMLANE  |  2KK5GB:REN,359.13,Revenue,Rents,,428 Cross St.,,,false,true
 359708425,"September 29, 2026",Melio,Melio  |  TX_1003489,-1.5,Operating Expenses,Bank Fees,,85-104 Alawa Pl,,,false,true
 359707169,"September 29, 2026",Hemlane,Hemlane  |  KYN7LR:REN,361.25,Revenue,Rents,,428 Cross St.,,,false,true
 359692321,"September 29, 2026",Pelican LFTY0316 DAO LLC  |  TRANSFER_OUT,Pelican LFTY0316 DAO LLC  |  TRANSFER_OUT,-4876.96,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,Shortage Reconciliation for NOI Distributions - unknown months,false,true
