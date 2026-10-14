@@ -360,8 +360,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 357617770,"September 25, 2026",HAWN ELECTRIC,HAWN ELECTRIC  |  ELEC PAYMT,-576.11,Operating Expenses,Electric,,85-104 Alawa Pl,,,false,true
 357617769,"September 25, 2026",HAWN ELECTRIC,Returned received ACH transaction #464564507 due to: Account has insufficient funds,576.11,Operating Expenses,Electric,,85-104 Alawa Pl,,,false,true
 357571127,"September 25, 2026",Kyle Leese  |  TRANSFER_OUT,Kyle Leese  |  TRANSFER_OUT,-273.86,Loan Payments & Capex,Other Loan Payments,,86 Madison Ave,,Capital Call 9000 6/25/25,false,true
-357566434,"September 25, 2026",Fee for Check Payment 504138,Fee for Check Payment 504138,-2,Non-Property Expense,Non-Property Expense,,22164 Umland Circle,,,false,true
-357566433,"September 25, 2026",Fee for Check Payment 504137,Fee for Check Payment 504137,-2,Non-Property Expense,Non-Property Expense,,22164 Umland Circle,,,false,true
+357566434,"September 25, 2026",Fee for Check Payment 504138,Fee for Check Payment 504138,-2,Operating Expenses,Bank Fees,,22164 Umland Circle,,,false,true
+357566433,"September 25, 2026",Fee for Check Payment 504137,Fee for Check Payment 504137,-2,Operating Expenses,Bank Fees,,22164 Umland Circle,,,false,true
 357562993,"September 25, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  BW2T4IUYMG,1043.12,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 357561497,"September 25, 2026",Hemlane,Hemlane  |  BBNMCV:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
 357555380,"September 25, 2026",ENBRIDGE GAS OH,ENBRIDGE GAS OH  |  BILLPAY,-66.14,Operating Expenses,Utilities,,428 Cross St.,,,false,true
