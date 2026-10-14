@@ -8350,7 +8350,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 206082950,"November 03, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4388",-790.31,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
 206082949,"November 03, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4305",-1187.79,Operating Expenses,Gas & Electric,,86 Madison Ave,,,false,true
 206043802,"November 03, 2025",HAWAIIAN TELCOM INC,"Purchase from HAWAIIAN TELCOM INC  |  Address: HAWAIIANTEL.C, HI, US  |  **1288",-30,Operating Expenses,"Phone, Cable & Internet",,85-104 Alawa Pl,,,false,true
-206039830,"November 02, 2025",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,599,Operating Expenses,Property Management,,326 South Alcott Street,,,false,true
+206039830,"November 02, 2025",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,599,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,,false,true
 206039828,"November 02, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-599,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,PM Fee November 10 percent,false,true
 206037304,"November 02, 2025",Interest October 2025,Interest October 2025,0.26,Transfers & Other,Baselane Banking Interest,,804 S Quitman St,,,false,true
 205763199,"November 01, 2025",ABSOLUTE TERMITE,"Purchase from ABSOLUTE TERMITE  |  Address: KAPOLEI, HI, US  |  **7398",-99.48,Operating Expenses,Pest,,85-104 Alawa Pl,,,false,true
@@ -9111,7 +9111,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 188108758,"September 05, 2025",Baselane,Baselane  |  Rent#960849,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
 188061072,"September 05, 2025",STRIPE,STRIPE  |  2CP2V2 REN,303,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 188017532,"September 05, 2025",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,923.99,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
-187906566,"September 05, 2025",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,599,Operating Expenses,Property Management,,326 South Alcott Street,,,false,true
+187906566,"September 05, 2025",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,599,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,,false,true
 187906562,"September 05, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-599,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,,false,true
 187832190,"September 04, 2025",Earl Vanze Co  |  INTERNAL_TRANSFER,Earl Vanze Co  |  INTERNAL_TRANSFER,1460.46,Transfers & Other,Owner Contributions/Distributions,,EARLDAO,,EARLDAO token sales from Lofty,false,true
 187798869,"September 04, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  5CMJLOJSPR,1057.12,Revenue,Short Term Rents,,85-104 Alawa Pl,,,false,true
@@ -9594,7 +9594,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 179146706,"July 11, 2025",Joshua Reeves Lawnmowing,Joshua Reeves Lawnmowing,-50,Operating Expenses,Gardening & Landscaping,,5401 Odom Ave,,Paid via Zelle from Chase x0000,true,false
 179146266,"July 07, 2025",Joshua Reeves Lawnmowing,Joshua Reeves Lawnmowing,-50,Operating Expenses,Gardening & Landscaping,,5401 Odom Ave,,Paid via Zelle from Chase x0000,true,false
 179133268,"August 05, 2025",ATMOS ENERGY,"Purchase from ATMOS ENERGY  |  Address: 888-286-6700, TX, US  |  **4225",-32.11,Operating Expenses,Gas,,5401 Odom Ave,,,false,true
-179115840,"August 04, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-150,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,#330 July PM Fees 10%,false,true
+179115840,"August 04, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-150,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,"Alcott PM cash | 2025-07 | 150.00. Cash pair 179115840/179115848; existing cash settles only 2025-07 PM accrual. Original DAO memo: #330 July PM Fees 10%. Original ECO memo: July 9th PM Fees 10 percent. Existing cash and accruals preserved; no new cash, expense or revenue.",false,true
 179089170,"August 03, 2025",Lofty Holding 9919 S Oglesby Avenue DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 9919 S Oglesby Avenue DAO LLC  |  INTERNAL_TRANSFER,-10000,Transfers & Other,Transfers Between Accounts,,9919 S Oglesby Ave,,,false,true
 179089168,"August 03, 2025",Lofty Holding 9919 S Oglesby Avenue DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 9919 S Oglesby Avenue DAO LLC  |  INTERNAL_TRANSFER,10000,Transfers & Other,Transfers Between Accounts,,9919 S Oglesby Ave,,,false,true
 179089152,"August 03, 2025",InvestmentKD  |  TRANSFER_OUT,InvestmentKD  |  TRANSFER_OUT,-1597.2,Operating Expenses,Consulting Fees,,9919 S Oglesby Ave,,Reimbursement for Legal Fees Invoice 0V4WCVI5-0001,false,true
@@ -10391,7 +10391,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 163895097,"June 06, 2025",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,1800,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,HVAC Cleaning & Maintenance to Elevated Home Remodeling LLC via Chase Zelle,false,true
 163895092,"June 06, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-1800,Operating Expenses,HVAC Repairs,,326 South Alcott Street,,HVAC Cleaning & Maintenance to Elevated Home Remodeling LLC via Chase Zelle,false,true
 163894812,"June 06, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-1662.89,Transfers & Other,Transfers Between Accounts,,90 Madison Ave,,PM Fees 25%,false,true
-163894707,"June 06, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-450,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,June PM Fees 10%,false,true
+163894707,"June 06, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-450,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,"Alcott PM cash | 2025-06 | 450.00. Cash pair 163894707/163894711; existing cash settles only 2025-06 PM accrual. Original DAO memo: June PM Fees 10%. Original ECO memo: PM Fees 10%. Existing cash and accruals preserved; no new cash, expense or revenue.",false,true
 163771605,"June 06, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  UGGEJPW5IV,411.42,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 163766108,"June 06, 2025",Baselane,Baselane  |  Rent#777038,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
 163467532,"June 05, 2025",NETFLIX.COM,"Purchase from NETFLIX.COM  |  Address: NETFLIX.COM, CA, US  |  **3073",-26.99,Operating Expenses,"Phone, Cable & Internet",,88 Madison Ave,,,false,true
