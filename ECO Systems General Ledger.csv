@@ -393,7 +393,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 354788045,"September 21, 2026",AMAZON MKTPL*5R1AG4610,"Purchase from AMAZON MKTPL*5R1AG4610  |  Address: Amzn.com/bill, WA, US  |  **2577",-28.5,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 354788042,"September 21, 2026",AMAZON MKTPL*5R8SU5H32,"Purchase from AMAZON MKTPL*5R8SU5H32  |  Address: Amzn.com/bill, WA, US  |  **2577",-38.87,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 354288152,"September 19, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **4164",-180,Operating Expenses,Repairs,,86 Madison Ave,,,false,true
-354285548,"September 19, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **2339",-315,Transfers & Other,Transfers Between Accounts,,90 Madison Ave,,,false,true
+354285548,"September 19, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **2339",-315,Operating Expenses,Repairs,,90 Madison Ave,,,false,true
 354285454,"September 19, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **0745",-90,Operating Expenses,Repairs,,88 Madison Ave,,,false,true
 354285229,"September 19, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **4164",-405,Operating Expenses,Repairs,,86 Madison Ave,,,false,true
 354285174,"September 19, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **4164",-270,Non-Property Expense,Non-Property Expense,,86 Madison Ave,,,false,true
