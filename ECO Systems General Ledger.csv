@@ -410,7 +410,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 352433630,"September 15, 2026",PG E EZ PAY,"PG E EZ PAY, 300 Lakeside Drive, OAKLAND, CA, US  |  **3228",-114.13,Operating Expenses,Electric,,22164 Umland Circle,,,false,true
 352195693,"September 16, 2026",ALBANY WATER BOARD,"Purchase from ALBANY WATER BOARD  |  Address: 518-434-5300, NY, US  |  **1863",-105.78,Operating Expenses,Utilities,,86 Madison Ave,,,false,true
 352195618,"September 16, 2026",ALBANY WATER BOARD,"Purchase from ALBANY WATER BOARD  |  Address: 518-434-5300, NY, US  |  **9098",-597.92,Operating Expenses,Utilities,,88 Madison Ave,,,false,true
-352182601,"September 15, 2026",Melio,Melio  |  TX_9716930,-20,Non-Property Expense,Non-Property Expense,,85-104 Alawa Pl,,,false,true
+352182601,"September 15, 2026",Melio,Melio  |  TX_9716930,-20,Operating Expenses,Bank Fees,,85-104 Alawa Pl,,,false,true
 352160651,"September 15, 2026",Aligned Properti,Aligned Properti  |  SIGONFILE,2246.29,Transfers & Other,Transfers Between Accounts,,1456 W 85th St.,,,false,true
 352124416,"September 15, 2026",PUBLIC UTILITIES,PUBLIC UTILITIES  |  UTILITIES,-239.07,Operating Expenses,Water & Sewer,,428 Cross St.,,,false,true
 352124415,"September 15, 2026",PUBLIC UTILITIES,Returned received ACH transaction #460932103 due to: Account has insufficient funds,239.07,Operating Expenses,Water & Sewer,,428 Cross St.,,,false,true
