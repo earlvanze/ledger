@@ -1,7 +1,5 @@
 BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,Unit,Notes,IsManual,HasBankAccount
 368116469,"October 13, 2026",MCPHAIL FUEL COMPANY.,MCPHAIL FUEL COMPANY.,-823.97,Operating Expenses,Auto & Travel,,22164 Umland Circle,,,false,true
-368066199,"October 12, 2026",Walmart.com,Walmart.com,-19.59,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
-368063594,"October 12, 2026",WALMART.COM 8009,WALMART.COM 8009,-72.21,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
 366574562,"October 10, 2026",WALMART.COM 8009,WALMART.COM 8009,-93.25,Loan Payments & Capex,New Furniture & Equipment,,88 Madison Ave,,,false,true
 366489512,"October 09, 2026",Walmart.com,Walmart.com,-53.03,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 366474667,"October 09, 2026",WALMART.COM 8009,WALMART.COM 8009,-44.84,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -81,6 +79,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 368101468,"October 13, 2026",Lychee LFTY0431 DAO LLC  |  TRANSFER_OUT,Lychee LFTY0431 DAO LLC  |  TRANSFER_OUT | Payment ID: 74114406,-233.53,Transfers & Other,Owner Contributions/Distributions,,84 Madison Ave,,Lofty OR Reimbursement,false,true
 368101389,"October 13, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER | Payment ID: 74114363",300,Transfers & Other,Transfers Between Accounts,,84 Madison Ave,,Cash Advance,false,true
 368086781,"October 12, 2026",S&P Property Management LLC  |  TRANSFER_OUT,S&P Property Management LLC  |  TRANSFER_OUT | Payment ID: 74108460,-11736.21,Transfers & Other,Transfers Between Accounts,,9 Country Club Ln N,,Transfer to HSM Ventures PM,false,true
+368066199,"October 13, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **2123",-19.59,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
+368063594,"October 14, 2026",WALMART.COM 8009,"Purchase from WALMART.COM 8009  |  Address: BENTONVILLE, AR, US  |  **2123",-72.21,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
 368059514,"October 12, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER | Payment ID: 74090701",3500,Transfers & Other,Transfers Between Accounts,,88 Madison Ave,,For mortgage payment Sept and Oct 2026,false,true
 367057799,"October 11, 2026",CASH APP*LASHONDA FLEMI,"CASH APP*LASHONDA FLEMI, Oakland, CA, US  |  **1328",-70,Operating Expenses,Gardening & Landscaping,,15555 Millard Ave,,,false,true
 367056683,"October 11, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **0745",-11.33,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -394,7 +394,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 354285037,"September 19, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **7683",-270,Non-Property Expense,Non-Property Expense,,84 Madison Ave,,,false,true
 353802983,"September 18, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  THEX2VNOQX,138.34,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 353797583,"September 18, 2026",NGRID36,NGRID36  |  RETRY PYMT |  2671274125,-449.5,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
-353795344,"September 18, 2026",CITY AND COUNTY,CITY AND COUNTY  |  CITY AND C |  142816723,-379.48,Operating Expenses,Taxes,,326 South Alcott Street,,,false,true
+353795344,"September 18, 2026",CITY AND COUNTY,CITY AND COUNTY  |  CITY AND C |  142816723,-379.48,Operating Expenses,Water & Sewer,,326 South Alcott Street,,,false,true
 353759667,"September 18, 2026",AXIOM ECOPEST CONTROL,"Purchase from AXIOM ECOPEST CONTROL  |  Address: 507-7729466, CO, US  |  **1814",-109,Operating Expenses,Pest,,326 South Alcott Street,,,false,true
 353248748,"September 17, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QJGXISPLZ2,469.71,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 353244094,"September 17, 2026",HEMLANE,HEMLANE  |  2CP07T:REN,1359,Revenue,Rents,,8143 S Sangamon St.,,,false,true
