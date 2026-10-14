@@ -675,6 +675,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 346474918,"September 08, 2026",Hemlane,Hemlane  |  CRGZ6B:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
 346474913,"September 08, 2026",Hemlane,Hemlane  |  798V1P:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
 346471246,"September 08, 2026",Hemlane,Hemlane  |  5PDJJW:REP,22.5,Revenue,Rents,,1432 Sara Ave.,,,false,true
+346470517,"September 08, 2026",Hemlane,Hemlane  |  2KKGLG:REN,548.25,Revenue,Rents,,428 Cross St.,,,false,true
 346467065,"September 08, 2026",Hemlane,Hemlane  |  5PD5RH:REN,900,Revenue,Rents,,1432 Sara Ave.,,,false,true
 346399947,"September 07, 2026",ABSOLUTE TERMITE,"Purchase from ABSOLUTE TERMITE  |  Address: KAPOLEI, HI, US  |  **7398",-99.48,Operating Expenses,Pest,,85-104 Alawa Pl,,,false,true
 346352391,"September 07, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",200,Transfers & Other,Transfers Between Accounts,,428 Cross St.,,,false,true
@@ -730,6 +731,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 343796496,"September 04, 2026",STRIPE,STRIPE  |  TRANSFER,207.22,Revenue,Fees & Other Revenue,,88 Madison Ave,,,false,true
 343653096,"September 04, 2026",AMAZON MKTPL*539NI3GR1,"Purchase from AMAZON MKTPL*539NI3GR1  |  Address: Amzn.com/bill, WA, US  |  **0745",-47.5,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  2 OUTNILI 2 Pack Mop Broom Holder Wall Mount with 3 Slots & 4 Hooks - Rustic Wood Broom Mop Hanger for Pantry Kitchen Organization - Garden Tool Organizer for Closet Laundry Room; $47.50; 2026-09-04. Dropbox receipt: 2026-09-04_amazon_USD-47.50_2-OUTNILI-2-Pack-Mop-Broom-Holder-Wall-Mount-with-3-Slots-4-Hooks-Rustic-Wood-Br_Baselane-343653096.pdf,false,true
 343197333,"September 03, 2026",Hemlane,Hemlane  |  KYNHXW:REN,360.4,Revenue,Rents,,428 Cross St.,,,false,true
+343181219,"September 03, 2026",HEMLANE,HEMLANE  |  2KKH47:REN,170,Revenue,Rents,,428 Cross St.,,,false,true
 343171433,"September 03, 2026",EDI DISB-AFTS,EDI DISB-AFTS  |  Web Pay,323.9,Property Transactions,Mortgage Disbursements Received,,1258 Lily St,,,false,true
 343154862,"September 03, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **0745",-1,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 343126713,"August 28, 2026",OR Replenishment | 86 Madison Ave | August 2026,OR Replenishment | 86 Madison Ave | August 2026,0,Transfers & Other,Owner Contributions/Distributions,,86 Madison Ave,,AOPS-PNL-ACCRUAL|retained_capital|86 Madison Ave|2026-08|0.00 | OR Replenishment per March 2026 governance vote: 100% of 2026-08 NOI $-828.78. Reserve basis $-18523.72 = ECO GL net of accruals $-20155.09 + Lofty OR $1631.37. Outstanding cash reserve settlement requirement after $0.00 of verified same-month cash settlement.,true,false
