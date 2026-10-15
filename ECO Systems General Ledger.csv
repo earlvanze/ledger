@@ -506,7 +506,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 357562993,"September 25, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  BW2T4IUYMG,1043.12,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 357561497,"September 25, 2026",Hemlane,Hemlane  |  BBNMCV:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
 357555380,"September 25, 2026",ENBRIDGE GAS OH,ENBRIDGE GAS OH  |  BILLPAY,-66.14,Operating Expenses,Utilities,,428 Cross St.,,,false,true
-357555379,"September 25, 2026",ENBRIDGE GAS OH,Returned received ACH transaction #464509896 due to: Account has insufficient funds,66.14,Transfers & Other,Transfers Between Accounts,,428 Cross St.,,,false,true
+357555379,"September 25, 2026",ENBRIDGE GAS OH,Returned received ACH transaction #464509896 due to: Account has insufficient funds,66.14,Operating Expenses,Utilities,,428 Cross St.,,,false,true
 357413481,"September 23, 2026",Zelle payment from TIFFANY JOHNSON 30933202753,Zelle payment from TIFFANY JOHNSON 30933202753,973,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 356839982,"September 23, 2026",AGBO HEATING COOLING,"Purchase from AGBO HEATING COOLING  |  Address: ragbo.heating, IL, US  |  **0810",-12.42,Operating Expenses,Repairs,,25 Circle Dr,,,false,true
 356406084,"September 23, 2026",Hemlane,Hemlane  |  GKGZ6J:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
