@@ -730,7 +730,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 355313728,"September 21, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  3T3EWYURBM,1206.94,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 355310778,"September 21, 2026",ComEd,ComEd  |  RETRY PYMT,-65.4,Operating Expenses,Utilities,,7542 & 7656 S Colfax Ave,,,false,true
 355310777,"September 21, 2026",ComEd,Returned received ACH transaction #463004993 due to: Account has insufficient funds,65.4,Operating Expenses,Utilities,,7542 & 7656 S Colfax Ave,,,false,true
-355310720,"September 21, 2026",DNVRWTR SDPY,DNVRWTR SDPY  |  DNVRWTRPMT |  2836430000,-327.15,Operating Expenses,Utilities,,326 South Alcott Street,,,false,true
+355310720,"September 21, 2026",DNVRWTR SDPY,DNVRWTR SDPY  |  DNVRWTRPMT |  2836430000,-327.15,Operating Expenses,Water & Sewer,,326 South Alcott Street,,,false,true
 354891233,"September 20, 2026",Starlink,"Starlink, Starlink, Hawthorne, CA, US  |  **7248",-80,Operating Expenses,"Phone, Cable & Internet",,22164 Umland Circle,,,false,true
 354788045,"September 21, 2026",AMAZON MKTPL*5R1AG4610,"Purchase from AMAZON MKTPL*5R1AG4610  |  Address: Amzn.com/bill, WA, US  |  **2577",-28.5,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 354788042,"September 21, 2026",AMAZON MKTPL*5R8SU5H32,"Purchase from AMAZON MKTPL*5R8SU5H32  |  Address: Amzn.com/bill, WA, US  |  **2577",-38.87,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
