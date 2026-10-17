@@ -607,7 +607,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 364722368,"October 06, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-490,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,March to Sept CAM,false,true
 364721672,"October 06, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-490,Transfers & Other,Transfers Between Accounts,,90 Madison Ave,,March to Sept CAM,false,true
 364721037,"October 06, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-490,Transfers & Other,Transfers Between Accounts,,88 Madison Ave,,March to Sept CAM,false,true
-364403568,"October 06, 2026",CATHERINE ARNOLD,CATHERINE ARNOLD  |  SENDER,34000,Transfers & Other,Owner Contributions/Distributions,,9 Country Club Ln N,,,false,true
+364403568,"October 06, 2026",CATHERINE ARNOLD,CATHERINE ARNOLD  |  SENDER,34000,Revenue,Medium Term Rents,,9 Country Club Ln N,,,false,true
 364395195,"October 07, 2026",CORPORATE FILINGS LLC,"Purchase from CORPORATE FILINGS LLC  |  Address: 888-4072122, WY, US  |  **2123",-113.5,Operating Expenses,Legal & Other Professional Fees,,85-104 Alawa Pl,,,false,true
 364304536,"October 06, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  ISW3556S7T,596.38,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 364291668,"October 06, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  WSQ64G6WVW,313.49,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
