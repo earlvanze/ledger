@@ -9018,7 +9018,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 201083417,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,942.04,Revenue,Long Term Rents,,2337 Greenvale Rd,,,true,true
 201083416,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,1500.53,Revenue,Long Term Rents,,7411 Elton Ave,,,true,true
 201083415,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,1002.15,Revenue,Long Term Rents,,1518 Dille Rd,,,true,true
-201083414,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,861.04,Revenue,Long Term Rents,,1432 Sara Ave.,,,true,true
+201083414,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,861.04,Transfers & Other,Transfers Between Accounts,,1432 Sara Ave.,,,true,true
 201083413,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,500,Revenue,Long Term Rents,,1321 Allendale Ave,,,true,true
 201083412,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,1023.73,Revenue,Long Term Rents,,1258 Lily St,,,true,true
 201083411,"August 19, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,1231,Revenue,Long Term Rents,,3905 E 189th St,,,true,true
@@ -10333,7 +10333,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 174734188,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,140.16,Revenue,Long Term Rents,,428 Cross St.,,,true,true
 174734187,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,414.03,Revenue,Long Term Rents,,1258 Lily St,,,true,true
 174734186,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,1944,Revenue,Long Term Rents,,1321 Allendale Ave,,,true,true
-174734185,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,171.31,Revenue,Long Term Rents,,1432 Sara Ave.,,,true,true
+174734185,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,171.31,Transfers & Other,Transfers Between Accounts,,1432 Sara Ave.,,,true,true
 174734184,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,1036.18,Revenue,Long Term Rents,,2337 Greenvale Rd,,,true,true
 174734183,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,925.08,Revenue,Long Term Rents,,918 Frederick Blvd,,,true,true
 174734182,"July 16, 2025",Aligned Properties,Aligned Properti  |  SIGONFILE,1415.6,Revenue,Long Term Rents,,8708 Willard Ave,,,true,true
