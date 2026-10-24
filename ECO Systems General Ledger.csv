@@ -1,6 +1,10 @@
 BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,Unit,Notes,IsManual,HasBankAccount
+374225843,2026-10-23,Walmart.com,Walmart.com,-73.47,Transaction,Non-Property Expense,Non-Property Expense,88 Madison Ave,,,false,true
 317208970,2026-07-18,ZELLE PAYMENT FROM TIFFANY JOHNSON 30064329012,ZELLE PAYMENT FROM TIFFANY JOHNSON 30064329012,721,Transaction,Revenue,Long Term Rents,25 Circle Dr,,,false,true
 240762483,2026-02-09,Lyft,Lyft,-23.24,Transaction,Operating Expenses,Auto & Travel,27 Pillar Ln,,,false,true
+374188739,2026-10-23,"Hospitable, Inc","Hospitable, Inc  |  PAYOUT",570.25,Transaction,Revenue,Short Term Rents,88 Madison Ave,,,false,true
+373740884,2026-10-23,Kyle Leese  |  TRANSFER_OUT,Kyle Leese  |  TRANSFER_OUT | Payment ID: 74976151,-273.86,Transaction,Loan Payments & Capex,Other Loan Payments,86 Madison Ave,,Capital Call 9000 6/25/25,false,true
+373728853,2026-10-23,AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  UR77PULQUX,189.55,Transaction,Revenue,Short Term Rents,88 Madison Ave,,,false,true
 373489356,2026-10-22,Water Account 51884305 428 Cross St,Water Account 51884305 428 Cross St,-531.4,Transaction,Operating Expenses,Water & Sewer,428 Cross St.,,Water Bill August and September,false,true
 373489344,2026-10-22,Account 221275312 918 FREDERICK BLVD,Account 221275312 918 FREDERICK BLVD,-176.57,Transaction,Operating Expenses,Water & Sewer,918 Frederick Blvd,,Water Bill August and September,false,true
 373174579,2026-10-22,AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  32IEV2HNHD,700,Transaction,Revenue,Short Term Rents,90 Madison Ave,,,false,true
