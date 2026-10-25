@@ -1,7 +1,21 @@
 BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,Unit,Notes,IsManual,HasBankAccount
-374225843,"October 23, 2026",Walmart.com,Walmart.com,-73.47,Non-Property Expense,Non-Property Expense,,88 Madison Ave,,,false,true
+374738666,"October 24, 2026",Walmart.com,Walmart.com,-51.74,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 317208970,"July 18, 2026",ZELLE PAYMENT FROM TIFFANY JOHNSON 30064329012,ZELLE PAYMENT FROM TIFFANY JOHNSON 30064329012,721,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 240762483,"February 09, 2026",Lyft,Lyft,-23.24,Operating Expenses,Auto & Travel,,27 Pillar Ln,,,false,true
+374758887,"October 22, 2026",CITY OF  EDWARDS,"CITY OF  EDWARDS, 118 Hillsboro Ave, EDWARDSVILLE, IL, US  |  **1327",-46.86,Operating Expenses,Garbage & Recycling,,665 Chapman St,,,true,true
+374758886,"October 22, 2026",CITY OF  EDWARDS,"CITY OF  EDWARDS, 118 Hillsboro Ave, EDWARDSVILLE, IL, US  |  **1327",-33.99,Operating Expenses,Water & Sewer,,665 Chapman St,,,true,true
+374756240,"October 25, 2026",Wesla Holdings LLC  |  TRANSFER_OUT,Wesla Holdings LLC  |  TRANSFER_OUT | Payment ID: 75090579,-1890,Transfers & Other,Security Deposits,,566 Nash St,,Transfer 566 Nash St Security Deposits to Legacy RM,false,true
+374756001,"October 25, 2026",Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER | Payment ID: 75090536,1897.13,Transfers & Other,Transfers Between Accounts,,566 Nash St,,Consolidation,false,true
+374755999,"October 25, 2026",Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER | Payment ID: 75090536,-1897.13,Transfers & Other,Transfers Between Accounts,,566 Nash St,,Consolidation,false,true
+374755981,"October 25, 2026",Wesla Holdings LLC  |  TRANSFER_OUT,Wesla Holdings LLC  |  TRANSFER_OUT | Payment ID: 75090525,-749,Transfers & Other,Security Deposits,,1278 E 187th St,,Transfer 1278 E 187th St Security Deposits to Legacy RM,false,true
+374755911,"October 25, 2026",Lofty Holding 1278 E 187th Street DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 1278 E 187th Street DAO LLC  |  INTERNAL_TRANSFER | Payment ID: 75090508,753.5,Transfers & Other,Transfers Between Accounts,,1278 E 187th St,,Consolidation,false,true
+374755909,"October 25, 2026",Lofty Holding 1278 E 187th Street DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 1278 E 187th Street DAO LLC  |  INTERNAL_TRANSFER | Payment ID: 75090508,-753.5,Transfers & Other,Transfers Between Accounts,,1278 E 187th St,,Consolidation,false,true
+374752440,"June 18, 2026",STRAIGHTTALK*AIRTIME - 90 Madison Ave,"Purchase from STRAIGHTTALK*AIRTIME  |  Address: 877-430-2355, FL, US  |  **0745",-11.25,Operating Expenses,"Phone, Cable & Internet",,90 Madison Ave,,*SPLIT* 25% per Madison,true,true
+374752439,"June 18, 2026",STRAIGHTTALK*AIRTIME - 88 Madison Ave,"Purchase from STRAIGHTTALK*AIRTIME  |  Address: 877-430-2355, FL, US  |  **0745",-11.25,Operating Expenses,"Phone, Cable & Internet",,88 Madison Ave,,*SPLIT* 25% per Madison,true,true
+374752438,"June 18, 2026",STRAIGHTTALK*AIRTIME - 86 Madison Ave,"Purchase from STRAIGHTTALK*AIRTIME  |  Address: 877-430-2355, FL, US  |  **0745",-11.25,Operating Expenses,"Phone, Cable & Internet",,86 Madison Ave,,*SPLIT* 25% per Madison,true,true
+374752437,"June 18, 2026",STRAIGHTTALK*AIRTIME - 84 Madison Ave,"Purchase from STRAIGHTTALK*AIRTIME  |  Address: 877-430-2355, FL, US  |  **0745",-11.25,Operating Expenses,"Phone, Cable & Internet",,84 Madison Ave,,*SPLIT* 25% per Madison,true,true
+374723255,"October 24, 2026",CASH APP*LASHONDA FLEMI,"CASH APP*LASHONDA FLEMI, Oakland, CA, US  |  **1328",-150,Operating Expenses,Gardening & Landscaping,,15555 Millard Ave,,,false,true
+374225843,"October 24, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **0745",-71.93,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 374188739,"October 23, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",570.25,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 373740884,"October 23, 2026",Kyle Leese  |  TRANSFER_OUT,Kyle Leese  |  TRANSFER_OUT | Payment ID: 74976151,-273.86,Loan Payments & Capex,Other Loan Payments,,86 Madison Ave,,Capital Call 9000 6/25/25,false,true
 373728853,"October 23, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  UR77PULQUX,189.55,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
@@ -9,7 +23,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 373489344,"October 22, 2026",Account 221275312 918 FREDERICK BLVD,Account 221275312 918 FREDERICK BLVD,-176.57,Operating Expenses,Water & Sewer,,918 Frederick Blvd,,Water Bill August and September,false,true
 373174579,"October 22, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  32IEV2HNHD,700,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 373168324,"October 22, 2026",COOK COUNTY,COOK COUNTY  |  SINGLE PRO |  0915486,-0.03,Operating Expenses,Property Taxes,,5541 S Peoria St,,,false,true
-373163451,"October 22, 2026",CITY OF  EDWARDS,"CITY OF  EDWARDS, 118 Hillsboro Ave, EDWARDSVILLE, IL, US  |  **1327",-80.85,Operating Expenses,Taxes,,665 Chapman St,,,false,true
 372628156,"October 21, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  JDCBNDCR4X,324.78,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 372623926,"October 21, 2026",NGRID36,NGRID36  |  NGRID36WEB |  4251273206,-291.96,Operating Expenses,Utilities,,88 Madison Ave,,,false,true
 372623925,"October 21, 2026",NGRID36,NGRID36  |  NGRID36WEB |  5771273258,-402.8,Operating Expenses,Utilities,,88 Madison Ave,,,false,true
@@ -243,7 +256,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 371976573,"October 19, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",1708.21,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 371976488,"October 19, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",27.74,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 371976475,"October 19, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",295.06,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-371658168,"October 19, 2026",Hemlane,Hemlane  |  GX332D:REN,1215,Revenue,Rents,,5541 S Peoria St,,,false,true
+371658168,"October 19, 2026",Hemlane,Hemlane  |  GX332D:REN,1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 371543325,"October 19, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  UHZMPMHLOY,512.87,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 371543315,"October 19, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  UHZMPMHLOY,1063.62,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 371500691,"October 19, 2026",ComEd,ComEd  |  RETRY PYMT,-66.1,Operating Expenses,Utilities,,7542 & 7656 S Colfax Ave,,,false,true
@@ -895,7 +908,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 368650164,"October 13, 2026",PRICELABS INC,"Purchase from PRICELABS INC  |  Address: Chicago, IL, US  |  **1398",-169.43,Operating Expenses,Software Subscriptions,,88 Madison Ave,,,false,true
 368625341,"October 13, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",478.47,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 368525717,"October 13, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,1374.76,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
-368518111,"October 13, 2026",Hemlane,Hemlane  |  X63ZRM:REN,540,Revenue,Rents,,1278 E 187th St,,,false,true
+368518111,"October 13, 2026",Hemlane,Hemlane  |  X63ZRM:REN,540,Revenue,Long Term Rents,,1278 E 187th St,,,false,true
 368158658,"October 13, 2026",NBT BANK,NBT BANK  |  ACH XFER |  26664940-315420,-321.74,Transfers & Other,Transfers Between Accounts,,9 Country Club Ln N,,,false,true
 368158657,"October 13, 2026",NBT BANK,Returned received ACH transaction #471178080 due to: Account has insufficient funds,321.74,Transfers & Other,Transfers Between Accounts,,9 Country Club Ln N,,,false,true
 368137056,"October 13, 2026",LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER | Payment ID: 74125851,-219,Transfers & Other,Property Tax Escrows,,5541 S Peoria St,,Escrow for Taxes,false,true
@@ -984,7 +997,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 366055672,"October 09, 2026",NEW YORK CENTRAL,NEW YORK CENTRAL  |  EFT DEBIT,-1097,Operating Expenses,Rental Dwelling,,9 Country Club Ln N,,,false,true
 366055671,"October 09, 2026",NEW YORK CENTRAL,NEW YORK CENTRAL  |  EFT DEBIT,-1635,Operating Expenses,Rental Dwelling,,9 Country Club Ln N,,,false,true
 366040174,"October 09, 2026",Universal Lending DAO (Pine)  |  TRANSFER_OUT,Universal Lending DAO (Pine)  |  TRANSFER_OUT | Payment ID: 73918187,-242.7,Loan Payments & Capex,Other Loan Payments,,566 Nash St,,ULD Loan Payment,false,true
-366036278,"October 09, 2026",Hemlane,Hemlane  |  BBN0BS:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
+366036278,"October 09, 2026",Hemlane,Hemlane  |  BBN0BS:REN,827.05,Revenue,Long Term Rents,,566 Nash St,,,false,true
 366034897,"October 09, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  MCIOEUJLO4,1024.94,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 366020411,"October 09, 2026",MORTGAGE SERV CT,MORTGAGE SERV CT  |  MTG PAYMT,-5590.44,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,,false,true
 365987444,"October 09, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER | Payment ID: 73883974",2500,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,For mortgage payments,false,true
@@ -992,11 +1005,11 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 365929994,"October 09, 2026",MORGAN LINEN SERVICES,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-450.9,Operating Expenses,"Linens, Soaps, & Other Consumables",,88 Madison Ave,,,false,true
 365856750,"October 08, 2026",6422 Mount,Depreciation transaction for 6422 Mount,254.85,Operating Expenses,Depreciation Expenses or Depletion,,6422 Mount,,,false,false
 365565322,"October 08, 2026",STRIPE,STRIPE  |  TRANSFER,77.14,Transfers & Other,Transfers Between Accounts,,90 Madison Ave,,,false,true
-365515204,"October 08, 2026",Hemlane,Hemlane  |  53DZF9:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-365515203,"October 08, 2026",Hemlane,Hemlane  |  CRGHTQ:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
+365515204,"October 08, 2026",Hemlane,Hemlane  |  53DZF9:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
+365515203,"October 08, 2026",Hemlane,Hemlane  |  CRGHTQ:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
 365515201,"October 08, 2026",Hemlane,Hemlane  |  53DFVP:REP,40,Operating Expenses,Repairs,,326 South Alcott Street,,,false,true
-365514758,"October 08, 2026",Hemlane,Hemlane  |  2CP50Q:REN,1359,Revenue,Rents,,8143 S Sangamon St.,,,false,true
-365514724,"October 08, 2026",Hemlane,Hemlane  |  8NR5PZ:REN,1417.5,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+365514758,"October 08, 2026",Hemlane,Hemlane  |  2CP50Q:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
+365514724,"October 08, 2026",Hemlane,Hemlane  |  8NR5PZ:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 365510147,"October 08, 2026",MOUNT PLEASANT,MOUNT PLEASANT  |  TAX BILL |  000000004998162,-269.9,Operating Expenses,Property Taxes,,9 Country Club Ln N,,,false,true
 365500397,"October 08, 2026",CON ED OF NY,CON ED OF NY  |  CECONY,-254.67,Operating Expenses,Gas & Electric,,9 Country Club Ln N,,,false,true
 365485639,"October 08, 2026",September 2026 cleaning paid to Florence Odongo | 90 Madison Ave,"VENMO *Florence Odongo, New York, NY, US  |  **1327",-200,Operating Expenses,Cleaning & Janitorial,,90 Madison Ave,,,true,true
@@ -1008,7 +1021,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 365472192,"October 08, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-1190,Transfers & Other,Transfers Between Accounts,,88 Madison Ave,,September Cleaning,false,true
 364996721,"October 07, 2026","loanDepot.com, L","loanDepot.com, L  |  Invoices",-3612.7,Loan Payments & Capex,Mortgage Payments,,85-104 Alawa Pl,,,false,true
 364978683,"October 07, 2026",NBT BANK,NBT BANK  |  ACH XFER |  26605604-315420,-321.74,Loan Payments & Capex,Other Loan Payments,,9 Country Club Ln N,,Solar Loan Payment,false,true
-364899604,"October 07, 2026",Hemlane,Hemlane  |  7980PV:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
+364899604,"October 07, 2026",Hemlane,Hemlane  |  7980PV:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 364884915,"October 07, 2026",VERIZON*RECURRING PAY,"Purchase from VERIZON*RECURRING PAY  |  Address: 800-VERIZON, FL, US  |  **3468",-328.84,Operating Expenses,"Phone, Cable & Internet",,9 Country Club Ln N,,,false,true
 364861240,"July 01, 2026",Yhome 656 in-kind settlement | Credit receivable,Yhome 656 in-kind settlement | Credit receivable,-19883.35,Transfers & Other,Transfers Between Accounts,,Yhome Nursing LLC,,"WEB3-WEB2-RECON|2026-07-01-656-yhome-in-kind-settlement|yhome_receivable_credit | Credit Due from 656 DAO: reduce reciprocal receivable by share settlement basis. | chain=Algorand | asset=EARLDAO shares | shares=398 | reference_share_price=$50.00 | web3_reference_value=$19,900.00 | web2_settlement_amount=$19,883.35 | basis: IN-KIND-NO-CASH | Operator 2026-10-07 directs recognition of completed share repayment to Yhome escrow. Current sheet O11 confirms 398 shares transferred 2026-07-01, settlement carrying basis 19883.35. Historical due 20371.67 less settlement 19883.35 leaves 488.32 unresolved. Reference 398x50=19900 is not the booked settlement amount; no 16.65 gain/loss plug. October reversals 360914502/360914503 preserved. Bank receipts 214921458/459,250628280/281/282,293159271 remain separate reimbursements. No new cash, expense, share issuance or blockchain transfer. This is source-attested historical accounting, not independent chain confirmation.",true,false
 364861239,"July 01, 2026",Yhome 656 in-kind settlement | Debit share investment,Yhome 656 in-kind settlement | Debit share investment,19883.35,Transfers & Other,Transfers Between Accounts,,Yhome Nursing LLC,,"WEB3-WEB2-RECON|2026-07-01-656-yhome-in-kind-settlement|yhome_investment_debit | Debit EARLDAO share investment held in Yhome escrow: receipt at agreed settlement basis. | chain=Algorand | asset=EARLDAO shares | shares=398 | reference_share_price=$50.00 | web3_reference_value=$19,900.00 | web2_settlement_amount=$19,883.35 | basis: IN-KIND-NO-CASH | Operator 2026-10-07 directs recognition of completed share repayment to Yhome escrow. Current sheet O11 confirms 398 shares transferred 2026-07-01, settlement carrying basis 19883.35. Historical due 20371.67 less settlement 19883.35 leaves 488.32 unresolved. Reference 398x50=19900 is not the booked settlement amount; no 16.65 gain/loss plug. October reversals 360914502/360914503 preserved. Bank receipts 214921458/459,250628280/281/282,293159271 remain separate reimbursements. No new cash, expense, share issuance or blockchain transfer. This is source-attested historical accounting, not independent chain confirmation.",true,false
@@ -1140,9 +1153,9 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 362518277,"October 02, 2026",Spectrum,"Purchase from Spectrum  |  Address: 855-707-7328, MO, US  |  **6958",-155.38,Operating Expenses,"Phone, Cable & Internet",,90 Madison Ave,,,false,true
 362490227,"October 02, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",50,Transfers & Other,Transfers Between Accounts,,84 Madison Ave,,,false,true
 362096469,"October 02, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  PHRO4NYXSV,209.22,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-362057865,"October 02, 2026",Hemlane,Hemlane  |  KYN73W:REN,360.4,Revenue,Rents,,428 Cross St.,,,false,true
+362057865,"October 02, 2026",Hemlane,Hemlane  |  KYN73W:REN,360.4,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 362051140,"October 02, 2026",Baselane,Baselane  |  Rent#2000782,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-362029382,"October 02, 2026",HEMLANE,HEMLANE  |  X636X3:REN,950,Revenue,Rents,,1278 E 187th St,,,false,true
+362029382,"October 02, 2026",HEMLANE,HEMLANE  |  X636X3:REN,950,Revenue,Long Term Rents,,1278 E 187th St,,,false,true
 362023850,"October 02, 2026",ComEd,ComEd  |  PAYMENTS,-22.95,Operating Expenses,Utilities,,5541 S Peoria St,,,false,true
 362008657,"October 02, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-600,Transfers & Other,Transfers Between Accounts,,1432 Sara Ave.,,For Loan Repayment,false,true
 362005994,"April 02, 2026",Transaction Coordination Fee,Transaction Coordination Fee,-630,Operating Expenses,Consulting Fees,,7411 Elton Ave,,1.5% Transaction Coordination Fee to ECO Systems,true,false
@@ -1150,7 +1163,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 362002557,"October 03, 2026",AMAZON MKTPL*5147I6730,"Purchase from AMAZON MKTPL*5147I6730  |  Address: Amzn.com/bill, WA, US  |  **2123",-35.58,Operating Expenses,Supplies,,85-104 Alawa Pl,,,false,true
 361937848,"October 02, 2026",Amazon.com*519AM12A0,"Purchase from Amazon.com*519AM12A0  |  Address: Amzn.com/bill, WA, US  |  **2577",-4.08,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 361469236,"October 01, 2026",Interest September 2026,Interest September 2026,0.08,Transfers & Other,Baselane Banking Interest,,9 Country Club Ln N,,,false,true
-361446800,"October 01, 2026",Interest September 2026,Interest September 2026,3.33,Transfers & Other,Baselane Banking Interest,,566 Nash St,,,false,true
 361446777,"October 01, 2026",Interest September 2026,Interest September 2026,1.32,Transfers & Other,Baselane Banking Interest,,1278 E 187th St,,,false,true
 361428325,"October 01, 2026",Interest September 2026,Interest September 2026,0.65,Transfers & Other,Baselane Banking Interest,,5541 S Peoria St,,,false,true
 361425873,"October 01, 2026",Interest September 2026,Interest September 2026,0.03,Transfers & Other,Baselane Banking Interest,,254 Bowmanville St,,,false,true
@@ -1158,7 +1170,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 361419850,"October 01, 2026",Interest September 2026,Interest September 2026,3.69,Transfers & Other,Baselane Banking Interest,,326 South Alcott Street,,,false,true
 360954895,"October 01, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  TXOPLH5MF4,415.28,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 360952317,"October 01, 2026",Hemlane,Hemlane  |  5PD2K8:REP,22.5,Revenue,Fees & Other Revenue,,1432 Sara Ave.,,,false,true
-360948512,"October 01, 2026",Hemlane,Hemlane  |  5PDQHT:REN,1035,Revenue,Rents,,1432 Sara Ave.,,,false,true
+360948512,"October 01, 2026",Hemlane,Hemlane  |  5PDQHT:REN,1035,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
 360935221,"October 01, 2026",071915580,071915580  |  HARRIS ACH,22,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,,false,true
 360935220,"October 01, 2026",071915580,071915580  |  HARRIS ACH,1154,Revenue,Fees & Other Revenue,,5541 S Peoria St,,,false,true
 360926407,"October 01, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  M2UB4EZAS5,27.12,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
@@ -1190,9 +1202,9 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 359721536,"September 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  63IKFM3JQ6,276.97,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 359720667,"September 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  YIMW2A3J6Z,540.96,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 359719639,"September 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  GEIKK5VN3C,1638.24,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
-359715180,"September 29, 2026",HEMLANE,HEMLANE  |  2KK5GB:REN,359.13,Revenue,Rents,,428 Cross St.,,,false,true
+359715180,"September 29, 2026",HEMLANE,HEMLANE  |  2KK5GB:REN,359.13,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 359708425,"September 29, 2026",Melio,Melio  |  TX_1003489,-1.5,Operating Expenses,Bank Fees,,85-104 Alawa Pl,,,false,true
-359707169,"September 29, 2026",Hemlane,Hemlane  |  KYN7LR:REN,361.25,Revenue,Rents,,428 Cross St.,,,false,true
+359707169,"September 29, 2026",Hemlane,Hemlane  |  KYN7LR:REN,361.25,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 359692321,"September 29, 2026",Pelican LFTY0316 DAO LLC  |  TRANSFER_OUT,Pelican LFTY0316 DAO LLC  |  TRANSFER_OUT,-4876.96,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,Shortage Reconciliation for NOI Distributions - unknown months,false,true
 359691428,"September 29, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",900,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,Cash Reconciliation Reimbursement,false,true
 359690536,"September 29, 2026",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,2254.53,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,Consolidation,false,true
@@ -1236,23 +1248,23 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 358083883,"September 26, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **0745",-40,Operating Expenses,Repairs,,88 Madison Ave,,,false,true
 358083767,"September 26, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **2339",-855,Operating Expenses,Repairs,,90 Madison Ave,,,false,true
 358083665,"September 26, 2026",CASH APP*JAZMINE MONEY,"CASH APP*JAZMINE MONEY, Oakland, CA, US  |  **2339",-315,Operating Expenses,Repairs,,90 Madison Ave,,,false,true
-358058751,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **4305",-280.69,Operating Expenses,Cleaning & Maintenance,,86 Madison Ave,,,false,true
-358058747,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **4388",-334.86,Operating Expenses,Cleaning & Maintenance,,88 Madison Ave,,,false,true
-358058743,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **4388",-260.97,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
-358058742,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **6813",-103.33,Operating Expenses,Supplies,,84 Madison Ave,,,false,true
+358058751,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **4305",-280.69,Operating Expenses,Gas & Electric,,86 Madison Ave,,,false,true
+358058747,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **4388",-334.86,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
+358058743,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **4388",-260.97,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
+358058742,"September 25, 2026",PERCH,"Purchase from PERCH  |  Address: PERCHENERGY.C, MA, US  |  **6813",-103.33,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 357617770,"September 25, 2026",HAWN ELECTRIC,HAWN ELECTRIC  |  ELEC PAYMT,-576.11,Operating Expenses,Electric,,85-104 Alawa Pl,,,false,true
 357617769,"September 25, 2026",HAWN ELECTRIC,Returned received ACH transaction #464564507 due to: Account has insufficient funds,576.11,Operating Expenses,Electric,,85-104 Alawa Pl,,,false,true
 357571127,"September 25, 2026",Kyle Leese  |  TRANSFER_OUT,Kyle Leese  |  TRANSFER_OUT,-273.86,Loan Payments & Capex,Other Loan Payments,,86 Madison Ave,,Capital Call 9000 6/25/25,false,true
 357566434,"September 25, 2026",Fee for Check Payment 504138,Fee for Check Payment 504138,-2,Operating Expenses,Bank Fees,,22164 Umland Circle,,,false,true
 357566433,"September 25, 2026",Fee for Check Payment 504137,Fee for Check Payment 504137,-2,Operating Expenses,Bank Fees,,22164 Umland Circle,,,false,true
 357562993,"September 25, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  BW2T4IUYMG,1043.12,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-357561497,"September 25, 2026",Hemlane,Hemlane  |  BBNMCV:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
+357561497,"September 25, 2026",Hemlane,Hemlane  |  BBNMCV:REN,827.05,Revenue,Long Term Rents,,566 Nash St,,,false,true
 357555380,"September 25, 2026",ENBRIDGE GAS OH,ENBRIDGE GAS OH  |  BILLPAY,-66.14,Operating Expenses,Utilities,,428 Cross St.,,,false,true
 357555379,"September 25, 2026",ENBRIDGE GAS OH,Returned received ACH transaction #464509896 due to: Account has insufficient funds,66.14,Operating Expenses,Utilities,,428 Cross St.,,,false,true
 357413481,"September 23, 2026",Zelle payment from TIFFANY JOHNSON 30933202753,Zelle payment from TIFFANY JOHNSON 30933202753,973,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 356839982,"September 23, 2026",AGBO HEATING COOLING,"Purchase from AGBO HEATING COOLING  |  Address: ragbo.heating, IL, US  |  **0810",-12.42,Operating Expenses,Repairs,,25 Circle Dr,,,false,true
-356406084,"September 23, 2026",Hemlane,Hemlane  |  GKGZ6J:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
-356405541,"September 23, 2026",Hemlane,Hemlane  |  GKGYRW:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
+356406084,"September 23, 2026",Hemlane,Hemlane  |  GKGZ6J:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+356405541,"September 23, 2026",Hemlane,Hemlane  |  GKGYRW:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 355845269,"September 22, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  HCKJDW5QDR,1002.51,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 355844871,"September 22, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  XPUI6PBXLY,165.37,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 355844862,"September 22, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  XPUI6PBXLY,201.52,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
@@ -1280,10 +1292,10 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 353795344,"September 18, 2026",CITY AND COUNTY,CITY AND COUNTY  |  CITY AND C |  142816723,-379.48,Operating Expenses,Water & Sewer,,326 South Alcott Street,,,false,true
 353759667,"September 18, 2026",AXIOM ECOPEST CONTROL,"Purchase from AXIOM ECOPEST CONTROL  |  Address: 507-7729466, CO, US  |  **1814",-109,Operating Expenses,Pest,,326 South Alcott Street,,,false,true
 353248748,"September 17, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QJGXISPLZ2,469.71,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
-353244094,"September 17, 2026",HEMLANE,HEMLANE  |  2CP07T:REN,1359,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+353244094,"September 17, 2026",HEMLANE,HEMLANE  |  2CP07T:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 353165166,"September 16, 2026",CITY OF  EDWARDS,"CITY OF  EDWARDS, 118 Hillsboro Ave, EDWARDSVILLE, IL, US  |  **1327",-27.12,Operating Expenses,Water & Sewer,,665 Chapman St,,,false,true
 353080345,"September 17, 2026",EPCON LANE,"Purchase from EPCON LANE  |  Address: 330-724-2473, OH, US  |  **9486",-56.49,Operating Expenses,Pest,,1432 Sara Ave.,,,false,true
-352655849,"September 16, 2026",Hemlane,Hemlane  |  5PD1X1:REN,135,Revenue,Rents,,1432 Sara Ave.,,,false,true
+352655849,"September 16, 2026",Hemlane,Hemlane  |  5PD1X1:REN,135,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
 352649077,"September 16, 2026",NGRID36,NGRID36  |  NGRID36TEL,-63,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
 352489468,"September 16, 2026",EPCON LANE,"Purchase from EPCON LANE  |  Address: 330-724-2473, OH, US  |  **5576",-52.92,Operating Expenses,Pest,,1432 Sara Ave.,,,false,true
 352433630,"September 15, 2026",PG E EZ PAY,"PG E EZ PAY, 300 Lakeside Drive, OAKLAND, CA, US  |  **3228",-114.13,Operating Expenses,Electric,,22164 Umland Circle,,,false,true
@@ -1324,7 +1336,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 348459011,"September 11, 2026",NEW YORK CENTRAL,Returned received ACH transaction #459650126 due to: Account has insufficient funds,1077,Operating Expenses,Rental Dwelling,,9 Country Club Ln N,,,false,true
 348456311,"September 11, 2026",LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,-219,Transfers & Other,Property Tax Escrows,,5541 S Peoria St,,Escrow for Taxes,false,true
 348455618,"September 11, 2026",Universal Lending DAO (Pine)  |  TRANSFER_OUT,Universal Lending DAO (Pine)  |  TRANSFER_OUT,-165.71,Loan Payments & Capex,Other Loan Payments,,428 Cross St.,,ULD Loan Payment 428 Cross St,false,true
-348450604,"September 11, 2026",Hemlane,Hemlane  |  8NRK5G:REN,1417.5,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+348450604,"September 11, 2026",Hemlane,Hemlane  |  8NRK5G:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 348443886,"September 11, 2026",HAWAII GAS,HAWAII GAS  |  RES UTIL,-13.19,Operating Expenses,Gas,,85-104 Alawa Pl,,,false,true
 348442333,"September 11, 2026",NGRID36,NGRID36  |  NGRID36WEB |  2651274236,-450,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
 348441878,"September 11, 2026",ComEd,ComEd  |  PAYMENTS,-22.21,Operating Expenses,Electric,,8143 S Sangamon St.,,,false,true
@@ -1335,7 +1347,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 348259208,"September 10, 2026","loanDepot.com, L",Returned received ACH transaction #459334839 due to: Account has insufficient funds,3612.7,Transfers & Other,Transfers Between Accounts,,85-104 Alawa Pl,,,false,true
 348190831,"September 10, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",200,Transfers & Other,Transfers Between Accounts,,85-104 Alawa Pl,,,false,true
 347814831,"September 10, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,1387.69,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
-347784856,"September 10, 2026",Hemlane,Hemlane  |  53DKRK:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
+347784856,"September 10, 2026",Hemlane,Hemlane  |  53DKRK:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
 347777758,"September 10, 2026",Hemlane,Hemlane  |  53DJ2C:REP,40,Revenue,Rents,,326 South Alcott Street,,,false,true
 347773290,"September 10, 2026",XCEL ENERGY-PSCO,XCEL ENERGY-PSCO  |  XCELENERGY |  00031723269,-165.76,Operating Expenses,Gas & Electric,,326 South Alcott Street,,,false,true
 347705657,"September 09, 2026",Universal Lending DAO (Pine)  |  TRANSFER_OUT,Universal Lending DAO (Pine)  |  TRANSFER_OUT,-242.7,Loan Payments & Capex,Other Loan Payments,,566 Nash St,,ULD Loan Payment,false,true
@@ -1532,12 +1544,12 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 347045766,"December 22, 2025",Hemlane PMX Gross-up | 25 Circle Drive | 2025-12-22,Hemlane PMX Gross-up | 25 Circle Drive | 2025-12-22,285,Revenue,Rents,,25 Circle Dr,,AOPS-PMX-GROSSUP|GVKTZ5|fe4f15f8-522d-4572-ab0e-999aa2c4d22e|a2aaaff9-02fe-4f76-b779-2206e46913e1|272431393|Non-cash gross-rent presentation; PMX withheld fee.,true,false
 346957128,"September 08, 2026","loanDepot.com, L","loanDepot.com, L  |  Invoices",-3612.7,Transfers & Other,Transfers Between Accounts,,85-104 Alawa Pl,,,false,true
 346957127,"September 08, 2026","loanDepot.com, L",Returned received ACH transaction #458522000 due to: Account has insufficient funds,3612.7,Transfers & Other,Transfers Between Accounts,,85-104 Alawa Pl,,,false,true
-346618902,"September 08, 2026",Hemlane,Hemlane  |  GX37Z0:REN,1215,Revenue,Rents,,5541 S Peoria St,,,false,true
-346474918,"September 08, 2026",Hemlane,Hemlane  |  CRGZ6B:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-346474913,"September 08, 2026",Hemlane,Hemlane  |  798V1P:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
+346618902,"September 08, 2026",Hemlane,Hemlane  |  GX37Z0:REN,1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+346474918,"September 08, 2026",Hemlane,Hemlane  |  CRGZ6B:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
+346474913,"September 08, 2026",Hemlane,Hemlane  |  798V1P:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 346471246,"September 08, 2026",Hemlane,Hemlane  |  5PDJJW:REP,22.5,Revenue,Rents,,1432 Sara Ave.,,,false,true
-346470517,"September 08, 2026",Hemlane,Hemlane  |  2KKGLG:REN,548.25,Revenue,Rents,,428 Cross St.,,,false,true
-346467065,"September 08, 2026",Hemlane,Hemlane  |  5PD5RH:REN,900,Revenue,Rents,,1432 Sara Ave.,,,false,true
+346470517,"September 08, 2026",Hemlane,Hemlane  |  2KKGLG:REN,548.25,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+346467065,"September 08, 2026",Hemlane,Hemlane  |  5PD5RH:REN,900,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
 346399947,"September 07, 2026",ABSOLUTE TERMITE,"Purchase from ABSOLUTE TERMITE  |  Address: KAPOLEI, HI, US  |  **7398",-99.48,Operating Expenses,Pest,,85-104 Alawa Pl,,,false,true
 346352391,"September 07, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",200,Transfers & Other,Transfers Between Accounts,,428 Cross St.,,,false,true
 346352334,"September 07, 2026",Sara EARLDAO repayment | counterparty | 2026-09-07,Lofty Holding 1432 Sara Avenue DAO LLC  |  INTERNAL_TRANSFER,200,Transfers & Other,Transfers Between Accounts,,1432 Sara Ave.,,EARLDAO revolving loan repayment on borrower date 2026-09-07; paired source IDs 346352330/346352334. Interest applied 115.34; principal applied 84.66; loan balance after event 8017.75. ECO acts as agent where applicable; later ECO remittance is not another borrower repayment. Existing cash only; category 24 settlement; interest expense/revenue recognized by paired monthly accruals.  | SARA-REVOLVING|20260908|cash|346352334,false,true
@@ -1588,8 +1600,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 343801116,"September 04, 2026",MORTGAGE SERV CT,Returned received ACH transaction #457261641 due to: Account has insufficient funds,1863.48,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,,false,true
 343796496,"September 04, 2026",STRIPE,STRIPE  |  TRANSFER,207.22,Revenue,Fees & Other Revenue,,88 Madison Ave,,,false,true
 343653096,"September 04, 2026",AMAZON MKTPL*539NI3GR1,"Purchase from AMAZON MKTPL*539NI3GR1  |  Address: Amzn.com/bill, WA, US  |  **0745",-47.5,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  2 OUTNILI 2 Pack Mop Broom Holder Wall Mount with 3 Slots & 4 Hooks - Rustic Wood Broom Mop Hanger for Pantry Kitchen Organization - Garden Tool Organizer for Closet Laundry Room; $47.50; 2026-09-04. Dropbox receipt: 2026-09-04_amazon_USD-47.50_2-OUTNILI-2-Pack-Mop-Broom-Holder-Wall-Mount-with-3-Slots-4-Hooks-Rustic-Wood-Br_Baselane-343653096.pdf,false,true
-343197333,"September 03, 2026",Hemlane,Hemlane  |  KYNHXW:REN,360.4,Revenue,Rents,,428 Cross St.,,,false,true
-343181219,"September 03, 2026",HEMLANE,HEMLANE  |  2KKH47:REN,170,Revenue,Rents,,428 Cross St.,,,false,true
+343197333,"September 03, 2026",Hemlane,Hemlane  |  KYNHXW:REN,360.4,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+343181219,"September 03, 2026",HEMLANE,HEMLANE  |  2KKH47:REN,170,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 343171433,"September 03, 2026",EDI DISB-AFTS,EDI DISB-AFTS  |  Web Pay,323.9,Property Transactions,Mortgage Disbursements Received,,1258 Lily St,,,false,true
 343154862,"September 03, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **0745",-1,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 343126713,"August 28, 2026",OR Replenishment | 86 Madison Ave | August 2026,OR Replenishment | 86 Madison Ave | August 2026,0,Transfers & Other,Owner Contributions/Distributions,,86 Madison Ave,,AOPS-PNL-ACCRUAL|retained_capital|86 Madison Ave|2026-08|0.00 | OR Replenishment per March 2026 governance vote: 100% of 2026-08 NOI $-828.78. Reserve basis $-18523.72 = ECO GL net of accruals $-20155.09 + Lofty OR $1631.37. Outstanding cash reserve settlement requirement after $0.00 of verified same-month cash settlement.,true,false
@@ -1664,7 +1676,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 342900469,"September 02, 2026",22164 Umland Circle Clark 1177,22164 Umland Circle Clark 1177,-350,Operating Expenses,Water & Sewer,,22164 Umland Circle,,,false,true
 342900468,"September 02, 2026",Clark 1176 22160 Umland Circle,Clark 1176 22160 Umland Circle,-126.22,Operating Expenses,Cleaning & Maintenance,,22164 Umland Circle,,,false,true
 342594084,"September 02, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **5967",-126.36,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
-342549775,"September 02, 2026",HEMLANE,HEMLANE  |  KYNYXG:REN,170,Revenue,Rents,,428 Cross St.,,,false,true
+342549775,"September 02, 2026",HEMLANE,HEMLANE  |  KYNYXG:REN,170,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 342547942,"September 02, 2026",Baselane,Baselane  |  Rent#1890697,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
 342519133,"September 03, 2026",Amazon.com*5Q8FF6KW0,"Purchase from Amazon.com*5Q8FF6KW0  |  Address: Amzn.com/bill, WA, US  |  **2577",-44.31,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  Toilet paper for 88 Madison Avenue; $44.31; 2026-09-03. Dropbox receipt: 2026-09-03_amazon_USD-44.31_toilet-paper_Baselane-342519133.pdf,false,true
 342492976,"September 02, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-1000,Transfers & Other,Transfers Between Accounts,,22164 Umland Circle,,,false,true
@@ -1674,7 +1686,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 341955479,"September 01, 2026",Interest August 2026,Interest August 2026,0.09,Transfers & Other,Baselane Banking Interest,,9 Country Club Ln N,,,false,true
 341949374,"September 01, 2026",Interest August 2026,Interest August 2026,3.66,Transfers & Other,Baselane Banking Interest,,25 Circle Dr,,,false,true
 341949122,"September 01, 2026",Interest August 2026,Interest August 2026,0.41,Transfers & Other,Baselane Banking Interest,,724 3rd Ave,,,false,true
-341944475,"September 01, 2026",Interest August 2026,Interest August 2026,3.8,Transfers & Other,Baselane Banking Interest,,566 Nash St,,,false,true
 341944454,"September 01, 2026",Interest August 2026,Interest August 2026,1.51,Transfers & Other,Baselane Banking Interest,,1278 E 187th St,,,false,true
 341942490,"September 01, 2026",CITADEL SERV PMT,CITADEL SERV PMT  |  MTGE PAYMT |  1910008671,-2309.59,Transfers & Other,Transfers Between Accounts,,90 Madison Ave,,,false,true
 341942489,"September 01, 2026",CITADEL SERV PMT,Returned received ACH transaction #455934528 due to: Account has insufficient funds,2309.59,Transfers & Other,Transfers Between Accounts,,90 Madison Ave,,,false,true
@@ -1698,7 +1709,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 341288503,"August 31, 2026",AMAZON.COM*5Q34V,"Purchase from AMAZON.COM*5Q34V  |  Address: SEATTLE, WA, US  |  **2919",-75.9,Operating Expenses,Repairs Supplies,,9 Country Club Ln N,,,false,true
 340982024,"August 31, 2026","loanDepot.com, L","loanDepot.com, L  |  Invoices",-3612.7,Loan Payments & Capex,Mortgage Payments,,85-104 Alawa Pl,,,false,true
 340982023,"August 31, 2026","loanDepot.com, L",Returned received ACH transaction #455257894 due to: Account has insufficient funds,3612.7,Loan Payments & Capex,Mortgage Payments,,85-104 Alawa Pl,,,false,true
-340786297,"August 31, 2026",Hemlane,Hemlane  |  GVKWPJ:REN,434.35,Revenue,Rents,,25 Circle Dr,,,false,true
+340786297,"August 31, 2026",Hemlane,Hemlane  |  GVKWPJ:REN,434.35,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 340700546,"August 28, 2026",Tax Accrual | 88 Madison Ave | August 2026,Tax Accrual | 88 Madison Ave | August 2026,-441.02,Operating Expenses,"City, State, & Local Taxes",,88 Madison Ave,,"AOPS-PNL-ACCRUAL|taxes|88 Madison Ave|2026-08|441.02 | Monthly accrual entry. Accounting/manual accrual only, no bank transfer.",true,false
 340700545,"August 28, 2026",Insurance Accrual | 88 Madison Ave | August 2026,Insurance Accrual | 88 Madison Ave | August 2026,-409.85,Operating Expenses,Rental Dwelling,,88 Madison Ave,,"AOPS-PNL-ACCRUAL|insurance|88 Madison Ave|2026-08|409.85 | Monthly accrual entry. Accounting/manual accrual only, no bank transfer.",true,false
 340700544,"July 28, 2026",Tax Accrual | 88 Madison Ave | July 2026,Tax Accrual | 88 Madison Ave | July 2026,-441.02,Operating Expenses,"City, State, & Local Taxes",,88 Madison Ave,,"AOPS-PNL-ACCRUAL|taxes|88 Madison Ave|2026-07|441.02 | Monthly accrual entry. Accounting/manual accrual only, no bank transfer.",true,false
@@ -1706,7 +1717,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 340217823,"August 29, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-1031.66,Transfers & Other,Transfers Between Accounts,,1321 Allendale Ave,,Cash Sweep for Accounts Payable,false,true
 340216979,"August 29, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-33.46,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Cash Sweep all funds transferred to Lofty,false,true
 340216739,"August 29, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-4.99,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,Interest Sweep,false,true
-340216659,"August 29, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-4.18,Transfers & Other,Transfers Between Accounts,,566 Nash St,,Sweep Interest,false,true
 340216598,"August 29, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-464.26,Transfers & Other,Transfers Between Accounts,,566 Nash St,,Accounts Payable Reimbursement Cash Sweep,false,true
 340210472,"August 29, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-67,Transfers & Other,Owner Contributions/Distributions,,804 S Quitman St,,,false,true
 340210327,"August 29, 2026",XCEL EZ PAY PHON,"XCEL EZ PAY PHON, 414 NICOLLET MALL, MINNEAPOLIS, MN, US  |  **6267",-486.92,Operating Expenses,Utilities,,804 S Quitman St,,,false,true
@@ -1898,10 +1908,9 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 338601846,"August 27, 2026",HAWN ELECTRIC,HAWN ELECTRIC  |  ELEC PAYMT,-589.23,Operating Expenses,Electric,,85-104 Alawa Pl,,,false,true
 338566976,"August 27, 2026",MORTGAGE SERV CT,MORTGAGE SERV CT  |  RETRY PYMT |  8016191218,-1863.48,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,,false,true
 338566975,"August 27, 2026",MORTGAGE SERV CT,Returned received ACH transaction #453947801 due to: Account has insufficient funds,1863.48,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,,false,true
-338490256,"August 26, 2026",UBER * EATS PEND,"Purchase from UBER * EATS PEND  |  Address: San Francisco, CA, US  |  **0745",-37.35,Operating Expenses,Auto & Travel,,88 Madison Ave,,,false,true
 338445625,"September 01, 2026",WALMART.COM 8009,"Purchase from WALMART.COM 8009  |  Address: BENTONVILLE, AR, US  |  **2339",-74.86,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
 338425170,"August 27, 2026",LOWES #00907*,"Purchase from LOWES #00907*  |  Address: 866-483-7521, NC, US  |  **2339",-86.29,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
-337991049,"August 26, 2026",Hemlane,Hemlane  |  KYNLBM:REN,191.25,Revenue,Rents,,428 Cross St.,,,false,true
+337991049,"August 26, 2026",Hemlane,Hemlane  |  KYNLBM:REN,191.25,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 337990096,"August 26, 2026",CON ED OF NY,CON ED OF NY  |  CECONY,-320.95,Operating Expenses,Electric,,9 Country Club Ln N,,,false,true
 337990095,"August 26, 2026",CON ED OF NY,Returned received ACH transaction #453576227 due to: Account has insufficient funds,320.95,Operating Expenses,Electric,,9 Country Club Ln N,,,false,true
 337987968,"August 26, 2026",MORTGAGE SERV CT,MORTGAGE SERV CT  |  RETRY PYMT |  8016191218,-1863.48,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,,false,true
@@ -1972,7 +1981,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 334644587,"August 20, 2026",LOWES #00907*,"Purchase from LOWES #00907*  |  Address: 866-483-7521, NC, US  |  **2577",-176.44,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 334196976,"August 19, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,2228.91,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
 334191188,"August 19, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  BQIVWE7JJE,627.19,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-334188484,"August 19, 2026",Hemlane,Hemlane  |  5PDJS9:REN,450,Revenue,Rents,,1432 Sara Ave.,,,false,true
+334188484,"August 19, 2026",Hemlane,Hemlane  |  5PDJS9:REN,450,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
 334167790,"August 20, 2026",AMAZON MKTPL*5A25Q95H2,"Purchase from AMAZON MKTPL*5A25Q95H2  |  Address: Amzn.com/bill, WA, US  |  **2577",-38.86,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  15-inch stretch-wrap supplies for 88 Madison Ave; $38.86; 2026-08-20. Dropbox receipt: 2026-08-20_amazon_USD-38.86_15-inch-stretch-wrap_Baselane-334167790.pdf,false,true
 334124228,"August 19, 2026",AMAZON MKTPL*5A0MT0BG0,"Purchase from AMAZON MKTPL*5A0MT0BG0  |  Address: Amzn.com/bill, WA, US  |  **5487",-187.6,Operating Expenses,Supplies,,84 Madison Ave,,Verified Amazon order 113-8866740-9949068: duct tape and disposable hazmat suits. Receipt saved in the 84 Madison Dropbox receipt folder.,false,true
 334120693,"August 19, 2026",STAYCATIONGO,"Purchase from STAYCATIONGO  |  Address: STAYCATIONGO., CA, US  |  **4891",-189,Operating Expenses,Other Operating Expenses,,9 Country Club Ln N,,,false,true
@@ -2023,7 +2032,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 331416016,"August 14, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  WLXCO2BW5R,376.87,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 331388024,"August 14, 2026",Strawberry LFTY402 DAO LLC  |  INTERNAL_TRANSFER,Strawberry LFTY402 DAO LLC  |  INTERNAL_TRANSFER,50,Revenue,Long Term Rents,,86 Madison Ave,,Shed Rent per gov vote 3/25/26,false,true
 331387502,"August 14, 2026",Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER,Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER,-50,Revenue,Long Term Rents,,90 Madison Ave,,Shed Rent per gov vote 3/25/26,false,true
-331381739,"August 14, 2026",Hemlane,Hemlane  |  BBNMBF:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
+331381739,"August 14, 2026",Hemlane,Hemlane  |  BBNMBF:REN,827.05,Revenue,Long Term Rents,,566 Nash St,,,false,true
 331362780,"August 19, 2026",HOMEDEPOT.COM,"Purchase from HOMEDEPOT.COM  |  Address: 800-466-3337, GA, US  |  **3700",-194.37,Operating Expenses,Supplies,,86 Madison Ave,,,false,true
 331361863,"August 15, 2026",LOWES #00907*,"Purchase from LOWES #00907*  |  Address: 866-483-7521, NC, US  |  **2577",-183.56,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 331361770,"August 15, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **3700",-111.3,Operating Expenses,Supplies,,86 Madison Ave,,,false,true
@@ -2046,7 +2055,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 330853182,"August 13, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,99.83,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
 330830568,"August 13, 2026",LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,219,Transfers & Other,Property Tax Escrows,,5541 S Peoria St,,Escrow for Taxes,false,true
 330829909,"August 13, 2026",LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,-219,Transfers & Other,Property Tax Escrows,,5541 S Peoria St,,Escrow for Taxes,false,true
-330824025,"August 13, 2026",Hemlane,Hemlane  |  8NRDWY:REN,1417.5,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+330824025,"August 13, 2026",Hemlane,Hemlane  |  8NRDWY:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 330820728,"August 13, 2026",HAWAII GAS,HAWAII GAS  |  RES UTIL,-13.19,Operating Expenses,Gas,,85-104 Alawa Pl,,,false,true
 330819727,"August 13, 2026",ComEd,ComEd  |  PAYMENTS,-22.2,Operating Expenses,Electric,,8143 S Sangamon St.,,,false,true
 330795578,"August 13, 2026",Earl Co  |  TRANSFER_OUT,Earl Co  |  TRANSFER_OUT,-1600,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Zelle to Charles Zivin for 7542 Floor 3 Eviction Fees,false,true
@@ -2057,7 +2066,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 330695755,"August 13, 2026",BRUNI & CAMPSI HEATING,"Purchase from BRUNI & CAMPSI HEATING  |  Address: 914-2292809, NY, US  |  **4891",-2130.1,Operating Expenses,Repairs,,9 Country Club Ln N,,,false,true
 330276260,"August 12, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  ZDGZV3424V,469.96,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 330276254,"August 12, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  ZDGZV3424V,491.35,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
-330271129,"August 12, 2026",HEMLANE,HEMLANE  |  X630DP:REN,950,Revenue,Rents,,1278 E 187th St,,,false,true
+330271129,"August 12, 2026",HEMLANE,HEMLANE  |  X630DP:REN,950,Revenue,Long Term Rents,,1278 E 187th St,,,false,true
 330269837,"August 12, 2026",NGRID36,NGRID36  |  NGRID36WEB |  2651274236,-476.35,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
 330213395,"August 12, 2026",S&P Property Management LLC  |  TRANSFER_OUT,S&P Property Management LLC  |  TRANSFER_OUT,-1398.33,Transfers & Other,Transfers Between Accounts,,724 3rd Ave,,Transfer to SPPM LLC,false,true
 330175307,"August 17, 2026",WALMART.COM 8009,"Purchase from WALMART.COM 8009  |  Address: BENTONVILLE, AR, US  |  **0745",-19.47,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -2094,12 +2103,12 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 329533131,"August 10, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",338.06,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
 329533116,"August 10, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",262.23,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 329237115,"August 10, 2026",XCEL ENERGY-PSCO,XCEL ENERGY-PSCO  |  XCELENERGY |  00031723269,-171.51,Operating Expenses,Gas & Electric,,326 South Alcott Street,,,false,true
-329151662,"August 10, 2026",Hemlane,Hemlane  |  GKGD0M:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
-329150152,"August 10, 2026",Hemlane,Hemlane  |  GVKGKJ:REN,425,Revenue,Rents,,25 Circle Dr,,,false,true
+329151662,"August 10, 2026",Hemlane,Hemlane  |  GKGD0M:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+329150152,"August 10, 2026",Hemlane,Hemlane  |  GVKGKJ:REN,425,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 329131027,"August 10, 2026",Hemlane,Hemlane  |  5PD84X:REP,22.5,Operating Expenses,Repairs,,1432 Sara Ave.,,,false,true
-329131026,"August 10, 2026",Hemlane,Hemlane  |  5PD30H:REN,180,Revenue,Rents,,1432 Sara Ave.,,,false,true
-329131025,"August 10, 2026",Hemlane,Hemlane  |  5PD2DV:REN,405,Revenue,Rents,,1432 Sara Ave.,,,false,true
-329129395,"August 10, 2026",Hemlane,Hemlane  |  GKG3MN:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
+329131026,"August 10, 2026",Hemlane,Hemlane  |  5PD30H:REN,180,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
+329131025,"August 10, 2026",Hemlane,Hemlane  |  5PD2DV:REN,405,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
+329129395,"August 10, 2026",Hemlane,Hemlane  |  GKG3MN:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 329109247,"August 10, 2026",PUBLIC UTILITIES,PUBLIC UTILITIES  |  UTILITIES,-46.59,Operating Expenses,Water & Sewer,,918 Frederick Blvd,,,false,true
 329109246,"August 10, 2026",PUBLIC UTILITIES,Returned received ACH transaction #447890560 due to: Account has insufficient funds,46.59,Operating Expenses,Water & Sewer,,918 Frederick Blvd,,,false,true
 329097331,"August 10, 2026",PUBLIC UTILITIES,PUBLIC UTILITIES  |  UTILITIES,-75.15,Operating Expenses,Water & Sewer,,1321 Allendale Ave,,,false,true
@@ -2131,17 +2140,17 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 327926934,"August 08, 2026",THE HOME DEPOT #1914,"Purchase from THE HOME DEPOT #1914  |  Address: 800-466-3337, IL, US  |  **3294",-162.44,Operating Expenses,Supplies,,8143 S Sangamon St.,,,false,true
 327912742,"August 08, 2026",THE HOME DEPOT #1914,"Purchase from THE HOME DEPOT #1914  |  Address: 800-466-3337, IL, US  |  **3294",-75.33,Operating Expenses,Supplies,,8143 S Sangamon St.,,,false,true
 327908297,"August 08, 2026",THE HOME DEPOT #1914,"Purchase from THE HOME DEPOT #1914  |  Address: 800-466-3337, IL, US  |  **3294",-183.5,Operating Expenses,Supplies,,8143 S Sangamon St.,,,false,true
-327498775,"August 07, 2026",Hemlane,Hemlane  |  53DYHM:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-327498370,"August 07, 2026",Hemlane,Hemlane  |  2CPNBQ:REN,1359,Revenue,Rents,,8143 S Sangamon St.,,,false,true
-327496891,"August 07, 2026",Hemlane,Hemlane  |  KYNT7L:REN,360.4,Revenue,Rents,,428 Cross St.,,,false,true
-327496764,"August 07, 2026",Hemlane,Hemlane  |  GX3ZL3:REN,1215,Revenue,Rents,,5541 S Peoria St,,,false,true
+327498775,"August 07, 2026",Hemlane,Hemlane  |  53DYHM:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
+327498370,"August 07, 2026",Hemlane,Hemlane  |  2CPNBQ:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
+327496891,"August 07, 2026",Hemlane,Hemlane  |  KYNT7L:REN,360.4,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+327496764,"August 07, 2026",Hemlane,Hemlane  |  GX3ZL3:REN,1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 327495917,"August 07, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  36OWAXSYIN,278.48,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
-327466370,"August 07, 2026",Hemlane,Hemlane  |  798J86:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
-327464155,"August 07, 2026",Hemlane,Hemlane  |  CRGLRS:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
+327466370,"August 07, 2026",Hemlane,Hemlane  |  798J86:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+327464155,"August 07, 2026",Hemlane,Hemlane  |  CRGLRS:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
 327459740,"August 07, 2026",HEMLANE,HEMLANE  |  53DN4L:REP,40,Revenue,Rents,,326 South Alcott Street,,,false,true
 327450275,"August 07, 2026",EVOLVE VACATION,EVOLVE VACATION  |  TRANSFER,6984.74,Revenue,Short Term Rents,,9 Country Club Ln N,,,false,true
-327368290,"August 06, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **4388",-375.12,Operating Expenses,Other Operating Expenses,,88 Madison Ave,,,false,true
-327368267,"August 06, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **4388",-273.17,Operating Expenses,Cleaning & Maintenance,,88 Madison Ave,,,false,true
+327368290,"August 06, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **4388",-375.12,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
+327368267,"August 06, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **4388",-273.17,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
 327250813,"August 06, 2026",Check Payment | 0225299,Check Payment | 0225299,-25,Transfers & Other,Credit Card Payments,,7542 & 7656 S Colfax Ave,,,false,true
 326925008,"August 06, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **1327",-65.11,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
 326890723,"August 06, 2026",Universal Lending DAO (Pine)  |  TRANSFER_OUT,Universal Lending DAO (Pine)  |  TRANSFER_OUT,-242.7,Loan Payments & Capex,Other Loan Payments,,566 Nash St,,ULD Loan Payment,false,true
@@ -2149,7 +2158,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 326879276,"August 06, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  CRBB76GXN7,682.13,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 326879133,"August 06, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  HZ5RYPECMB,101.65,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 326866919,"August 06, 2026","PadSplit, Inc.","PadSplit, Inc.  |  PadSplit,",1865.76,Revenue,Rents,,85-104 Alawa Pl,,,false,true
-326860514,"August 06, 2026",Hemlane,Hemlane  |  M2423H:REN,940.5,Revenue,Rents,,1321 Allendale Ave,,,false,true
+326860514,"August 06, 2026",Hemlane,Hemlane  |  M2423H:REN,940.5,Revenue,Long Term Rents,,1321 Allendale Ave,,,false,true
 326840786,"August 06, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,725.43,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
 326805729,"August 06, 2026",Rosa Mora  |  TRANSFER_OUT,Rosa Mora  |  TRANSFER_OUT,-800,Operating Expenses,Cleaning & Janitorial,,9 Country Club Ln N,,2x Cleanings,false,true
 326805534,"August 06, 2026",Jacob Gott  |  TRANSFER_OUT,Jacob Gott  |  TRANSFER_OUT,-165.44,Loan Payments & Capex,Other Loan Payments,,724 3rd Ave,,Loan Payment,false,true
@@ -2170,11 +2179,11 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 326275828,"August 05, 2026",UBS BANK USA,UBS BANK USA  |  RETRY PYMT |  0162213789,-3025.25,Transfers & Other,Transfers Between Accounts,,9 Country Club Ln N,,,false,true
 326275827,"August 05, 2026",UBS BANK USA,Returned received ACH transaction #446186234 due to: Account has insufficient funds,3025.25,Transfers & Other,Transfers Between Accounts,,9 Country Club Ln N,,,false,true
 326261918,"August 05, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  HFOR3WKYM4,73.79,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-326253136,"August 05, 2026",Hemlane,Hemlane  |  2KKYXN:REN,359.12,Revenue,Rents,,428 Cross St.,,,false,true
-326251527,"August 05, 2026",Hemlane,Hemlane  |  LD6D7Y:REN,270,Revenue,Rents,,1518 Dille Rd,,,false,true
+326253136,"August 05, 2026",Hemlane,Hemlane  |  2KKYXN:REN,359.12,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+326251527,"August 05, 2026",Hemlane,Hemlane  |  LD6D7Y:REN,270,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 326247822,"August 05, 2026",BASELANE,BASELANE  |  RENT#1784109,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
 326246552,"August 05, 2026",HEMLANE,HEMLANE  |  174ZQV:REN,997.5,Revenue,Long Term Rents,,724 3rd Ave,,,false,true
-326245025,"August 05, 2026",HEMLANE,HEMLANE  |  KYNHWN:REN,170,Revenue,Rents,,428 Cross St.,,,false,true
+326245025,"August 05, 2026",HEMLANE,HEMLANE  |  KYNHWN:REN,170,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 326243648,"August 05, 2026",NGRID36,NGRID36  |  NGRID36WEB |  5651273116,-487,Operating Expenses,Utilities,,90 Madison Ave,,,false,true
 326234146,"August 05, 2026",EDI DISB-AFTS,EDI DISB-AFTS  |  Web Pay,323.9,Property Transactions,Mortgage Disbursements Received,,1258 Lily St,,,false,true
 326125164,"June 27, 2025",3850 W 17th St DAO LLC Filing Fees,"Purchase from OHIO BUSINESS FILING  |  Address: 614-466-0180, OH, US  |  **1327",-550,Operating Expenses,Legal & Other Professional Fees,,3850 W 17th St,,,true,true
@@ -2193,7 +2202,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 325609089,"January 07, 2026",Colfax-ECO | DAO LLC fee cash settlement | 2025-08 through 2026-07,Lofty Holding 7542 & 7656 S Colfax Avenue DAO LLC  |  INTERNAL_TRANSFER,750,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Repayment of OpEx,true,true
 325609088,"January 07, 2026",Colfax-ECO | Operating reimbursement residual | through 2026-01-07,"ECO Systems, LLC  |  INTERNAL_TRANSFER",-13886.38,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Repayment of OpEx,true,true
 325609087,"January 07, 2026",Colfax-ECO | DAO LLC fee cash settlement | 2025-08 through 2026-07,"ECO Systems, LLC  |  INTERNAL_TRANSFER",-750,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Repayment of OpEx,true,true
-325536814,"August 03, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **6778",-53.23,Operating Expenses,Other Operating Expenses,,724 3rd Ave,,,false,true
+325536814,"August 03, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **6778",-53.23,Operating Expenses,Gas & Electric,,724 3rd Ave,,,false,true
 325485960,"August 03, 2026",OpEx Reimbursement from Eric LeMunyan,VENMO  |  CASHOUT,1564.92,Transfers & Other,Transfers Between Accounts,,8708 Willard Ave,,Willard OpEx Reimbursement,true,true
 325481118,"August 03, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",155.39,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 325475342,"August 04, 2026",EPCON LANE,"Purchase from EPCON LANE  |  Address: 330-724-2473, OH, US  |  **9486",-52.31,Operating Expenses,Pest,,1432 Sara Ave.,,,false,true
@@ -2746,7 +2755,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 324509167,"August 01, 2026",Spectrum - 86 Madison Ave,"Purchase from Spectrum  |  Address: 855-707-7328, MO, US  |  **6958",-38.85,Operating Expenses,"Phone, Cable & Internet",,86 Madison Ave,,,true,true
 324509166,"August 01, 2026",Spectrum - 84 Madison Ave,"Purchase from Spectrum  |  Address: 855-707-7328, MO, US  |  **6958",-38.85,Operating Expenses,"Phone, Cable & Internet",,84 Madison Ave,,,true,true
 324503307,"July 08, 2026",Denver Water Bill 2026-07-08,Denver Water Bill 2026-07-08,-592.06,Operating Expenses,Water & Sewer,,326 South Alcott Street,,Amount due and payable to Derek Scruggs for reimbursement,true,false
-324488460,"August 01, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **6813",-30.89,Operating Expenses,Other Operating Expenses,,84 Madison Ave,,,false,true
+324488460,"August 01, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **6813",-30.89,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 324298227,"August 01, 2026",Interest July 2026,Interest July 2026,92.65,Transfers & Other,Baselane Banking Interest,,7542 & 7656 S Colfax Ave,,,false,true
 324298209,"August 01, 2026",Interest July 2026,Interest July 2026,47.01,Transfers & Other,Baselane Banking Interest,,9 Country Club Ln N,,,false,true
 324215903,"August 01, 2026",Interest July 2026,Interest July 2026,2.34,Transfers & Other,Baselane Banking Interest,,724 3rd Ave,,,false,true
@@ -2836,7 +2845,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 322820673,"July 30, 2026",22164 Umland Circle Clark 1177,22164 Umland Circle Clark 1177,-350,Operating Expenses,Water & Sewer,,22164 Umland Circle,,,false,true
 322555513,"July 30, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **1327",-58.99,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
 322513261,"July 30, 2026",HEML,HEML  |  LD6243:RAZ,-332,Operating Expenses,Repairs,,1518 Dille Rd,,,false,true
-322507494,"July 30, 2026",Hemlane,Hemlane  |  98NK7V:REN,743.36,Revenue,Rents,,1518 Dille Rd,,,false,true
+322507494,"July 30, 2026",Hemlane,Hemlane  |  98NK7V:REN,743.36,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 322503300,"July 30, 2026",COOK COUNTY,COOK COUNTY  |  SINGLE PRO |  3450478,-3664.86,Operating Expenses,Property Taxes,,7542 & 7656 S Colfax Ave,,,false,true
 322503088,"July 30, 2026",Melio,Melio  |  TX_8634890,-1.5,Operating Expenses,Bank Fees,,85-104 Alawa Pl,,,false,true
 322478885,"July 30, 2026",OSC - RISK SECURE,"Purchase from OSC - RISK SECURE  |  Address: KENNESAW, GA, US  |  **1327",-139.91,Operating Expenses,Rental Dwelling,,9634 S Green St,,,false,true
@@ -2958,8 +2967,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 322111712,"July 29, 2026",Colfax token buyback | Web3 residual | $309.82,Colfax token buyback | Web3 residual | $309.82,-309.82,Transfers & Other,Owner Contributions/Distributions,,7542 & 7656 S Colfax Ave,,"COLFAX-EARLDAO-ASSET-RECON|buyback-residual|2026-07-29|309.82 | Manual Web3 reconciliation only; no new bank cash movement. Verified total March-July 2026 acquisition of 635 Colfax tokens was $17,769.82 USDC, including $906.37 marketplace charges. Baselane already books $15,000.00 of Coinbase cash funding on 2026-04-16 and $2,460.00 transferred to ECO as buyback-agent reimbursement on 2026-03-30, so this row records only the $309.82 residual and avoids double-counting. The separately matched 0.239 ALGO network fees are excluded because no USD basis is documented.",true,false
 321962171,"July 29, 2026",HEML,HEML  |  PURCHASE X,-250,Operating Expenses,Repairs,,1278 E 187th St,,,false,true
 321962170,"July 29, 2026",HEML,Returned received ACH transaction #443379055 due to: Account has insufficient funds,250,Transfers & Other,Transfers Between Accounts,,1278 E 187th St,,,false,true
-321960309,"July 29, 2026",Hemlane,Hemlane  |  KYNCBC:REN,191.25,Revenue,Rents,,428 Cross St.,,,false,true
-321960239,"July 29, 2026",Hemlane,Hemlane  |  2KKTRG:REN,359.13,Revenue,Rents,,428 Cross St.,,,false,true
+321960309,"July 29, 2026",Hemlane,Hemlane  |  KYNCBC:REN,191.25,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+321960239,"July 29, 2026",Hemlane,Hemlane  |  2KKTRG:REN,359.13,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 321958525,"July 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  W3SWSX3MLD,1289.34,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 321958501,"July 29, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  W3SWSX3MLD,1815.38,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 321952994,"July 29, 2026",CON ED OF NY,CON ED OF NY  |  CECONY,-339.79,Operating Expenses,Electric,,9 Country Club Ln N,,,false,true
@@ -3284,7 +3293,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 321311591,"July 27, 2026",ECO interest | 724 3rd Ave | through 2026-06 | 724 Security Deposits,"ECO Systems, LLC  |  INTERNAL_TRANSFER",-12.67,Transfers & Other,Transfers Between Accounts,,724 3rd Ave,,ECO bank interest through June 2026 724 3rd Ave source 126410,false,true
 321311554,"July 27, 2026",ECO interest | 724 3rd Ave | through 2026-06 | 724 Security Deposits,Grape LFTY403 DAO LLC  |  INTERNAL_TRANSFER,12.67,Transfers & Other,Transfers Between Accounts,,724 3rd Ave,,ECO bank interest through June 2026 724 3rd Ave source 126410,false,true
 321311448,"July 27, 2026",ECO interest | 566 Nash St | through 2026-06 | 566 Security Deposits,Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER,7.26,Transfers & Other,Transfers Between Accounts,,566 Nash St,,ECO bank interest through June 2026 566 Nash St source 122733,false,true
-321311446,"July 27, 2026",ECO interest | 566 Nash St | through 2026-06 | 566 Security Deposits,"ECO Systems, LLC  |  INTERNAL_TRANSFER",-7.26,Transfers & Other,Transfers Between Accounts,,566 Nash St,,ECO bank interest through June 2026 566 Nash St source 122733,false,true
 321311338,"July 27, 2026",ECO interest | 428 Cross St. | through 2026-06 | 428 Security Deposits,Lofty Holding 428 Cross Street DAO LLC  |  INTERNAL_TRANSFER,1.98,Transfers & Other,Transfers Between Accounts,,428 Cross St.,,ECO bank interest through June 2026 428 Cross St source 122732,false,true
 321311331,"July 27, 2026",ECO interest | 428 Cross St. | through 2026-06 | 428 Security Deposits,"ECO Systems, LLC  |  INTERNAL_TRANSFER",-1.98,Transfers & Other,Transfers Between Accounts,,428 Cross St.,,ECO bank interest through June 2026 428 Cross St source 122732,false,true
 321301884,"July 27, 2026",ECO interest | 326 South Alcott Street | through 2026-06 | 326-332 S Alcott Operations,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,4.49,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,ECO bank interest through June 2026 326 South Alcott Street source 84290,false,true
@@ -3659,10 +3667,10 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 320805236,"July 24, 2026",MORGAN LINEN SERVICES - 88 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-138.61,Operating Expenses,Cleaning & Maintenance,,88 Madison Ave,,,true,true
 320805235,"July 24, 2026",MORGAN LINEN SERVICES - 86 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-115.51,Operating Expenses,Cleaning & Maintenance,,86 Madison Ave,,,true,true
 320805234,"July 24, 2026",MORGAN LINEN SERVICES - 84 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-92.41,Operating Expenses,Cleaning & Maintenance,,84 Madison Ave,,,true,true
-320790347,"July 26, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **9445",-611.8,Operating Expenses,Cleaning & Maintenance,,90 Madison Ave,,,false,true
+320790347,"July 26, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **9445",-611.8,Operating Expenses,Electric,,90 Madison Ave,,,false,true
 320330852,"July 27, 2026",WALMART.COM 8009,"Purchase from WALMART.COM 8009  |  Address: BENTONVILLE, AR, US  |  **0745",-51.05,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Walmart  Intex twin airbed mattress; $51.05; 2026-07-27. Dropbox receipt: 2026-07-27_walmart_USD-51.05_twin-airbed-mattress_Baselane-320330852.pdf,false,true
-320301038,"July 25, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **9445",-112.27,Operating Expenses,Other Operating Expenses,,90 Madison Ave,,,false,true
-320301035,"July 25, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **4305",-167.55,Operating Expenses,Supplies,,86 Madison Ave,,,false,true
+320301038,"July 25, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **9445",-112.27,Operating Expenses,Electric,,90 Madison Ave,,,false,true
+320301035,"July 25, 2026",PERCH/ARCADIA,"Purchase from PERCH/ARCADIA  |  Address: PERCHENERGY.C, MA, US  |  **4305",-167.55,Operating Expenses,Gas & Electric,,86 Madison Ave,,,false,true
 320282878,"July 27, 2026",THE HOME DEPOT #1914,"Purchase from THE HOME DEPOT #1914  |  Address: 800-466-3337, IL, US  |  **3294",-527.15,Operating Expenses,Supplies,,8143 S Sangamon St.,,,false,true
 320275316,"July 27, 2026",THE HOME DEPOT #1914,"Purchase from THE HOME DEPOT #1914  |  Address: 800-466-3337, IL, US  |  **3294",-533.32,Operating Expenses,Supplies,,8143 S Sangamon St.,,,false,true
 319781136,"July 24, 2026","Wire to Veterans Title, LLC | 27 Pillar Ln Palm Coast FL VET270160","Wire to Veterans Title, LLC | 27 Pillar Ln Palm Coast FL VET270160",-43708.77,Property Transactions,Down Payments,,27 Pillar Ln,,Down Payment and Closing Costs,false,true
@@ -3675,7 +3683,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 319351133,"July 24, 2026",Kyle Leese  |  TRANSFER_OUT,Kyle Leese  |  TRANSFER_OUT,-273.86,Loan Payments & Capex,Other Loan Payments,,86 Madison Ave,,Capital Call 9000 6/25/25,false,true
 319347019,"July 24, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  CPVHZJGMJB,382.79,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 319347006,"July 24, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  CPVHZJGMJB,397.91,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
-319344223,"July 24, 2026",Hemlane,Hemlane  |  GX3MRH:REN,1215,Revenue,Rents,,5541 S Peoria St,,,false,true
+319344223,"July 24, 2026",Hemlane,Hemlane  |  GX3MRH:REN,1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 319343105,"July 24, 2026",HEMLANE,HEMLANE  |  4NSBBJ:REN,376,Revenue,Long Term Rents,,724 3rd Ave,,,false,true
 319201400,"July 24, 2026",WWP*ROSE PEST SOLUTIONS,"Purchase from WWP*ROSE PEST SOLUTIONS  |  Address: 800-468-7378, IL, US  |  **8139",-119,Operating Expenses,Cleaning & Maintenance,,7542 & 7656 S Colfax Ave,,,false,true
 319186533,"July 23, 2026",FPL: Speedpay Pa,"FPL: Speedpay Pa, WWW 800-226-3545, Juno Beach, FL, US  |  **3183",-220.62,Operating Expenses,Electric,,122 Florida Park Dr,,,false,true
@@ -3690,7 +3698,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 318659616,"July 23, 2026",AMAZON MKTPL*ND9I585Q3,"Purchase from AMAZON MKTPL*ND9I585Q3  |  Address: Amzn.com/bill, WA, US  |  **2577",-61.55,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 318297134,"July 22, 2026",HEML,HEML  |  98NC32:RAZ,-750,Operating Expenses,Repairs,,1518 Dille Rd,,,false,true
 318290173,"July 22, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **5967",-58.99,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
-318247734,"July 22, 2026",Hemlane,Hemlane  |  GVK8M8:REN,425,Revenue,Rents,,25 Circle Dr,,,false,true
+318247734,"July 22, 2026",Hemlane,Hemlane  |  GVK8M8:REN,425,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 318246443,"July 22, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  NBEBKIDKCV,735.41,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 318236260,"July 23, 2026",AMAZON MKTPL*2V5CG7LZ3,"Purchase from AMAZON MKTPL*2V5CG7LZ3  |  Address: Amzn.com/bill, WA, US  |  **2577",-41.67,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  Disposable shoe covers for 88 Madison Ave; $41.67; 2026-07-23. Dropbox receipt: 2026-07-23_amazon_USD-41.67_disposable-shoe-covers_Baselane-318236260.pdf,false,true
 318227509,"July 23, 2026",SAMSCLUB.COM,"Purchase from SAMSCLUB.COM  |  Address: 888-746-7726, AR, US  |  **2577",-105.09,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -3714,7 +3722,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 317208965,"July 16, 2026",Zelle payment from TIFFANY JOHNSON 30028032643,Zelle payment from TIFFANY JOHNSON 30028032643,500,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 317165632,"July 20, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  BK3D2PZMV5,327.01,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 317162385,"July 20, 2026",NGRID36,NGRID36  |  NGRID36TEL,-733.18,Operating Expenses,Utilities,,90 Madison Ave,,,false,true
-317153435,"July 20, 2026",Hemlane,Hemlane  |  BBNMSX:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
+317153435,"July 20, 2026",Hemlane,Hemlane  |  BBNMSX:REN,827.05,Revenue,Long Term Rents,,566 Nash St,,,false,true
 317138419,"July 20, 2026",AMAZON MKTPL*RZ1J29DP3,"Purchase from AMAZON MKTPL*RZ1J29DP3  |  Address: Amzn.com/bill, WA, US  |  **5487",-34.86,Operating Expenses,Supplies,,84 Madison Ave,,,false,true
 317138418,"July 20, 2026",AMAZON MKTPL*R81AM15J3,"Purchase from AMAZON MKTPL*R81AM15J3  |  Address: Amzn.com/bill, WA, US  |  **0745",-97.63,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  DC power extension cables for 88 Madison Ave; $97.63; 2026-07-20. Dropbox receipt: 2026-07-20_amazon_USD-97.63_dc-power-extension-cables_Baselane-317138418.pdf,false,true
 317138417,"July 20, 2026",AMAZON MKTPL*Z14I63GO3,"Purchase from AMAZON MKTPL*Z14I63GO3  |  Address: Amzn.com/bill, WA, US  |  **0745",-18.13,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  Hotel body wash and hand soap for 88 Madison Ave; $18.13; 2026-07-20. Dropbox receipt: 2026-07-20_amazon_USD-18.13_hotel-body-wash-and-hand-soap_Baselane-317138417.pdf,false,true
@@ -3734,7 +3742,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 315716564,"July 17, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **5967",-126.36,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
 315688034,"July 17, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QOBJGWFHAH,783.83,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 315688028,"July 17, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QOBJGWFHAH,119.75,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-315673877,"July 17, 2026",Hemlane,Hemlane  |  8NR832:REN,1417.5,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+315673877,"July 17, 2026",Hemlane,Hemlane  |  8NR832:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 315663852,"July 17, 2026",MORGAN LINEN SERVICES - 90 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-116.97,Operating Expenses,Cleaning & Maintenance,,90 Madison Ave,,,true,true
 315663851,"July 17, 2026",MORGAN LINEN SERVICES - 88 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-140.36,Operating Expenses,Cleaning & Maintenance,,88 Madison Ave,,,true,true
 315663850,"July 17, 2026",MORGAN LINEN SERVICES - 86 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-116.97,Operating Expenses,Cleaning & Maintenance,,86 Madison Ave,,,true,true
@@ -3773,7 +3781,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 314597470,"July 15, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  MDGQHZPKS7,269.97,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 314597442,"July 15, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  MDGQHZPKS7,193.37,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 314597417,"July 15, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  MDGQHZPKS7,433.78,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
-314596257,"July 15, 2026",Hemlane,Hemlane  |  YQLTRM:REN,285.3,Revenue,Rents,,10724 Gooding Ave,,,false,true
+314596257,"July 15, 2026",Hemlane,Hemlane  |  YQLTRM:REN,285.3,Revenue,Long Term Rents,,10724 Gooding Ave,,,false,true
 314573157,"March 28, 2026",Mortgage Interest Paid by Stone Manor | 9 Country Club Ln N | 2026-03,Mortgage Interest Paid by Stone Manor | 9 Country Club Ln N | 2026-03,2875,Transfers & Other,Owner Contributions/Distributions,,9 Country Club Ln N,,"AOPS-9CC-NOAH-MORTGAGE-ADVANCE|9 Country Club Ln N|2026-03 | Accounting-only owner-payable recognition matching the $2,875 UBS mortgage-interest obligation paid by Stone Manor outside the DAO bank account. Creditor: Stone Manor Hospitality LLC; the corresponding DAO debit is reimbursement, not a second mortgage expense.",true,false
 314573156,"February 28, 2026",Mortgage Interest Paid by Stone Manor | 9 Country Club Ln N | 2026-02,Mortgage Interest Paid by Stone Manor | 9 Country Club Ln N | 2026-02,2875,Transfers & Other,Owner Contributions/Distributions,,9 Country Club Ln N,,"AOPS-9CC-NOAH-MORTGAGE-ADVANCE|9 Country Club Ln N|2026-02 | Accounting-only owner-payable recognition matching the $2,875 UBS mortgage-interest obligation paid by Stone Manor outside the DAO bank account. Creditor: Stone Manor Hospitality LLC; the corresponding DAO debit is reimbursement, not a second mortgage expense.",true,false
 314573155,"January 28, 2026",Mortgage Interest Paid by Stone Manor | 9 Country Club Ln N | 2026-01,Mortgage Interest Paid by Stone Manor | 9 Country Club Ln N | 2026-01,2875,Transfers & Other,Owner Contributions/Distributions,,9 Country Club Ln N,,"AOPS-9CC-NOAH-MORTGAGE-ADVANCE|9 Country Club Ln N|2026-01 | Accounting-only owner-payable recognition matching the $2,875 UBS mortgage-interest obligation paid by Stone Manor outside the DAO bank account. Creditor: Stone Manor Hospitality LLC; the corresponding DAO debit is reimbursement, not a second mortgage expense.",true,false
@@ -4014,7 +4022,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 314495932,"July 14, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",200.39,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
 314087801,"July 14, 2026",Strawberry LFTY402 DAO LLC  |  INTERNAL_TRANSFER,Strawberry LFTY402 DAO LLC  |  INTERNAL_TRANSFER,50,Revenue,Long Term Rents,,86 Madison Ave,,Shed Rent per gov vote 3/25/26,false,true
 314087681,"July 14, 2026",Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER,Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER,-50,Operating Expenses,Leases,,90 Madison Ave,,Shed Rent per gov vote 3/25/26,false,true
-314082801,"July 14, 2026",Hemlane,Hemlane  |  YQLW30:REN,285.3,Revenue,Rents,,10724 Gooding Ave,,,false,true
+314082801,"July 14, 2026",Hemlane,Hemlane  |  YQLW30:REN,285.3,Revenue,Long Term Rents,,10724 Gooding Ave,,,false,true
 314082103,"July 14, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  EQG37O22HT,584.59,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 314081148,"July 14, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  XAAMBKJJYP,238.29,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 314080872,"July 14, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QAW6U5JFDP,568.27,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
@@ -4228,10 +4236,10 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 312088855,"July 10, 2026",Universal Lending DAO (Pine)  |  TRANSFER_O,Universal Lending DAO (Pine)  |  TRANSFER_O,-165.71,Loan Payments & Capex,Other Loan Payments,,428 Cross St.,,ULD Loan Payment 428 Cross St,false,true
 312065049,"July 10, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  R3IFUQN74G,220.54,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 312064883,"July 10, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  R3IFUQN74G,454.65,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
-312060755,"July 10, 2026",Hemlane,Hemlane  |  M24VXX:REN,940.5,Revenue,Rents,,1321 Allendale Ave,,,false,true
-312056889,"July 10, 2026",Hemlane,Hemlane  |  5PDXP3:REN,1035,Revenue,Rents,,1432 Sara Ave.,,,false,true
+312060755,"July 10, 2026",Hemlane,Hemlane  |  M24VXX:REN,940.5,Revenue,Long Term Rents,,1321 Allendale Ave,,,false,true
+312056889,"July 10, 2026",Hemlane,Hemlane  |  5PDXP3:REN,1035,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
 312054697,"July 10, 2026",NGRID36,NGRID36  |  NGRID36WEB |  2651274236,-473.47,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
-312054006,"July 10, 2026",HEMLANE,HEMLANE  |  X637G7:REN,855,Revenue,Rents,,1278 E 187th St,,,false,true
+312054006,"July 10, 2026",HEMLANE,HEMLANE  |  X637G7:REN,855,Revenue,Long Term Rents,,1278 E 187th St,,,false,true
 312053870,"July 10, 2026",HEMLANE,HEMLANE  |  5PD7JW:REP,22.5,Operating Expenses,Repairs,,1432 Sara Ave.,,,false,true
 312046350,"July 10, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  T5NJDIZ67J,568.86,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 312043906,"July 10, 2026",MORGAN LINEN SERVICES - 90 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-117.46,Operating Expenses,Cleaning & Maintenance,,90 Madison Ave,,,true,true
@@ -4250,23 +4258,23 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 311512872,"July 09, 2026",Lofty Holding 566 Nash Street DAO LLC  |  TRANSFER_O,Lofty Holding 566 Nash Street DAO LLC  |  TRANSFER_O,-242.7,Transfers & Other,Transfers Between Accounts,,566 Nash St,,OR Balance Repayment,false,true
 311507050,"July 09, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  5IQDEE5FQY,210.24,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 311507040,"July 09, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  5IQDEE5FQY,4197.96,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
-311501678,"July 09, 2026",Hemlane,Hemlane  |  HKWJT0:REN,1435.5,Revenue,Rents,,8708 Willard Ave,,,false,true
+311501678,"July 09, 2026",Hemlane,Hemlane  |  HKWJT0:REN,1435.5,Revenue,Long Term Rents,,8708 Willard Ave,,,false,true
 311471042,"July 10, 2026",AMAZON MKTPL*8P3V79KM3,"Purchase from AMAZON MKTPL*8P3V79KM3  |  Address: Amzn.com/bill, WA, US  |  **2339",-59.39,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
 311346112,"July 10, 2026",WALMART.COM 8009,"Purchase from WALMART.COM 8009  |  Address: BENTONVILLE, AR, US  |  **2339",-175.88,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
 311345850,"July 09, 2026",THE HOME DEPOT #1263,"Purchase from THE HOME DEPOT #1263  |  Address: 800-466-3337, NY, US  |  **2339",-19.36,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
 311281818,"July 08, 2026",Clark 1176 22160 Umland Circle,Clark 1176 22160 Umland Circle,-126.22,Operating Expenses,Supplies,,22164 Umland Circle,,,false,true
 311040650,"July 09, 2026",Amazon.com*9M01648C3,"Purchase from Amazon.com*9M01648C3  |  Address: Amzn.com/bill, WA, US  |  **2577",-43.49,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  Wide-mouth jars for 88 Madison Ave; $43.49; 2026-07-09. Dropbox receipt: 2026-07-09_amazon_USD-43.49_wide-mouth-jars_Baselane-311040650.pdf,false,true
 310952546,"July 08, 2026",Hemlane,Hemlane  |  53D7VN:REP,40,Revenue,Rents,,326 South Alcott Street,,,false,true
-310952545,"July 08, 2026",Hemlane,Hemlane  |  CRGD2T:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-310952414,"July 08, 2026",Hemlane,Hemlane  |  2CPTJ8:REN,1359,Revenue,Rents,,8143 S Sangamon St.,,,false,true
-310951248,"July 08, 2026",Hemlane,Hemlane  |  53DZ92:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-310939455,"July 08, 2026",Hemlane,Hemlane  |  798VBT:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
-310938454,"July 08, 2026",Hemlane,Hemlane  |  2KKPJ5:REN,420.75,Revenue,Rents,,428 Cross St.,,,false,true
-310933101,"July 08, 2026",HEMLANE,HEMLANE  |  KYNFNB:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
+310952545,"July 08, 2026",Hemlane,Hemlane  |  CRGD2T:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
+310952414,"July 08, 2026",Hemlane,Hemlane  |  2CPTJ8:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
+310951248,"July 08, 2026",Hemlane,Hemlane  |  53DZ92:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
+310939455,"July 08, 2026",Hemlane,Hemlane  |  798VBT:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+310938454,"July 08, 2026",Hemlane,Hemlane  |  2KKPJ5:REN,420.75,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+310933101,"July 08, 2026",HEMLANE,HEMLANE  |  KYNFNB:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 310892650,"July 09, 2026",AMAZON MKTPL*8M39B0043,"Purchase from AMAZON MKTPL*8M39B0043  |  Address: Amzn.com/bill, WA, US  |  **0745",-72.33,Operating Expenses,Supplies,,88 Madison Ave,,Receipt evidence: Amazon  Face moisturizer for 88 Madison Ave; $72.33; 2026-07-09. Dropbox receipt: 2026-07-09_amazon_USD-72.33_face-moisturizer_Baselane-310892650.pdf,false,true
 310863267,"July 08, 2026",CASH APP*AYESHA MITCHEL,"CASH APP*AYESHA MITCHEL, Oakland, CA, US  |  **5235",-50,Operating Expenses,Other Operating Expenses,,665 Chapman St,,,false,true
 310433237,"July 07, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **5967",-115.14,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
-310408468,"July 07, 2026",Hemlane,Hemlane  |  2KK01Q:REN,297.5,Revenue,Rents,,428 Cross St.,,,false,true
+310408468,"July 07, 2026",Hemlane,Hemlane  |  2KK01Q:REN,297.5,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 310395489,"July 07, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  OJ5WVD2TWF,582.16,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 310395443,"July 07, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  OJ5WVD2TWF,2620.36,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
 310394269,"July 07, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  VGHQ4MM6K6,178.19,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
@@ -4274,8 +4282,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 310390002,"July 07, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  H2XQMSX3ZL,316.44,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
 310389996,"July 07, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  H2XQMSX3ZL,351.52,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 310378966,"July 07, 2026","PadSplit, Inc.","PadSplit, Inc.  |  PadSplit,",3850.66,Revenue,Rents,,85-104 Alawa Pl,,,false,true
-310374708,"July 07, 2026",Hemlane,Hemlane  |  GVKTXV:REN,765,Revenue,Rents,,25 Circle Dr,,,false,true
-310374683,"July 07, 2026",Hemlane,Hemlane  |  YQLGKS:REN,213.3,Revenue,Rents,,10724 Gooding Ave,,,false,true
+310374708,"July 07, 2026",Hemlane,Hemlane  |  GVKTXV:REN,765,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
+310374683,"July 07, 2026",Hemlane,Hemlane  |  YQLGKS:REN,213.3,Revenue,Long Term Rents,,10724 Gooding Ave,,,false,true
 310370529,"July 07, 2026",NGRID36,NGRID36  |  NGRID36WEB |  5651273116,-487,Operating Expenses,Utilities,,90 Madison Ave,,,false,true
 310365814,"July 07, 2026",CON ED OF NY,CON ED OF NY  |  CECONY,-383.28,Operating Expenses,Electric,,9 Country Club Ln N,,,false,true
 310365722,"July 07, 2026",ComEd,ComEd  |  PAYMENTS,0,Operating Expenses,Utilities,,7542 & 7656 S Colfax Ave,,,false,true
@@ -4339,8 +4347,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 308362061,"July 03, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **1327",-55.37,Operating Expenses,Gardening & Landscaping,,428 Cross St.,,,false,true
 308321637,"July 03, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  63H7ICT6VN,156.76,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 308313433,"July 03, 2026",Jacob Gott  |  TRANSFER_OUT,Jacob Gott  |  TRANSFER_OUT,-165.44,Loan Payments & Capex,Other Loan Payments,,724 3rd Ave,,Rehab Loan Payment,false,true
-308312715,"July 03, 2026",Hemlane,Hemlane  |  GX32TS:REN,1215,Revenue,Rents,,5541 S Peoria St,,,false,true
-308281303,"July 03, 2026",Hemlane,Hemlane  |  GVKMPB:REN,22.95,Revenue,Rents,,25 Circle Dr,,,false,true
+308312715,"July 03, 2026",Hemlane,Hemlane  |  GX32TS:REN,1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+308281303,"July 03, 2026",Hemlane,Hemlane  |  GVKMPB:REN,22.95,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 308279644,"July 03, 2026",EDI DISB-AFTS,EDI DISB-AFTS  |  Web Pay,323.9,Property Transactions,Mortgage Disbursements Received,,1258 Lily St,,,false,true
 308235307,"July 03, 2026",CASH APP*AUSTIN TINKHAM,"CASH APP*AUSTIN TINKHAM, Oakland, CA, US  |  **5487",-76.5,Operating Expenses,Repairs Supplies,,122 Florida Park Dr,,Source audit 2026-07-14: Cash App receipt memo identifies 122 Florida Park materials.,false,true
 308235282,"July 03, 2026",CASH APP*AUSTIN TINKHAM,"CASH APP*AUSTIN TINKHAM, Oakland, CA, US  |  **5487",-65,Operating Expenses,Repairs Supplies,,122 Florida Park Dr,,Source audit 2026-07-14: Cash App receipt memo identifies 122 Florida Park materials.,false,true
@@ -4543,7 +4551,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 308110068,"January 16, 2024","Lofty AI, Inc.","Lofty AI, Inc.",5214.38,Transfers & Other,Transfers Between Accounts,,1456 W 85th St.,,"Aligned clearing detail import | PM clearing funding | pre_yhome_transition | source=Owner Statement - 2024 - 1456 W 85th St, Cleveland, OH 44102.pdf line=19 | accounting/manual detail only, no ECO bank transfer | key=aligned-1456-w-85th-st-cleveland-oh-4410-4fd09a1c18d48fd8 | batch=aligned-baselane-import-1456w85-20260702T140555Z | reversible_manifest=aligned-baselane-import-1456w85-20260702T140555Z",true,false
 307776180,"July 02, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  LSDWFGTWKH,105.62,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 307742036,"July 02, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **1327",-58.99,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
-307730899,"July 02, 2026",Hemlane,Hemlane  |  98NBB8:REN,743.36,Revenue,Rents,,1518 Dille Rd,,,false,true
+307730899,"July 02, 2026",Hemlane,Hemlane  |  98NBB8:REN,743.36,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 307705531,"July 02, 2026",BASELANE,BASELANE  |  RENT#1684602,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
 307693174,"July 02, 2026",ComEd,ComEd  |  PAYMENTS,-23.15,Operating Expenses,Utilities,,5541 S Peoria St,,,false,true
 307645803,"July 02, 2026",Dover Holdings LLC  |  TRANSFER_O,Dover Holdings LLC  |  TRANSFER_O,-850,Operating Expenses,C & M Labor,,22164 Umland Circle,,Reimbursement for Yasbeth Salinas,false,true
@@ -4559,7 +4567,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 307158469,"July 01, 2026",Interest June 2026,Interest June 2026,245.58,Transfers & Other,Baselane Banking Interest,,7542 & 7656 S Colfax Ave,,,false,true
 307158467,"July 01, 2026",Interest June 2026,Interest June 2026,45.99,Transfers & Other,Baselane Banking Interest,,9 Country Club Ln N,,,false,true
 307152464,"July 01, 2026",Interest June 2026,Interest June 2026,2.26,Transfers & Other,Baselane Banking Interest,,724 3rd Ave,,,false,true
-307148698,"July 01, 2026",Interest June 2026,Interest June 2026,4.04,Transfers & Other,Baselane Banking Interest,,566 Nash St,,,false,true
 307145427,"July 01, 2026",Interest June 2026,Interest June 2026,0.05,Transfers & Other,Baselane Banking Interest,,9902 Garfield Ave,,,false,true
 307137173,"July 01, 2026","EARLDAO -> Ohio 3 | post-maturity plumbing draw | $1,000",Lofty Holding 1518 Dille Road DAO LLC  |  INTERNAL_TRANSFER,-1000,Transfers & Other,Transfers Between Accounts,,1518 Dille Rd,,"OHIO3-EARLDAO|cash-subledger|307137173 | EARLDAO -> Ohio 3 | post-maturity plumbing draw | $1,000. Actual internal cash transfer; category remains Transfers Between Accounts. Included in Ohio 3/EARLDAO principal or interest subledger as labeled.",false,true
 307137169,"July 01, 2026","EARLDAO -> Ohio 3 | post-maturity plumbing draw | $1,000",Ecosystems Asset Recovery Lending DAO LLC  |  INTERNAL_TRANSFER,1000,Transfers & Other,Transfers Between Accounts,,1518 Dille Rd,,"OHIO3-EARLDAO|cash-subledger|307137169 | EARLDAO -> Ohio 3 | post-maturity plumbing draw | $1,000. Actual internal cash transfer; category remains Transfers Between Accounts. Included in Ohio 3/EARLDAO principal or interest subledger as labeled.",false,true
@@ -4847,7 +4854,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 300118677,"June 17, 2026",Stone Manor Hospitality LLC  |  TRANSFER_O,Stone Manor Hospitality LLC  |  TRANSFER_O,-1200,Operating Expenses,Gardening & Landscaping,,9 Country Club Ln N,,Tree removal and cleanup services,false,true
 300117970,"June 17, 2026",Nailed It Home Services Inc.  |  TRANSFER_OUT,Nailed It Home Services Inc.  |  TRANSFER_OUT,-423.58,Operating Expenses,Repairs,,9 Country Club Ln N,,Fences disposal blinds trash and curtains,false,true
 300107382,"June 17, 2026",Nailed It Home Services Inc.  |  TRANSFER_OUT,Nailed It Home Services Inc.  |  TRANSFER_OUT,-491.7,Operating Expenses,Repairs,,9 Country Club Ln N,,2026-06-14 invoice blinds leak disposal fence repairs 300 and materials 191.70,false,true
-300098161,"June 18, 2026",STRAIGHTTALK*AIRTIME,"Purchase from STRAIGHTTALK*AIRTIME  |  Address: 877-430-2355, FL, US  |  **0745",-45,Operating Expenses,"Phone, Cable & Internet",,88 Madison Ave,,*SPLIT* 25% per Madison,false,true
 300091157,"June 17, 2026",Walmart.com,"Return from Walmart.com  |  Address: Bentonville, AR, US  |  **0745",6.46,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 300079491,"June 18, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **0745",-100.34,Operating Expenses,Supplies,,88 Madison Ave,,*SPLIT* 25% per Madison,false,true
 300078219,"June 18, 2026",Amazon.com*YV1VS6LP3,"Purchase from Amazon.com*YV1VS6LP3  |  Address: Amzn.com/bill, WA, US  |  **0745",-237.58,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -4896,7 +4902,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 298666597,"June 15, 2026",Daniel Murrey  |  TRANSFER_OUT,Daniel Murrey  |  TRANSFER_OUT,-632.11,Loan Payments & Capex,Other Loan Payments,,85-104 Alawa Pl,,7000 Loan Payment for Furnishings,false,true
 298665626,"June 15, 2026",Aligned Properti,Aligned Properti  |  SIGONFILE,1543.77,Transfers & Other,Transfers Between Accounts,,1456 W 85th St.,,Aligned PM cash settlement; neutral transfer after detail import | batch=aligned-baselane-import-1456w85-20260702T140555Z,false,true
 298655634,"June 15, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  3S7RBK5JZK,255.19,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-298640945,"June 15, 2026",Hemlane,Hemlane  |  8NR7HQ:REN,1417.5,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+298640945,"June 15, 2026",Hemlane,Hemlane  |  8NR7HQ:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 298144994,"June 15, 2026",THE HOME DEPOT #1914,"Purchase from THE HOME DEPOT #1914  |  Address: 800-466-3337, IL, US  |  **0906",-692.49,Loan Payments & Capex,Remodeling,,7542 & 7656 S Colfax Ave,,,false,true
 297747839,"June 13, 2026",THE HOME DEPOT #8598,"Purchase from THE HOME DEPOT #8598  |  Address: 800-466-3337, IL, US  |  **0906",-3661.2,Loan Payments & Capex,Capital Expenditures,,7542 & 7656 S Colfax Ave,,,false,true
 297626849,"June 13, 2026",THE HOME DEPOT #8598,"Purchase from THE HOME DEPOT #8598  |  Address: 800-466-3337, IL, US  |  **0906",-208.1,Operating Expenses,Supplies,,7542 & 7656 S Colfax Ave,,,false,true
@@ -4920,7 +4926,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 296761293,"June 11, 2026",Universal Lending DAO (Pine)  |  TRANSFER_O,Universal Lending DAO (Pine)  |  TRANSFER_O,-165.71,Loan Payments & Capex,Other Loan Payments,,428 Cross St.,,ULD Loan Payment 428 Cross St,false,true
 296754776,"June 11, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  YYBRA7STVL,43.69,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
 296754765,"June 11, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  YYBRA7STVL,416.92,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-296749450,"June 11, 2026",Hemlane,Hemlane  |  GKGMZS:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
+296749450,"June 11, 2026",Hemlane,Hemlane  |  GKGMZS:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 296747746,"June 11, 2026",XCEL ENERGY-PSCO,XCEL ENERGY-PSCO  |  XCELENERGY |  00031723269,-103.82,Operating Expenses,Gas & Electric,,326 South Alcott Street,,,false,true
 296743540,"June 11, 2026",VRBO,VRBO  |  PAYMENT,125.22,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 296707235,"June 10, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",5000,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,COLFAX-INTERACCOUNT-RECON|eco-reserve-to-colfax-2026-06-10|5000.00 | ECO reserve cash moved to Colfax operations | Classification only; no cash movement.,false,true
@@ -4940,12 +4946,12 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 296257769,"June 10, 2026",UBS BANK USA,UBS BANK USA  |  1 TIME DFT |  0162213789,-2875,Loan Payments & Capex,Mortgage Interest Payments,,9 Country Club Ln N,,,false,true
 296257768,"June 10, 2026",UBS BANK USA,UBS BANK USA  |  LOAN PAYMT |  0162213789,0,Loan Payments & Capex,Mortgage Interest Payments,,9 Country Club Ln N,,,false,true
 296250046,"June 10, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  VOPWETQNWZ,124.21,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-296247783,"June 10, 2026",Hemlane,Hemlane  |  GKGWG1:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
-296247730,"June 10, 2026",Hemlane,Hemlane  |  GKGCT4:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
-296247107,"June 10, 2026",Hemlane,Hemlane  |  X63ZF6:REN,855,Revenue,Rents,,1278 E 187th St,,,false,true
-296244534,"June 10, 2026",Hemlane,Hemlane  |  GVK350:REN,827.05,Revenue,Rents,,25 Circle Dr,,,false,true
-296241762,"June 10, 2026",HEMLANE,HEMLANE  |  GKG9F8:REN,139.5,Revenue,Rents,,5541 S Peoria St,,,false,true
-296241441,"June 10, 2026",HEMLANE,HEMLANE  |  2CPT6N:REN,1359,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+296247783,"June 10, 2026",Hemlane,Hemlane  |  GKGWG1:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+296247730,"June 10, 2026",Hemlane,Hemlane  |  GKGCT4:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+296247107,"June 10, 2026",Hemlane,Hemlane  |  X63ZF6:REN,855,Revenue,Long Term Rents,,1278 E 187th St,,,false,true
+296244534,"June 10, 2026",Hemlane,Hemlane  |  GVK350:REN,827.05,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
+296241762,"June 10, 2026",HEMLANE,HEMLANE  |  GKG9F8:REN,139.5,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+296241441,"June 10, 2026",HEMLANE,HEMLANE  |  2CPT6N:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 296240290,"June 10, 2026",NGRID36,NGRID36  |  NGRID36WEB |  2319120111,-351.83,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
 296240267,"June 10, 2026",NGRID36,NGRID36  |  NGRID36WEB |  2651274236,-485.6,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
 296220509,"June 16, 2026",WF *WAYFAIR46351,"Purchase from WF *WAYFAIR46351  |  Address: Boston, MA, US  |  **0745",-518.39,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -4974,10 +4980,10 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 295283959,"June 08, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  6DMRY5AVVY,159.92,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 295252422,"June 08, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **4225",-58.99,Operating Expenses,Gardening & Landscaping,,8143 S Sangamon St.,,,false,true
 295208455,"June 08, 2026",Hemlane,Hemlane  |  53DLKZ:REP,40,Revenue,Rents,,326 South Alcott Street,,,false,true
-295207337,"June 08, 2026",Hemlane,Hemlane  |  BBNNG1:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
-295207310,"June 08, 2026",Hemlane,Hemlane  |  2KKYSS:REN,425,Revenue,Rents,,428 Cross St.,,,false,true
-295203176,"June 08, 2026",Hemlane,Hemlane  |  53DV3L:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-295203175,"June 08, 2026",Hemlane,Hemlane  |  CRGSB4:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
+295207337,"June 08, 2026",Hemlane,Hemlane  |  BBNNG1:REN,827.05,Revenue,Long Term Rents,,566 Nash St,,,false,true
+295207310,"June 08, 2026",Hemlane,Hemlane  |  2KKYSS:REN,425,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+295203176,"June 08, 2026",Hemlane,Hemlane  |  53DV3L:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
+295203175,"June 08, 2026",Hemlane,Hemlane  |  CRGSB4:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
 295134646,"June 08, 2026",Amazon.com*J64GD51R3,"Purchase from Amazon.com*J64GD51R3  |  Address: Amzn.com/bill, WA, US  |  **2577",-6.12,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 295121314,"June 07, 2026",Spectrum,"Purchase from Spectrum  |  Address: 855-707-7328, MO, US  |  **1328",-70,Operating Expenses,"Phone, Cable & Internet",,122 Florida Park Dr,,,false,true
 294701346,"June 08, 2026",REMOTE ONLINE DEPOSIT # 1,REMOTE ONLINE DEPOSIT # 1,1000,Revenue,Long Term Rents,,917 Pawnee Ave,,,false,true
@@ -4988,8 +4994,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 294196112,"June 06, 2026",CHOICE HOME WARRANTY,"Purchase from CHOICE HOME WARRANTY  |  Address: 888-5315403, NJ, US  |  **0745",-65,Operating Expenses,Appliance Repairs,,88 Madison Ave,,Washer Service Call,false,true
 294153747,"June 05, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  636NUYXFHH,506.75,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 294153741,"June 05, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  636NUYXFHH,454.15,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-294108740,"June 05, 2026",Hemlane,Hemlane  |  HKWRN0:REN,1435.5,Revenue,Rents,,8708 Willard Ave,,,false,true
-294088233,"June 05, 2026",HEMLANE,HEMLANE  |  YXTM9N:REN,765,Revenue,Rents,,25 Circle Dr,,,false,true
+294108740,"June 05, 2026",Hemlane,Hemlane  |  HKWRN0:REN,1435.5,Revenue,Long Term Rents,,8708 Willard Ave,,,false,true
+294088233,"June 05, 2026",HEMLANE,HEMLANE  |  YXTM9N:REN,765,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 293991616,"June 06, 2026",AMAZON MKTPL*AB9UW78V3,"Purchase from AMAZON MKTPL*AB9UW78V3  |  Address: Amzn.com/bill, WA, US  |  **2123",-69.05,Operating Expenses,Supplies,,85-104 Alawa Pl,,,false,true
 293795079,"June 05, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **4225",-126.36,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
 293740397,"June 06, 2026",Amazon.com*WP4UY1273,"Purchase from Amazon.com*WP4UY1273  |  Address: Amzn.com/bill, WA, US  |  **2577",-8.4,Operating Expenses,Supplies,,88 Madison Ave,,"Receipt evidence: Amazon  Amazon Basics Fresh Breath Mouthwash, Blue Mint, 1.5 L; $8.40; 2026-06-06. Dropbox receipt: 2026-06-06_amazon_USD-8.40_fresh-breath-mouthwash_Baselane-293740397.pdf",false,true
@@ -4999,12 +5005,12 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 293564146,"June 04, 2026",HEML,HEML  |  PURCHASE G,-135,Operating Expenses,Supplies,,5541 S Peoria St,,,false,true
 293548939,"June 04, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  JK2SL27NJZ,130.74,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 293539770,"June 04, 2026",Baselane,Baselane  |  Rent#1574539,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-293537429,"June 04, 2026",Hemlane,Hemlane  |  5PDBSY:REN,1035,Revenue,Rents,,1432 Sara Ave.,,,false,true
-293535933,"June 04, 2026",Hemlane,Hemlane  |  KYN2S4:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
+293537429,"June 04, 2026",Hemlane,Hemlane  |  5PDBSY:REN,1035,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
+293535933,"June 04, 2026",Hemlane,Hemlane  |  KYN2S4:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 293532621,"June 04, 2026","PadSplit, Inc.","PadSplit, Inc.  |  PadSplit,",2000.73,Revenue,Rents,,85-104 Alawa Pl,,,false,true
 293523443,"June 04, 2026",Hemlane,Hemlane  |  5PDS60:REP,22.5,Operating Expenses,Cleaning & Maintenance,,1432 Sara Ave.,,,false,true
-293520604,"June 04, 2026",Hemlane,Hemlane  |  2KKWVM:REN,293.25,Revenue,Rents,,428 Cross St.,,,false,true
-293495807,"June 04, 2026",HEMLANE,HEMLANE  |  M2470D:REN,940.5,Revenue,Rents,,1321 Allendale Ave,,,false,true
+293520604,"June 04, 2026",Hemlane,Hemlane  |  2KKWVM:REN,293.25,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+293495807,"June 04, 2026",HEMLANE,HEMLANE  |  M2470D:REN,940.5,Revenue,Long Term Rents,,1321 Allendale Ave,,,false,true
 293478775,"June 04, 2026",NGRID36,NGRID36  |  NGRID36WEB |  5651273116,-487,Operating Expenses,Utilities,,90 Madison Ave,,,false,true
 293246154,"June 04, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **4225",-58.99,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
 293217517,"June 04, 2026",Jacob Gott  |  TRANSFER_OUT,Jacob Gott  |  TRANSFER_OUT,-165.44,Loan Payments & Capex,Other Loan Payments,,724 3rd Ave,,Rehab Loan Payment,false,true
@@ -5023,11 +5029,11 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 293034190,"June 03, 2026",CMHA,CMHA  |  PAYMENTS,590,Revenue,Long Term Rents,,10724 Gooding Ave,,,false,true
 293029896,"June 03, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  IXRB4PVZFI,554.9,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 293029894,"June 03, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  IXRB4PVZFI,493.85,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
-293024998,"June 03, 2026",Hemlane,Hemlane  |  798V5J:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
-292998061,"June 03, 2026",Hemlane,Hemlane  |  KYNBSJ:REN,360.4,Revenue,Rents,,428 Cross St.,,,false,true
+293024998,"June 03, 2026",Hemlane,Hemlane  |  798V5J:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+292998061,"June 03, 2026",Hemlane,Hemlane  |  KYNBSJ:REN,360.4,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 292988619,"June 03, 2026",Hemlane,Hemlane  |  174154:REN,997.5,Revenue,Long Term Rents,,724 3rd Ave,,,false,true
 292975843,"June 03, 2026",BASELANE,BASELANE  |  RENT#1575417,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-292971364,"June 03, 2026",HEMLANE,HEMLANE  |  GX3R1W:REN,1215,Revenue,Rents,,5541 S Peoria St,,,false,true
+292971364,"June 03, 2026",HEMLANE,HEMLANE  |  GX3R1W:REN,1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 292955877,"June 03, 2026",Corp E Corp,Corp E Corp  |  E-CHECK,-300,Operating Expenses,Other Operating Expenses,,7542 & 7656 S Colfax Ave,,,false,true
 292651008,"December 31, 2025",Dec 2025 PM Fee Accrual,Dec 2025 PM Fee Accrual,-417.72,Operating Expenses,Property Management,,22164 Umland Circle,,Dec 2025 PM Fee Accrual on 2784.80 gross revenue payouts,true,false
 292650513,"June 03, 2026",EDI DISB-AFTS,EDI DISB-AFTS  |  Web Pay,323.9,Property Transactions,Mortgage Disbursements Received,,1258 Lily St,,,false,true
@@ -5082,8 +5088,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 291169898,"June 01, 2026",HEMLANE,HEMLANE  |  HKWXS2:UTW,334.57,Operating Expenses,Water & Sewer,,8708 Willard Ave,,,false,true
 291164888,"June 01, 2026",Lofty Holding 254 Bowmanville Street DAO LLC  |  TRANSFER_O,Lofty Holding 254 Bowmanville Street DAO LLC  |  TRANSFER_O,-342,Loan Payments & Capex,Other Loan Interest Payments,,EARLDAO,,34200 Loan Interest Payment,false,true
 291164733,"June 01, 2026",Universal Lending DAO (Pine)  |  TRANSFER_O,Universal Lending DAO (Pine)  |  TRANSFER_O,-118,Loan Payments & Capex,Other Loan Payments,,8143 S Sangamon St.,,ULD Loan Payment 8143 S Sangamon St,false,true
-291159150,"June 01, 2026",Hemlane,Hemlane  |  KYNB1Q:REN,361.25,Revenue,Rents,,428 Cross St.,,,false,true
-291159118,"June 01, 2026",Hemlane,Hemlane  |  98N99N:REN,743.36,Revenue,Rents,,1518 Dille Rd,,,false,true
+291159150,"June 01, 2026",Hemlane,Hemlane  |  KYNB1Q:REN,361.25,Revenue,Long Term Rents,,428 Cross St.,,,false,true
+291159118,"June 01, 2026",Hemlane,Hemlane  |  98N99N:REN,743.36,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 291104721,"June 02, 2026",OSC - RISK SECURE,"Purchase from OSC - RISK SECURE  |  Address: KENNESAW, GA, US  |  **3140",-368.11,Operating Expenses,Rental Dwelling,,7542 & 7656 S Colfax Ave,,,false,true
 291088259,"June 02, 2026",OSC - RISK SECURE,"Purchase from OSC - RISK SECURE  |  Address: KENNESAW, GA, US  |  **3140",-292.87,Operating Expenses,Rental Dwelling,,7542 & 7656 S Colfax Ave,,,false,true
 291088121,"June 02, 2026",OSC - RISK SECURE,"Purchase from OSC - RISK SECURE  |  Address: KENNESAW, GA, US  |  **8174",-181.04,Operating Expenses,Rental Dwelling,,428 Cross St.,,,false,true
@@ -5110,7 +5116,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 289582825,"May 28, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  K2QHTJFCZP,552.05,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 289582819,"May 28, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  K2QHTJFCZP,574.5,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 289582814,"May 28, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  K2QHTJFCZP,337.45,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
-289575243,"May 28, 2026",Hemlane,Hemlane  |  YXT0F1:REN,630,Revenue,Rents,,49 Bannbury Ln,,,false,true
+289575243,"May 28, 2026",Hemlane,Hemlane  |  YXT0F1:REN,630,Revenue,Long Term Rents,,49 Bannbury Ln,,,false,true
 289568918,"May 28, 2026",FPL DIRECT DEBIT,FPL DIRECT DEBIT  |  ELEC PYMT,-107.93,Operating Expenses,Utilities,,27 Pillar Ln,,,false,true
 289250223,"May 28, 2026",SPI*DENVER WATER,"Purchase from SPI*DENVER WATER  |  Address: 303-893-2444, CO, US  |  **5236",-84.59,Operating Expenses,Utilities,,804 S Quitman St,,,false,true
 289214355,"May 29, 2026",FRONTIER COMM CORP WEB,"Purchase from FRONTIER COMM CORP WEB  |  Address: 800-921-8101, CT, US  |  **7248",-103.99,Operating Expenses,"Phone, Cable & Internet",,22164 Umland Circle,,,false,true
@@ -5150,7 +5156,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 288504840,"May 26, 2026",Hemlane,Hemlane  |  98NK0F:RAZ,-425,Operating Expenses,Repairs,,1518 Dille Rd,,,false,true
 288504838,"May 26, 2026",Hemlane,Returned received ACH transaction #420956272 due to: Account has insufficient funds,425,Revenue,Rents,,1518 Dille Rd,,,false,true
 288492251,"May 26, 2026",QUANTUM FIBER,QUANTUM FIBER  |  QUANTUM FI,-50,Operating Expenses,Utilities,,804 S Quitman St,,,false,true
-288222293,"May 26, 2026",HEMLANE,HEMLANE  |  GVKCWJ:REN,787.95,Revenue,Rents,,25 Circle Dr,,,false,true
+288222293,"May 26, 2026",HEMLANE,HEMLANE  |  GVKCWJ:REN,787.95,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 288222079,"May 26, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,1342.94,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
 288219965,"May 26, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,762.34,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
 288146288,"May 25, 2026",LOWE'S #1784,"Purchase from LOWE'S #1784  |  Address: GLENMONT, NY, US  |  **1599",-49.64,Operating Expenses,Supplies,,724 3rd Ave,,,false,true
@@ -5551,6 +5557,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 283682049,"May 16, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **4225",-125.96,Operating Expenses,Gardening & Landscaping,,918 Frederick Blvd,,,false,true
 283636364,"May 16, 2026",Lofty Holding 566 Nash Street DAO LLC  |  TRANSFER_O,Lofty Holding 566 Nash Street DAO LLC  |  TRANSFER_O,-1752.93,Transfers & Other,Transfers Between Accounts,,566 Nash St,,OR Balance Repayment,false,true
 283636215,"May 16, 2026",Universal Lending DAO (Pine)  |  TRANSFER_O,Universal Lending DAO (Pine)  |  TRANSFER_O,-1752.93,Loan Payments & Capex,Other Loan Payments,,566 Nash St,,ULD Loan Payment,false,true
+283635814,"May 16, 2026",Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER,1890,Transfers & Other,Transfers Between Accounts,,566 Nash St,,,false,true
+283634238,"May 16, 2026",Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 566 Nash Street DAO LLC  |  INTERNAL_TRANSFER,-1007.23,Transfers & Other,Transfers Between Accounts,,566 Nash St,,,false,true
 283603666,"May 15, 2026",Harbor Freight T,"Purchase from Harbor Freight T  |  Address: Schenectady, NY, US  |  **4243",-48.59,Operating Expenses,Supplies,,84 Madison Ave,,,false,true
 283549915,"February 28, 2026",Mortgage Interest Accrual | 9 Country Club Ln N | February 2026,Mortgage Interest Accrual | 9 Country Club Ln N | February 2026,-2875,Loan Payments & Capex,Mortgage Interest Payments,,9 Country Club Ln N,,"AOPS-PNL-ACCRUAL|mortgage_interest|9 Country Club Ln N|2026-02|2875.00 | Baselane accrual entry per Earl 2026-05-15. Launch-date aware: no accruals before 2025-06-01. Accounting/manual accrual only, no bank transfer.",true,false
 283549904,"May 28, 2026",Legal Fee Accrual | 9 Country Club Ln N | May 2026,Legal Fee Accrual | 9 Country Club Ln N | May 2026,-62.5,Operating Expenses,Legal Fees,,9 Country Club Ln N,,"AOPS-PNL-ACCRUAL|legal|9 Country Club Ln N|2026-05|62.50 | Baselane accrual entry per Earl 2026-05-15. Launch-date aware: no accruals before 2025-06-01. Accounting/manual accrual only, no bank transfer.",true,false
@@ -5586,7 +5594,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 283531694,"May 16, 2026",EPCON LANE,"Purchase from EPCON LANE  |  Address: 330-724-2473, OH, US  |  **9486",-52.31,Operating Expenses,Pest,,1432 Sara Ave.,,,false,true
 283522936,"May 15, 2026",Aligned Properti,Aligned Properti  |  SIGONFILE,2419.74,Transfers & Other,Transfers Between Accounts,,1456 W 85th St.,,Aligned PM cash settlement; neutral transfer after detail import | batch=aligned-baselane-import-1456w85-20260702T140555Z,false,true
 283513033,"May 15, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  TNLU4CO72P,316.5,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
-283489378,"May 15, 2026",HEMLANE,HEMLANE  |  2KKWWH:REN,203.15,Revenue,Rents,,428 Cross St.,,,false,true
+283489378,"May 15, 2026",HEMLANE,HEMLANE  |  2KKWWH:REN,203.15,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 283323534,"May 16, 2026",ALBANY WATER BOARD,"Purchase from ALBANY WATER BOARD  |  Address: 518-434-5300, NY, US  |  **1863",-269.84,Operating Expenses,Utilities,,86 Madison Ave,,,false,true
 283314221,"May 16, 2026",ALBANY WATER BOARD,"Purchase from ALBANY WATER BOARD  |  Address: 518-434-5300, NY, US  |  **9098",-452.38,Operating Expenses,Utilities,,88 Madison Ave,,,false,true
 283148800,"February 28, 2026",Legal Fee Accrual | 724 3rd Ave | February 2026,Legal Fee Accrual | 724 3rd Ave | February 2026,-62.5,Operating Expenses,Legal Fees,,724 3rd Ave,,AOPS-PNL-ACCRUAL|legal|724 3rd Ave|2026-02|62.50 | Backfill July 2025-May 2026. Standard monthly legal/professional fee accrual.,true,false
@@ -5752,7 +5760,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 283013291,"May 14, 2026",Hemlane,Hemlane  |  98N1NL:RAZ,-155,Operating Expenses,Repairs,,1518 Dille Rd,,,false,true
 282997044,"May 14, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  R4KSBTQSUS,199.12,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 282997036,"May 14, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  R4KSBTQSUS,242.72,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
-282989190,"May 14, 2026",HEMLANE,HEMLANE  |  X15FGP:REN,1800,Revenue,Rents,,9634 S Green St,,,false,true
+282989190,"May 14, 2026",HEMLANE,HEMLANE  |  X15FGP:REN,1800,Revenue,Long Term Rents,,9634 S Green St,,,false,true
 282980226,"May 14, 2026",HAWAII GAS,HAWAII GAS  |  RES UTIL,-934.15,Operating Expenses,Gas,,85-104 Alawa Pl,,,false,true
 282960827,"May 14, 2026",ComEd,ComEd  |  PAYMENTS,-22.03,Operating Expenses,Electric,,8143 S Sangamon St.,,,false,true
 282924840,"May 14, 2026",22164 Umland Circle Clark 1177,22164 Umland Circle Clark 1177,-350,Operating Expenses,Utilities,,22164 Umland Circle,,,false,true
@@ -5792,7 +5800,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 282529567,"May 13, 2026",Hemlane,Hemlane  |  NSYXVG:RAZ,-690,Operating Expenses,Repairs,,918 Frederick Blvd,,,false,true
 282512683,"May 13, 2026",Hemlane,Hemlane  |  PURCHASE X,-825,Operating Expenses,Repairs,,1278 E 187th St,,,false,true
 282509391,"May 13, 2026",Hemlane,Hemlane  |  PURCHASE 8,-85,Operating Expenses,Repairs,,8143 S Sangamon St.,,,false,true
-282492827,"May 13, 2026",Hemlane,Hemlane  |  2KKGWN:REN,515.1,Revenue,Rents,,428 Cross St.,,,false,true
+282492827,"May 13, 2026",Hemlane,Hemlane  |  2KKGWN:REN,515.1,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 282490704,"May 13, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  XJLGZDJV2V,207.1,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 282464183,"May 13, 2026",NGRID36,NGRID36  |  NGRID36WEB |  2651274236,-494.09,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
 282206225,"May 13, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **1327",-58.99,Operating Expenses,Cleaning & Maintenance,,8143 S Sangamon St.,,,false,true
@@ -5849,8 +5857,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 281966654,"May 12, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QNYFZLRGB6,187.03,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 281966647,"May 12, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QNYFZLRGB6,154.63,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 281965941,"May 12, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  ZXIE6ELBUD,372.29,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-281953922,"May 12, 2026",Hemlane,Hemlane  |  X63V42:REN,855,Revenue,Rents,,1278 E 187th St,,,false,true
-281947660,"May 12, 2026",HEMLANE,HEMLANE  |  M24ZWF:REN,940.5,Revenue,Rents,,1321 Allendale Ave,,,false,true
+281953922,"May 12, 2026",Hemlane,Hemlane  |  X63V42:REN,855,Revenue,Long Term Rents,,1278 E 187th St,,,false,true
+281947660,"May 12, 2026",HEMLANE,HEMLANE  |  M24ZWF:REN,940.5,Revenue,Long Term Rents,,1321 Allendale Ave,,,false,true
 281916419,"May 12, 2026",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,1011.87,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
 281689073,"May 12, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **4225",-56.15,Operating Expenses,Cleaning & Maintenance,,1518 Dille Rd,,,false,true
 281651100,"May 12, 2026",VRBO,VRBO  |  PAYMENT,339.74,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
@@ -5878,27 +5886,27 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 280180676,"May 09, 2026",WATER INTERNET,"Purchase from WATER INTERNET  |  Address: 216-664-3130, OH, US  |  **6776",-2097.96,Operating Expenses,Water & Sewer,,1518 Dille Rd,,,false,true
 280180545,"May 08, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",1000,Transfers & Other,Transfers Between Accounts,,1518 Dille Rd,,,false,true
 280180541,"May 08, 2026",Lofty Holding 1518 Dille Road DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 1518 Dille Road DAO LLC  |  INTERNAL_TRANSFER,-1000,Transfers & Other,Transfers Between Accounts,,1518 Dille Rd,,,false,true
-280115486,"May 08, 2026",Hemlane,Hemlane  |  HKWSYG:REN,1435.5,Revenue,Rents,,8708 Willard Ave,,,false,true
-280114826,"May 08, 2026",Hemlane,Hemlane  |  8NRWFP:REN,1417.5,Revenue,Rents,,8143 S Sangamon St.,,,false,true
+280115486,"May 08, 2026",Hemlane,Hemlane  |  HKWSYG:REN,1435.5,Revenue,Long Term Rents,,8708 Willard Ave,,,false,true
+280114826,"May 08, 2026",Hemlane,Hemlane  |  8NRWFP:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 280105060,"May 08, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  VRQ4WWPGRK,240.82,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 280105013,"May 08, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  VRQ4WWPGRK,681.37,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 280104992,"May 08, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  VRQ4WWPGRK,168.68,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
 280104982,"May 08, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  VRQ4WWPGRK,334.44,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 280097507,"May 08, 2026",HEMLANE,HEMLANE  |  53D8P1:REP,40,Revenue,Rents,,326 South Alcott Street,,,false,true
-280090774,"May 08, 2026",Hemlane,Hemlane  |  GX33WC:REN,1215,Revenue,Rents,,5541 S Peoria St,,,false,true
-280090728,"May 08, 2026",Hemlane,Hemlane  |  5PDMF8:REN,1035,Revenue,Rents,,1432 Sara Ave.,,,false,true
-280090647,"May 08, 2026",Hemlane,Hemlane  |  2CPN9G:REN,1359,Revenue,Rents,,8143 S Sangamon St.,,,false,true
-280090642,"May 08, 2026",Hemlane,Hemlane  |  BBN3GG:REN,827.05,Revenue,Rents,,566 Nash St,,,false,true
-280080013,"May 08, 2026",HEMLANE,HEMLANE  |  53DLX1:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-280079750,"May 08, 2026",HEMLANE,HEMLANE  |  CRG2ZG:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
+280090774,"May 08, 2026",Hemlane,Hemlane  |  GX33WC:REN,1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
+280090728,"May 08, 2026",Hemlane,Hemlane  |  5PDMF8:REN,1035,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
+280090647,"May 08, 2026",Hemlane,Hemlane  |  2CPN9G:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
+280090642,"May 08, 2026",Hemlane,Hemlane  |  BBN3GG:REN,827.05,Revenue,Long Term Rents,,566 Nash St,,,false,true
+280080013,"May 08, 2026",HEMLANE,HEMLANE  |  53DLX1:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
+280079750,"May 08, 2026",HEMLANE,HEMLANE  |  CRG2ZG:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
 279797712,"May 08, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **4225",-70.99,Operating Expenses,Cleaning & Maintenance,,7542 & 7656 S Colfax Ave,,,false,true
 279782967,"May 08, 2026",VRBO,VRBO  |  PAYMENT,340.18,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 279699501,"May 07, 2026",CASH APP*LASHONDA FMI,"CASH APP*LASHONDA FMI, Oakland, CA, US  |  **4225",-70,Operating Expenses,Cleaning & Maintenance,,15555 Millard Ave,,,false,true
 279683611,"May 30, 2025",ATM Cash Deposit - Erica Ely Security Deposit,ATM Cash Deposit - Erica Ely Security Deposit,1600,Transfers & Other,Security Deposits,,804 S Quitman St,,,true,true
 279683562,"May 30, 2025",ATM Cash Deposit - Erica Ely June Rent,ATM Cash Deposit - Erica Ely June Rent,3200,Revenue,Long Term Rents,,804 S Quitman St,,,true,true
 279601857,"May 07, 2026",Hemlane,Hemlane  |  YQLD4G:REN,285.3,Revenue,Long Term Rents,,10724 Gooding Ave,,,false,true
-279601029,"May 07, 2026",Hemlane,Hemlane  |  98NW00:REN,743.36,Revenue,Rents,,1518 Dille Rd,,,false,true
-279580257,"May 07, 2026",Hemlane,Hemlane  |  798WW4:REN,721.65,Revenue,Rents,,428 Cross St.,,,false,true
+279601029,"May 07, 2026",Hemlane,Hemlane  |  98NW00:REN,743.36,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
+279580257,"May 07, 2026",Hemlane,Hemlane  |  798WW4:REN,721.65,Revenue,Long Term Rents,,428 Cross St.,,,false,true
 279294686,"May 07, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **4225",-58.99,Operating Expenses,Cleaning & Maintenance,,5541 S Peoria St,,,false,true
 279222089,"May 07, 2026",CASH APP*AUSTIN TINKHAM,"CASH APP*AUSTIN TINKHAM, Oakland, CA, US  |  **4225",-40,Operating Expenses,"Phone, Cable & Internet",,27 Pillar Ln,,,false,true
 279171267,"May 06, 2026",THE HOME DEPOT #,"Purchase from THE HOME DEPOT #  |  Address: CALUMET CITY, IL, US  |  **0906",-24.39,Operating Expenses,Supplies,,7542 & 7656 S Colfax Ave,,New locks,false,true
@@ -6070,10 +6078,10 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 277914328,"May 04, 2026",ComEd,ComEd  |  PAYMENTS,-23.14,Operating Expenses,Utilities,,5541 S Peoria St,,,false,true
 277707384,"May 04, 2026",Jacob Gott  |  TRANSFER_OUT,Jacob Gott  |  TRANSFER_OUT,-661.76,Loan Payments & Capex,Other Loan Payments,,724 3rd Ave,,Rehab Loan Payments Jan-Apr 2026,false,true
 277707382,"May 04, 2026",Jacob Gott  |  TRANSFER_OUT,Jacob Gott  |  TRANSFER_OUT,-165.44,Loan Payments & Capex,Other Loan Payments,,724 3rd Ave,,Rehab Loan Payment,false,true
-277701910,"May 04, 2026",HEMLANE,HEMLANE  |  GVKNJB:REN,827.05,Revenue,Rents,,25 Circle Dr,,,false,true
+277701910,"May 04, 2026",HEMLANE,HEMLANE  |  GVKNJB:REN,827.05,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 277699978,"May 05, 2026",AMAZON MKTPL*BV78T1C81,"Purchase from AMAZON MKTPL*BV78T1C81  |  Address: Amzn.com/bill, WA, US  |  **3700",-111.22,Operating Expenses,Supplies,,86 Madison Ave,,,false,true
 277694505,"May 04, 2026",Baselane,Baselane  |  Rent#1481457,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-277692591,"May 04, 2026",Hemlane,Hemlane  |  GVKFDJ:REN,793.05,Revenue,Rents,,25 Circle Dr,,,false,true
+277692591,"May 04, 2026",Hemlane,Hemlane  |  GVKFDJ:REN,793.05,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 277650957,"May 05, 2026",AMAZON MKTPL*BJ6N44GI0,"Purchase from AMAZON MKTPL*BJ6N44GI0  |  Address: Amzn.com/bill, WA, US  |  **2339",-75.03,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
 277648475,"May 05, 2026",SAMSCLUB.COM,"Purchase from SAMSCLUB.COM  |  Address: 888-746-7726, AR, US  |  **2577",-143.9,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 277648159,"May 05, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **2577",-49.06,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -6220,11 +6228,11 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 273640667,"April 25, 2026",VENMO *Evan Chen,"VENMO *Evan Chen, New York, NY, US  |  **4225",-3590,Loan Payments & Capex,Remodeling,,724 3rd Ave,,,false,true
 273233382,"April 24, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",14.29,Revenue,Short Term Rents,,9 Country Club Ln N,,,false,true
 273218230,"April 28, 2026",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **2577",-43.15,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
-272882283,"April 24, 2026",HEMLANE,HEMLANE  |  YQLTDK:REN,285.3,Revenue,Rents,,10724 Gooding Ave,,,false,true
+272882283,"April 24, 2026",HEMLANE,HEMLANE  |  YQLTDK:REN,285.3,Revenue,Long Term Rents,,10724 Gooding Ave,,,false,true
 272821787,"April 24, 2026",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-324.03,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 272431654,"April 23, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  DFC3GP7JAO,200,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 272431651,"April 23, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  DFC3GP7JAO,35,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
-272431393,"April 23, 2026",Hemlane,Hemlane  |  GVKTZ5:REN,1615,Revenue,Rents,,25 Circle Dr,,,false,true
+272431393,"April 23, 2026",Hemlane,Hemlane  |  GVKTZ5:REN,1615,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 272425659,"April 23, 2026",VRBO,VRBO  |  PAYMENT,116.73,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 272286535,"April 23, 2026",AMAZON MKTPL*BS0YZ6F11,"Purchase from AMAZON MKTPL*BS0YZ6F11  |  Address: Amzn.com/bill, WA, US  |  **2577",-50.28,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 272283009,"April 23, 2026",AMAZON MKTPL*BS3GC4FD1,"Purchase from AMAZON MKTPL*BS3GC4FD1  |  Address: Amzn.com/bill, WA, US  |  **2577",-71.99,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
@@ -6424,7 +6432,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 264753000,"April 06, 2026",HEMLANE,HEMLANE  |  PURCHASE Y,-31.7,Operating Expenses,Management Fees,,49 Bannbury Ln,,,false,true
 264749413,"April 06, 2026",BASELANE,BASELANE  |  RENT#1384312,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
 264744098,"April 06, 2026",STRIPE,STRIPE  |  YXTFYD:REN,1665,Revenue,Long Term Rents,,49 Bannbury Ln,,,false,true
-264730051,"April 06, 2026",STRIPE,STRIPE  |  53DF2W:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
+264730051,"April 06, 2026",STRIPE,STRIPE  |  53DF2W:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
 264729686,"April 06, 2026",STRIPE,STRIPE  |  2CPKDV:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,"Hemlane provider evidence: 2CPKDV:REN gross $1510.00; 2CPKDV:PMX withheld $151.00; bank net $1359.00. Exact provider property/unit and PMX efb8e132-341c-4124-a731-dc778249353d; presentation only, no new cash or payable.",false,true
 264321575,"April 05, 2026",AMAZON MKTPL*B77QP8H62,"Purchase from AMAZON MKTPL*B77QP8H62  |  Address: Amzn.com/bill, WA, US  |  **5487",-27.5,Operating Expenses,Supplies,,84 Madison Ave,,,false,true
 264293241,"April 05, 2026",CASH APP*IHAR TARASIUK,"CASH APP*IHAR TARASIUK, Oakland, CA, US  |  **4225",-150,Operating Expenses,Cleaning & Janitorial,,27 Pillar Ln,,,false,true
@@ -6449,7 +6457,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 263364214,"April 02, 2026",Harbor Freight T,"Purchase from Harbor Freight T  |  Address: Schenectady, NY, US  |  **4243",-18.35,Operating Expenses,Supplies,,84 Madison Ave,,,false,true
 263331240,"April 02, 2026",LOWE'S #1973,"Purchase from LOWE'S #1973  |  Address: COLONIE, NY, US  |  **4425",-37.74,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
 263287295,"April 02, 2026",WALMART.COM 8009,"Purchase from WALMART.COM 8009  |  Address: BENTONVILLE, AR, US  |  **2577",-1,Operating Expenses,Supplies,,88 Madison Ave,,,false,true
-263279265,"April 02, 2026",HEMLANE,HEMLANE  |  YXT0XV:REN,-1665,Revenue,Rents,,49 Bannbury Ln,,,false,true
+263279265,"April 02, 2026",HEMLANE,HEMLANE  |  YXT0XV:REN,-1665,Revenue,Long Term Rents,,49 Bannbury Ln,,,false,true
 263275419,"April 03, 2026",PUBLIC STORAGE 07103,"Purchase from PUBLIC STORAGE 07103  |  Address: 800-567-0759, MO, US  |  **4225",-209,Operating Expenses,Supplies,,3560 Saint Albans Rd,,,false,true
 263251250,"April 03, 2026",HI TELCOM BILL PAYMENT,"Purchase from HI TELCOM BILL PAYMENT  |  Address: 808-643-3456, HI, US  |  **1288",-60,Operating Expenses,"Phone, Cable & Internet",,85-104 Alawa Pl,,,false,true
 262983242,"April 02, 2026",HEMLANE,HEMLANE  |  PURCHASE L,-93.2,Operating Expenses,Management Fees,,1518 Dille Rd,,,false,true
@@ -6457,7 +6465,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 262946413,"April 02, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QRSR6XOP5W,552.55,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 262946385,"April 02, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QRSR6XOP5W,2113.98,Revenue,Short Term Rents,,84 Madison Ave,,,false,true
 262915788,"April 02, 2026",Baselane,Baselane  |  Rent#1384166,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
-262915787,"April 02, 2026",STRIPE,STRIPE  |  CRGYL8:REN,1500,Revenue,Rents,,326 South Alcott Street,,,false,true
+262915787,"April 02, 2026",STRIPE,STRIPE  |  CRGYL8:REN,1500,Revenue,Long Term Rents,,326 South Alcott Street,,,false,true
 262913700,"April 02, 2026",STRIPE,STRIPE  |  YXT0XV:REN,1665,Revenue,Long Term Rents,,49 Bannbury Ln,,,false,true
 262908919,"April 02, 2026",Interest March 2026,Interest March 2026,381.19,Transfers & Other,Baselane Banking Interest,,7542 & 7656 S Colfax Ave,,,false,true
 262906132,"April 02, 2026",ComEd,ComEd  |  PAYMENTS,-21.97,Operating Expenses,Utilities,,5541 S Peoria St,,,false,true
@@ -6510,7 +6518,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 261762587,"April 02, 2026",OSC - RISK SECURE,"Purchase from OSC - RISK SECURE  |  Address: KENNESAW, GA, US  |  **4225",-229.6,Operating Expenses,Rental Dwelling,,10724 Gooding Ave,,,false,true
 261694225,"March 31, 2026",CASH APP*FRANCIS NANFUR,"CASH APP*FRANCIS NANFUR, Oakland, CA, US  |  **4225",-120,Operating Expenses,Cleaning & Janitorial,,7542 & 7656 S Colfax Ave,,Hallway Dog Shit Cleanup and Carpet Removal,false,true
 261676556,"March 31, 2026",THE HOME DEPOT #,"Purchase from THE HOME DEPOT #  |  Address: CHICAGO, IL, US  |  **2781",-53.95,Operating Expenses,Supplies,,25 Circle Dr,,,false,true
-261624302,"March 31, 2026",HEMLANE,HEMLANE  |  LD6XY9:REN,-838.8,Revenue,Rents,,1518 Dille Rd,,,false,true
+261624302,"March 31, 2026",HEMLANE,HEMLANE  |  LD6XY9:REN,-838.8,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 261617454,"April 01, 2026",ILLINOIS SECRETARY OF S,"Purchase from ILLINOIS SECRETARY OF S  |  Address: 866-7566041, IL, US  |  **0906",-178.94,Operating Expenses,Tax Licenses & Registrations,,7542 & 7656 S Colfax Ave,,,false,true
 261428411,"March 31, 2026",FirstEnergy,FirstEnergy  |  OPCO-ACH,-34.89,Operating Expenses,Electric,,10724 Gooding Ave,,,false,true
 261309240,"March 31, 2026",HEMLANE,HEMLANE  |  PURCHASE L,-50,Revenue,Rents,,7542 & 7656 S Colfax Ave,,,false,true
@@ -6529,7 +6537,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 261223239,"March 30, 2026",Lofty Holding 7542 & 7656 S Colfax Avenue DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 7542 & 7656 S Colfax Avenue DAO LLC  |  INTERNAL_TRANSFER,2460,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,100-Share Buyback and Burn @ 24 USDC plus fees | COLFAX-INTERACCOUNT-RECON|share-buyback-2026-03-30|2460.00 | Authorized Colfax token buyback funding | Classification only; no cash movement.,false,true
 261223236,"March 30, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",-2460,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,COLFAX-INTERACCOUNT-RECON|share-buyback-2026-03-30|2460.00 | Authorized Colfax token buyback funding | Classification only; no cash movement.,false,true
 261220917,"March 31, 2026",SPI*DENVER WATER,"Purchase from SPI*DENVER WATER  |  Address: 303-893-2444, CO, US  |  **4288",-408.52,Operating Expenses,Water & Sewer,,326 South Alcott Street,,,false,true
-261173323,"March 30, 2026",HEMLANE,HEMLANE  |  LD6LNM:REN,-838.8,Revenue,Rents,,1518 Dille Rd,,,false,true
+261173323,"March 30, 2026",HEMLANE,HEMLANE  |  LD6LNM:REN,-838.8,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 261173322,"March 30, 2026",HEMLANE,Returned received ACH transaction #402897903 due to: Account has insufficient funds,838.8,Revenue,Rents,,1518 Dille Rd,,,false,true
 261150643,"March 30, 2026",Inspection - HEMLANE  |  PURCHASE 7 #1,HEMLANE  |  PURCHASE 7,-300,Operating Expenses,Inspection Fees,,428 Cross St.,,Leasing Package 428 Cross St,true,true
 260812346,"March 30, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  EHAXPPVMXR,302,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
@@ -6552,8 +6560,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 259693805,"March 27, 2026",Stone Manor Hospitality LLC  |  TRANSFER_O,Stone Manor Hospitality LLC  |  TRANSFER_O,-400,Operating Expenses,Cleaning & Janitorial,,9 Country Club Ln N,,Cleaning Fee,false,true
 259677692,"March 30, 2026",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4305",-220.28,Operating Expenses,Gas & Electric,,86 Madison Ave,,,false,true
 259674550,"March 27, 2026","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",2371.32,Revenue,Short Term Rents,,9 Country Club Ln N,,,false,true
-259643221,"March 27, 2026",HEMLANE,HEMLANE  |  LD6B5C:REN,-701.1,Revenue,Rents,,1518 Dille Rd,,,false,true
-259643215,"March 27, 2026",HEMLANE,HEMLANE  |  LD64TZ:REN,-838.8,Revenue,Rents,,1518 Dille Rd,,,false,true
+259643221,"March 27, 2026",HEMLANE,HEMLANE  |  LD6B5C:REN,-701.1,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
+259643215,"March 27, 2026",HEMLANE,HEMLANE  |  LD64TZ:REN,-838.8,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 259351317,"March 27, 2026",SPI*DENVER WATER,"Purchase from SPI*DENVER WATER  |  Address: 303-893-2444, CO, US  |  **5236",-118.67,Operating Expenses,Water & Sewer,,804 S Quitman St,,,false,true
 259319052,"March 27, 2026",Fee for Check Payment 316063,Fee for Check Payment 316063,-2,Revenue,Fees & Other Revenue,,22164 Umland Circle,,,false,true
 259311463,"March 27, 2026",Fee for Check Payment 316038,Fee for Check Payment 316038,-2,Operating Expenses,Other Operating Expenses,,22164 Umland Circle,,,false,true
@@ -7521,7 +7529,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 241104602,"February 11, 2026",Lofty Holding 614 E 97th Street DAO LLC  |  TRANSFER_O,Lofty Holding 614 E 97th Street DAO LLC  |  TRANSFER_O,10708.64,Transfers & Other,Owner Contributions/Distributions,,614 East 97th St,,"Reimbursement from Net Sale ProceedsAOPS-ORIGINAL-PROPERTY|614 East 97th St | Moved to Mining, Sales, Consulting, and PM in Baselane per Earl 2026-05-17 (sale_proceeds_text_msc_reclass); matched original Baselane property: 614 East 97th St.",false,true
 241100454,"February 11, 2026",CASH APP*IHAR TARASIUK,"CASH APP*IHAR TARASIUK, Oakland, CA, US  |  **4225",-298.61,Operating Expenses,Cleaning & Janitorial,,27 Pillar Ln,,Cleaning - $150 Couch bar stools and master bathroom chair cleaning; repair of the smoke detector sensor door lock and cameras - $120,false,true
 241094335,"January 31, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER #1","ECO Systems, LLC  |  INTERNAL_TRANSFER",-1000,Operating Expenses,Consulting Fees,,13806 Coit Rd,,,true,true
-241086018,"January 03, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER #2","ECO Systems, LLC  |  INTERNAL_TRANSFER",-119.43,Operating Expenses,Property Management,,12507 Astor Ave,,,true,true
 241086017,"January 03, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER #1","ECO Systems, LLC  |  INTERNAL_TRANSFER",-325.39,Operating Expenses,Property Management,,614 East 97th St,,,true,true
 241083997,"February 12, 2026",SONOMA CNTY TAX,"Purchase from SONOMA CNTY TAX  |  Address: 714-879-5000, CA, US  |  **8403",-288.26,Operating Expenses,Short Term Occupancy Taxes,,22164 Umland Circle,,,false,true
 241081774,"February 11, 2026",CASH APP*EARL CO*CASH O,"CASH APP*EARL CO*CASH O, Oakland, CA, US  |  **4225",2500,Revenue,Short Term Rents,,27 Pillar Ln,,Airbnb Payout via Austin Tinkham,false,true
@@ -8531,7 +8538,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 216538731,"December 04, 2025",PARMAPUBLICHOUSI,PARMAPUBLICHOUSI  |  HAP PMT,1000,Revenue,Long Term Rents,,1518 Dille Rd,,,false,true
 216441351,"December 04, 2025",HEMLANE,HEMLANE  |  X630X8:RAZ,-289.61,Operating Expenses,Repairs,,1278 E 187th St,,ALJ Handyman Ohio LLC Replace Bathroom Light Fixture,false,true
 216435019,"December 04, 2025",HEMLANE,HEMLANE  |  5PD3VV:REN,-1035,Revenue,Long Term Rents,,1432 Sara Ave.,,,false,true
-216427968,"December 04, 2025",HEMLANE,HEMLANE  |  GX3J91:REN,-1215,Revenue,Rents,,5541 S Peoria St,,,false,true
+216427968,"December 04, 2025",HEMLANE,HEMLANE  |  GX3J91:REN,-1215,Revenue,Long Term Rents,,5541 S Peoria St,,,false,true
 216409460,"December 03, 2025",THE HOME DEPOT #,"Purchase from THE HOME DEPOT #  |  Address: CHICAGO, IL, US  |  **2781",-128.26,Operating Expenses,Repairs Supplies,,25 Circle Dr,,,false,true
 216395579,"December 03, 2025",OFFICIAL PAYMENT,OFFICIAL PAYMENT  |  WEB PMTS,-1,Operating Expenses,Taxes,,428 Cross St.,,,false,true
 216395542,"December 03, 2025",SUMMITCOPTXOH,SUMMITCOPTXOH  |  WEB PMTS,-10.93,Operating Expenses,Taxes,,428 Cross St.,,,false,true
@@ -9267,7 +9274,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 202037434,"October 21, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  TE2HYA6WI2,886.51,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 202022552,"October 21, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  AKISAJEMVM,200.4,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 201943772,"October 21, 2025",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,688.25,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
-201925116,"October 21, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-27.36,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
+201925116,"October 21, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-27.36,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 201897914,"October 20, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  HHKOPOMCWO,206.12,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 201897909,"October 20, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  HHKOPOMCWO,132.89,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 201637310,"October 19, 2025",THE HOME DEPOT #,"Purchase from THE HOME DEPOT #  |  Address: ALBANY, NY, US  |  **4243",-112.41,Operating Expenses,Repairs,,84 Madison Ave,,,false,true
@@ -10093,6 +10100,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 183518435,"August 19, 2025",LOWE'S #1784,"Purchase from LOWE'S #1784  |  Address: GLENMONT, NY, US  |  **1539",-20.5,Operating Expenses,Repairs Supplies,,90 Madison Ave,,,false,true
 183517359,"August 20, 2025",STAPLES       00117051,"Purchase from STAPLES       00117051  |  Address: GLENMONT, NY, US  |  **1539",-30.23,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
 183504877,"August 20, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4305",-59.44,Operating Expenses,Gas & Electric,,86 Madison Ave,,,false,true
+183504875,"August 20, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-23.11,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 183504865,"August 20, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4388",-524.42,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
 183503801,"August 19, 2025",Zelle to Elevated Home Remodeling for ADU Gate,Zelle to Elevated Home Remodeling for ADU Gate,-2730,Loan Payments & Capex,Remodeling,,804 S Quitman St,,Gate for ADU (Balance),true,false
 183427358,"August 19, 2025",HEMLANE,HEMLANE  |  ACCTVERIFY,-0.12,Operating Expenses,Bank Fees,,724 3rd Ave,,,false,true
@@ -10117,6 +10125,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 183239297,"August 18, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",4000,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Insurance Premiums and Reinstatement Fees,false,true
 183239279,"August 18, 2025",Lofty Holding 7542 & 7656 S Colfax Avenue DAO LLC  |  INTERNAL_TRANSFER,Lofty Holding 7542 & 7656 S Colfax Avenue DAO LLC  |  INTERNAL_TRANSFER,-4000,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Insurance Premiums and Reinstatement Fees,false,true
 183228693,"August 19, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **9445",-534.35,Operating Expenses,Electric,,90 Madison Ave,,,false,true
+183228690,"August 19, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-211.89,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
+183228689,"August 19, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-312.02,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 183199229,"August 18, 2025",HEMLANE,HEMLANE  |  798LF0 LBF,-100,Loan Payments & Capex,New Furniture & Equipment,,428 Cross St.,,Lockbox,false,true
 183196418,"August 18, 2025",HEMLANE,HEMLANE  |  SX4CPY MAI,-265,Operating Expenses,Pest,,9919 S Oglesby Ave,,For pest control,false,true
 183191771,"August 18, 2025","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",383.51,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
@@ -10519,7 +10529,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 176239634,"July 24, 2025",OPC TAX*SERVICE,"OPC TAX*SERVICE, OPC TAX*SERVICE, ELKHORN, NE, US  |  **1327",-33.05,Operating Expenses,Property Taxes,,1321 Allendale Ave,,,false,true
 176239631,"July 24, 2025",OPC*SUMMIT REAL,"OPC*SUMMIT REAL, OPC*SUMMIT REAL, AKRON, OH, US  |  **1327",-3304.54,Operating Expenses,Property Taxes,,1321 Allendale Ave,,,false,true
 176238221,"July 25, 2025","IN *REPAIR MY RENTALS,","Purchase from IN *REPAIR MY RENTALS,  |  Address: 216-2452901, OH, US  |  **1550",-187.5,Operating Expenses,C & M Labor,,1432 Sara Ave.,,,false,true
-176236892,"July 24, 2025",PNP BILLPAYMENT,PNP BILLPAYMENT  |  072225EK,-1998.09,Operating Expenses,Property Taxes,,428 Cross St.,,,false,true
+176236892,"July 24, 2025",PNP BILLPAYMENT,PNP BILLPAYMENT  |  072225EK,-1998.09,Operating Expenses,Property Taxes,,12507 Astor Ave,,,false,true
 176234156,"July 25, 2025",SAMSCLUB.COM,"Purchase from SAMSCLUB.COM  |  Address: 888-746-7726, AR, US  |  **2339",-81.99,Operating Expenses,Repairs,,90 Madison Ave,,,false,true
 176222605,"July 24, 2025",CASH APP*FRANCIS NANFUR,"CASH APP*FRANCIS NANFUR, Oakland, CA, US  |  **7683",-100,Operating Expenses,Repairs Labor,,7542 & 7656 S Colfax Ave,,Window screens,false,true
 176203561,"July 23, 2025",LOWE'S #1784,"Purchase from LOWE'S #1784  |  Address: GLENMONT, NY, US  |  **1539",-25.21,Operating Expenses,Repairs Supplies,,90 Madison Ave,,,false,true
@@ -10541,6 +10551,8 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 175737505,"July 22, 2025",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,594.71,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
 175721890,"July 22, 2025",Walmart.com,"Purchase from Walmart.com  |  Address: Bentonville, AR, US  |  **2339",-172.75,Operating Expenses,Repairs,,90 Madison Ave,,,false,true
 175712775,"July 21, 2025","ECO Systems, LLC","ECO Systems, LLC  |  Astor OR",6264.45,Transfers & Other,Transfers Between Accounts,,12507 Astor Ave,,DAO OR Balance Transfer,false,true
+175710662,"July 22, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-23.11,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
+175710404,"July 22, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-382.44,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 175707512,"July 22, 2025",AMAZON MKTPL*T56S39UB3,"Purchase from AMAZON MKTPL*T56S39UB3  |  Address: Amzn.com/bill, WA, US  |  **2339",-27.18,Operating Expenses,Repairs,,90 Madison Ave,,,false,true
 175707188,"July 23, 2025",SAMSCLUB.COM,"Purchase from SAMSCLUB.COM  |  Address: 888-746-7726, AR, US  |  **0745",-76.6,Operating Expenses,C & M Labor,,88 Madison Ave,,,false,true
 175706805,"July 21, 2025",LOWE'S #1784,"Purchase from LOWE'S #1784  |  Address: GLENMONT, NY, US  |  **4425",-19.96,Operating Expenses,Repairs Supplies,,88 Madison Ave,,,false,true
@@ -10567,6 +10579,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 175219899,"July 19, 2025",THE HOME DEPOT #1502,"Return from THE HOME DEPOT #1502  |  Address: ARVADA, CO, US  |  **6267",40.14,Loan Payments & Capex,Remodeling,,804 S Quitman St,,,false,true
 175214754,"July 19, 2025",Lion LFTY0435 DAO LLC  |  INTERNAL_TRANSFER,Lion LFTY0435 DAO LLC  |  INTERNAL_TRANSFER,10000,Transfers & Other,Transfers Between Accounts,,804 S Quitman St,,,false,true
 175214751,"July 19, 2025",Lion LFTY0435 DAO LLC  |  INTERNAL_TRANSFER,Lion LFTY0435 DAO LLC  |  INTERNAL_TRANSFER,-10000,Transfers & Other,Transfers Between Accounts,,804 S Quitman St,,,false,true
+175214740,"July 21, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-164.78,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 175214736,"July 21, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4305",-62.07,Operating Expenses,Gas & Electric,,86 Madison Ave,,,false,true
 175214730,"July 19, 2025",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,3000,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,,false,true
 175214717,"July 19, 2025",PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,PELICAN LFTY0316 DAO LLC  |  INTERNAL_TRANSFER,-3000,Transfers & Other,Transfers Between Accounts,,326 South Alcott Street,,,false,true
@@ -10932,6 +10945,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 167985986,"June 23, 2025",ROSS STORES #135,"Purchase from ROSS STORES #135  |  Address: KAPOLEI, HI, US  |  **2123",-87.44,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
 167981160,"June 23, 2025",THE HOME DEPOT #,"Purchase from THE HOME DEPOT #  |  Address: KAPOLEI, HI, US  |  **2123",-116.98,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
 167981112,"June 23, 2025",THE HOME DEPOT #1706,"Purchase from THE HOME DEPOT #1706  |  Address: KAPOLEI, HI, US  |  **2123",-50,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
+167967727,"June 23, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-103.24,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 167965652,"June 22, 2025",VENMO *Michael Lampp,"VENMO *Michael Lampp, Visa Direct, NY, US  |  **4225",-80,Loan Payments & Capex,New Furniture & Equipment,,804 S Quitman St,,"Propane Tank (Full, Large)",false,true
 167897034,"June 23, 2025",PAYLESS POWER,"Purchase from PAYLESS POWER  |  Address: 888-4492735, TX, US  |  **4225",-40,Operating Expenses,Electric,,5401 Odom Ave,,,false,true
 167760239,"June 22, 2025",CITY MILL,"Purchase from CITY MILL  |  Address: 180-85333811, HI, US  |  **2123",-384.9,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
@@ -10956,11 +10970,13 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 167475678,"June 23, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4388",-506.89,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
 167475675,"June 23, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4388",-336.45,Operating Expenses,Gas & Electric,,88 Madison Ave,,,false,true
 167475661,"June 23, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **9445",-287.74,Operating Expenses,Electric,,90 Madison Ave,,,false,true
+167475579,"June 23, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-23.11,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 167473108,"June 22, 2025",STATE FARM  INSURANCE,"Purchase from STATE FARM  INSURANCE  |  Address: 800-956-6310, IL, US  |  **4164",-1305,Operating Expenses,Rental Dwelling,,86 Madison Ave,,,false,true
 167473053,"June 20, 2025","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER",500,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,For State Farm Insurance Premium,false,true
 167473048,"June 20, 2025",Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER,Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER,-500,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,For State Farm Insurance Premium,false,true
 167291081,"June 20, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  CBQNKMAIYL,148.06,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 167252850,"June 20, 2025",AIRBNB 4977,AIRBNB 4977  |  AIRBNB,386.54,Revenue,Short Term Rents,,22164 Umland Circle,,,false,true
+167219306,"June 20, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-162.79,Operating Expenses,Gas & Electric,,84 Madison Ave,,,false,true
 167018691,"June 20, 2025",PAYLESS POWER,"Purchase from PAYLESS POWER  |  Address: 888-4492735, TX, US  |  **4225",-40,Operating Expenses,Electric,,5401 Odom Ave,,,false,true
 167000231,"June 19, 2025",ROSS STORES  #15,"Purchase from ROSS STORES  #15  |  Address: EWA BEACH, HI, US  |  **2123",-133.2,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
 166999050,"June 19, 2025",ROSS STORES  #1594,"Purchase from ROSS STORES  #1594  |  Address: EWA BEACH, HI, US  |  **2123",-78.82,Loan Payments & Capex,New Furniture & Equipment,,85-104 Alawa Pl,,,false,true
@@ -11343,6 +11359,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 159209839,"May 19, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **9445",-246.46,Operating Expenses,Electric,,90 Madison Ave,,Unit 90.2,false,true
 159059542,"May 18, 2025",CASH APP*EARL VANZE CO,"CASH APP*EARL VANZE CO, Oakland, CA, US  |  **4164",-726.25,Operating Expenses,Repairs Labor,,86 Madison Ave,,Evan Chen April 8-30 Invoices,false,true
 159011490,"May 19, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4305",-42.31,Operating Expenses,Gas & Electric,,86 Madison Ave,,86 HSE,false,true
+159011484,"May 19, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-23.11,Operating Expenses,Gas & Electric,,84 Madison Ave,,84 HSE,false,true
 158695947,"May 16, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  V6AT36G76C,823.4,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 158695920,"May 16, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  V6AT36G76C,296.69,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 158567046,"May 17, 2025",SWAN HEATING SCS,"Purchase from SWAN HEATING SCS  |  Address: 303-6881897, CO, US  |  **7387",-99,Operating Expenses,HVAC Repairs,,326 South Alcott Street,,Service call for new AC,false,true
@@ -11565,6 +11582,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 152848148,"April 22, 2025",AMAZON MKTPL*SB2YT7HW3,"Purchase from AMAZON MKTPL*SB2YT7HW3  |  Address: Amzn.com/bill, WA, US  |  **6267",-62.92,Loan Payments & Capex,Doors & Windows,,804 S Quitman St,,Door Knobs,false,true
 152848005,"April 22, 2025",AMAZON MKTPL*0Y1YM4H13,"Purchase from AMAZON MKTPL*0Y1YM4H13  |  Address: Amzn.com/bill, WA, US  |  **6267",-42.2,Loan Payments & Capex,New Furniture & Equipment,,804 S Quitman St,,Mattress Covers,false,true
 152847909,"April 22, 2025",AMAZON MKTPL*XJ4TU2OW3,"Purchase from AMAZON MKTPL*XJ4TU2OW3  |  Address: Amzn.com/bill, WA, US  |  **6267",-67.61,Loan Payments & Capex,New Furniture & Equipment,,804 S Quitman St,,Mattress Covers,false,true
+152842381,"April 22, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-15.26,Operating Expenses,Gas & Electric,,84 Madison Ave,,84 HSE,false,true
 152842322,"April 22, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4305",-426.57,Operating Expenses,Gas & Electric,,86 Madison Ave,,Unit 86.1,false,true
 152838183,"April 21, 2025",VENMO *Mayra Rodrigue,"VENMO *Mayra Rodrigue, Visa Direct, NY, US  |  **4225",-35,Loan Payments & Capex,New Furniture & Equipment,,804 S Quitman St,,*PAY BACK* Cabinet,false,true
 152825293,"April 21, 2025",THE HOME DEPOT #,"Purchase from THE HOME DEPOT #  |  Address: ALBANY, NY, US  |  **4164",-161.43,Loan Payments & Capex,Doors & Windows,,86 Madison Ave,,Door Knobs + Lumber,false,true
@@ -11777,6 +11795,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 149409985,"April 05, 2025",Netflix.com,"Purchase from Netflix.com  |  Address: netflix.com, CA, US  |  **3073",-9,Operating Expenses,"Phone, Cable & Internet",,90 Madison Ave,,,true,true
 149409984,"April 05, 2025",Netflix.com,"Purchase from Netflix.com  |  Address: netflix.com, CA, US  |  **3073",-9,Operating Expenses,"Phone, Cable & Internet",,88 Madison Ave,,,true,true
 149409983,"April 05, 2025",Netflix.com,"Purchase from Netflix.com  |  Address: netflix.com, CA, US  |  **3073",-8.99,Operating Expenses,"Phone, Cable & Internet",,86 Madison Ave,,,true,true
+149225530,"April 07, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-77.83,Operating Expenses,Gas & Electric,,84 Madison Ave,,Unit 84.3,false,true
 149213607,"April 05, 2025",Amazon.com*Z14PY8083,"Purchase from Amazon.com*Z14PY8083  |  Address: Amzn.com/bill, WA, US  |  **4091",-14.49,Operating Expenses,"Linens, Soaps, & Other Consumables",,90 Madison Ave,,Toilet Paper,true,true
 149213606,"April 05, 2025",Amazon.com*Z14PY8083,"Purchase from Amazon.com*Z14PY8083  |  Address: Amzn.com/bill, WA, US  |  **4091",-14.49,Operating Expenses,"Linens, Soaps, & Other Consumables",,88 Madison Ave,,Toilet Paper,true,true
 149213605,"April 05, 2025",Amazon.com*Z14PY8083,"Purchase from Amazon.com*Z14PY8083  |  Address: Amzn.com/bill, WA, US  |  **4091",-14.49,Operating Expenses,"Linens, Soaps, & Other Consumables",,86 Madison Ave,,Toilet Paper,true,true
@@ -11842,6 +11861,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 147748214,"March 20, 2025",Amazon.com*380JC1ZB3,"Purchase from Amazon.com*380JC1ZB3  |  Address: Amzn.com/bill, WA, US  |  **2577",-16.2,Operating Expenses,"Linens, Soaps, & Other Consumables",,90 Madison Ave,,Toilet Paper,true,true
 147748213,"March 20, 2025",Amazon.com*380JC1ZB3,"Purchase from Amazon.com*380JC1ZB3  |  Address: Amzn.com/bill, WA, US  |  **2577",-16.19,Operating Expenses,"Linens, Soaps, & Other Consumables",,88 Madison Ave,,Toilet Paper,true,true
 147748212,"March 20, 2025",Amazon.com*380JC1ZB3,"Purchase from Amazon.com*380JC1ZB3  |  Address: Amzn.com/bill, WA, US  |  **2577",-16.19,Operating Expenses,"Linens, Soaps, & Other Consumables",,86 Madison Ave,,Toilet Paper,true,true
+147747900,"March 31, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-1538.34,Operating Expenses,Gas & Electric,,84 Madison Ave,,Double-paid $825.58 for Feb; Unit 84.2,false,true
 147351103,"March 28, 2025","Hospitable, Inc","Hospitable, Inc  |  PAYOUT",60.84,Revenue,Short Term Rents,,90 Madison Ave,,Direct Booking,false,true
 147319475,"March 28, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  YWLEN6E6FJ,364.69,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 147319455,"March 28, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  YWLEN6E6FJ,719.58,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
@@ -11856,6 +11876,7 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 146530883,"March 25, 2025",VRBO,VRBO  |  PAYMENT,167.75,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 146475423,"March 25, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **9445",-424.23,Operating Expenses,Electric,,90 Madison Ave,,Unit 90.1,false,true
 146469388,"March 25, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **4305",-38.85,Operating Expenses,Gas & Electric,,86 Madison Ave,,86 HSE,false,true
+146469384,"March 25, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **6813",-180.83,Operating Expenses,Gas & Electric,,84 Madison Ave,,Unit 84.3,false,true
 146465484,"March 25, 2025",ARCADIA,"Purchase from ARCADIA  |  Address: ARCADIA.COM, DC, US  |  **8018",-323.67,Operating Expenses,Gas & Electric,,804 S Quitman St,,Whole House,false,true
 146465454,"March 24, 2025",Earl Vanze Co  |  INTERNAL_TRANSFER,Earl Vanze Co  |  INTERNAL_TRANSFER,1000,Transfers & Other,Transfers Between Accounts,,804 S Quitman St,,,false,true
 146465450,"March 24, 2025",Lion LFTY0435 DAO LLC  |  INTERNAL_TRANSFER,Lion LFTY0435 DAO LLC  |  INTERNAL_TRANSFER,-1000,Transfers & Other,Transfers Between Accounts,,804 S Quitman St,,,false,true
