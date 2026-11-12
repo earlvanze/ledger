@@ -11905,7 +11905,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 176641302,"July 25, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  V4RWU473EL,253.17,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 176641295,"July 25, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  V4RWU473EL,364.74,Revenue,Short Term Rents,,84 Madison Ave,,"Platform attribution 2026-11-05: Airbnb payout G-JDNXONOB7ZNBA sent 07/24/2025, Transfer to Lychee LFTY0431 DAO LLC, Checking 2073 (USD); complete reservation/component cohort HM8J5TYZ9W totals 364.74. Unique matching posted bank settlement 176641295. Beneficiary 84 Madison Ave; property attribution only, existing cash and category preserved; no new fee, payable or repeated allocation.",false,true
 176620581,"July 25, 2025",STRIPE,STRIPE  |  8NRCP0 REN,75,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
-176573365,"July 25, 2025",STRIPE,STRIPE  |  8NR5DW LFS,5,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,Property attributed 2026-11-09: posted to the dedicated 8143 S Sangamon St Operations account.,false,true
 176494037,"July 25, 2025",SUMMITCOPTXOH,SUMMITCOPTXOH  |  WEB PMTS,-1343.43,Operating Expenses,Property Taxes,,1432 Sara Ave.,,,false,true
 176494016,"July 25, 2025",SUMMITCOPTXOH,SUMMITCOPTXOH  |  WEB PMTS,-261.65,Operating Expenses,Property Taxes,,428 Cross St.,,Declined Payment,false,true
 176494015,"July 25, 2025",SUMMITCOPTXOH,Returned received ACH transaction #314735734 due to: Account has insufficient funds,261.65,Operating Expenses,Property Taxes,,428 Cross St.,,Declined Payment,false,true
@@ -12086,7 +12085,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 173985737,"July 15, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  3XR4HU3OVC,122.45,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 173985731,"July 15, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  3XR4HU3OVC,1010.55,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 173985702,"July 15, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  3XR4HU3OVC,118.34,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-173947695,"July 15, 2025",STRIPE,STRIPE  |  8NR76Q LFS,55,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,Property attributed 2026-11-09: posted to the dedicated 8143 S Sangamon St Operations account.,false,true
 173940144,"July 15, 2025",VRBO,VRBO  |  PAYMENT,1042.86,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 173935563,"July 15, 2025",HEMLANE,HEMLANE  |  ACCTVERIFY,0.03,Revenue,Rents,,1432 Sara Ave.,,,false,true
 173934586,"June 25, 2025",WALMART.COM 8009,"Purchase from WALMART.COM 8009  |  Address: BENTONVILLE, AR, US  |  **2577",-9.72,Operating Expenses,"Linens, Soaps, & Other Consumables",,88 Madison Ave,,Paper Towels x2,true,true
