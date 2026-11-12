@@ -5,6 +5,14 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 385650581,"November 11, 2026",WALMART.COM 8009,WALMART.COM 8009,-114.44,Operating Expenses,Supplies,,90 Madison Ave,,,false,true
 317208970,"July 18, 2026",ZELLE PAYMENT FROM TIFFANY JOHNSON 30064329012,ZELLE PAYMENT FROM TIFFANY JOHNSON 30064329012,721,Revenue,Long Term Rents,,25 Circle Dr,,,false,true
 240762483,"February 09, 2026",Lyft,Lyft,-23.24,Operating Expenses,Auto & Travel,,27 Pillar Ln,,,false,true
+385989265,"November 12, 2026",NEW YORK CENTRAL,NEW YORK CENTRAL  |  EFT DEBIT,-539,Operating Expenses,Rental Dwelling,,9 Country Club Ln N,,,false,true
+385989264,"November 12, 2026",NEW YORK CENTRAL,Returned received ACH transaction #482551910 due to: Account has insufficient funds,539,Operating Expenses,Rental Dwelling,,9 Country Club Ln N,,,false,true
+385934414,"November 12, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  Q4BSZL2XLE,307.5,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
+385934411,"November 12, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  Q4BSZL2XLE,508.93,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
+385882177,"November 12, 2026",NGRID36,NGRID36  |  NGRID36WEB |  2651274236,-392.12,Operating Expenses,Utilities,,84 Madison Ave,,,false,true
+385882176,"November 12, 2026",NGRID36,Returned received ACH transaction #482530233 due to: Account has insufficient funds,392.12,Revenue,Rents,,84 Madison Ave,,,false,true
+385880843,"November 12, 2026",XCEL ENERGY-PSCO,XCEL ENERGY-PSCO  |  XCELENERGY |  00031723269,-99.33,Operating Expenses,Gas & Electric,,326 South Alcott Street,,,false,true
+385880062,"November 12, 2026",ComEd,ComEd  |  PAYMENTS,-22.16,Operating Expenses,Electric,,8143 S Sangamon St.,,,false,true
 385684710,"November 12, 2026","ECO Systems, LLC  |  INTERNAL_TRANSFER","ECO Systems, LLC  |  INTERNAL_TRANSFER | Payment ID: 76503570",1400,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,,false,true
 385684684,"November 12, 2026",Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER,Snow Leopard LFTY0439 DAO LLC  |  INTERNAL_TRANSFER | Payment ID: 76503570,-1400,Transfers & Other,Transfers Between Accounts,,86 Madison Ave,,,false,true
 385131695,"November 28, 2026","ECO Systems LLC PM Fee Revenue | 5541 S Peoria St, Chicago, IL 60621 | November 2026","ECO Systems LLC PM Fee Revenue | 5541 S Peoria St, Chicago, IL 60621 | November 2026",115.4,Revenue,Fees & Other Revenue,,5541 S Peoria St,,"AOPS-OHIL-ACCRUAL|pm_eco|5541 S Peoria St, Chicago, IL 60621|2026-11|115.40 | Accrual ID AOPS-OHIL-ACCRUAL|pm|5541 S Peoria St, Chicago, IL 60621|2026-11|115.40. ECO Systems LLC PM fee revenue for November 2026 (10% of direct gross rent); matched to the DAO-side expense. Accounting/manual accrual only, no bank transfer.",true,false
@@ -2804,7 +2812,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 353759667,"September 18, 2026",AXIOM ECOPEST CONTROL,"Purchase from AXIOM ECOPEST CONTROL  |  Address: 507-7729466, CO, US  |  **1814",-109,Operating Expenses,Pest,,326 South Alcott Street,,,false,true
 353496783,"September 18, 2026",SPI*AMERENIL,"Purchase from SPI*AMERENIL  |  Address: 888-789-2477, MO, US  |  **1327",-717.17,Operating Expenses,Gas & Electric,,665 Chapman St,,,false,true
 353248748,"September 17, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QJGXISPLZ2,469.71,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
-353246420,"September 17, 2026",Hemlane,Hemlane  |  2CPQN6:LFS,50,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,Property attributed 2026-11-09: posted to the dedicated 8143 S Sangamon St Operations account.,false,true
 353244094,"September 17, 2026",HEMLANE,HEMLANE  |  2CP07T:REN,1359,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 353165166,"September 16, 2026",CITY OF  EDWARDS,"CITY OF  EDWARDS, 118 Hillsboro Ave, EDWARDSVILLE, IL, US  |  **1327",-27.12,Operating Expenses,Water & Sewer,,665 Chapman St,,,false,true
 353080345,"September 17, 2026",EPCON LANE,"Purchase from EPCON LANE  |  Address: 330-724-2473, OH, US  |  **9486",-56.49,Operating Expenses,Pest,,1432 Sara Ave.,,,false,true
@@ -3573,7 +3580,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 330830568,"August 13, 2026",LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,219,Transfers & Other,Property Tax Escrows,,5541 S Peoria St,,Escrow for Taxes,false,true
 330829909,"August 13, 2026",LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,LOFTY HOLDING 5541 S PEORIA STREET DAO LLC  |  INTERNAL_TRANSFER,-219,Transfers & Other,Property Tax Escrows,,5541 S Peoria St,,Escrow for Taxes,false,true
 330824025,"August 13, 2026",Hemlane,Hemlane  |  8NRDWY:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
-330823987,"August 13, 2026",Hemlane,Hemlane  |  8NRGWL:LFS,63.75,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,Property attributed 2026-11-09: posted to the dedicated 8143 S Sangamon St Operations account.,false,true
 330820728,"August 13, 2026",HAWAII GAS,HAWAII GAS  |  RES UTIL,-13.19,Operating Expenses,Gas,,85-104 Alawa Pl,,,false,true
 330819727,"August 13, 2026",ComEd,ComEd  |  PAYMENTS,-22.2,Operating Expenses,Electric,,8143 S Sangamon St.,,,false,true
 330795578,"August 13, 2026",Earl Co  |  TRANSFER_OUT,Earl Co  |  TRANSFER_OUT,-1600,Transfers & Other,Transfers Between Accounts,,7542 & 7656 S Colfax Ave,,Zelle to Charles Zivin for 7542 Floor 3 Eviction Fees,false,true
@@ -5194,7 +5200,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 315716564,"July 17, 2026",LAWNCARE* LAWNSTARTER,"Purchase from LAWNCARE* LAWNSTARTER  |  Address: LAWNSTARTER.C, TX, US  |  **5967",-126.36,Operating Expenses,Gardening & Landscaping,,5541 S Peoria St,,,false,true
 315688034,"July 17, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QOBJGWFHAH,783.83,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 315688028,"July 17, 2026",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  QOBJGWFHAH,119.75,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-315674620,"July 17, 2026",Hemlane,Hemlane  |  8NR20B:LFS,63.75,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,Property attributed 2026-11-09: posted to the dedicated 8143 S Sangamon St Operations account.,false,true
 315673877,"July 17, 2026",Hemlane,Hemlane  |  8NR832:REN,1417.5,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 315663852,"July 17, 2026",MORGAN LINEN SERVICES - 90 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-116.97,Operating Expenses,Cleaning & Maintenance,,90 Madison Ave,,,true,true
 315663851,"July 17, 2026",MORGAN LINEN SERVICES - 88 Madison Ave,"Purchase from MORGAN LINEN SERVICES  |  Address: 518-465-3337, NY, US  |  **4425",-140.36,Operating Expenses,Cleaning & Maintenance,,88 Madison Ave,,,true,true
@@ -11154,7 +11159,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 189956429,"September 12, 2025",OSC - RISK SECURE,"Purchase from OSC - RISK SECURE  |  Address: KENNESAW, GA, US  |  **4225",-857.28,Operating Expenses,Rental Dwelling,,13806 Coit Rd,,,false,true
 189939392,"September 11, 2025",LOWE'S #1612,"Purchase from LOWE'S #1612  |  Address: SCHENECTADY, NY, US  |  **4243",-207.52,Operating Expenses,Repairs Supplies,,84 Madison Ave,,,false,true
 189680761,"September 11, 2025",STRIPE,STRIPE  |  8NRK2W REN,1575,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
-189680754,"September 11, 2025",STRIPE,STRIPE  |  8NRXLY LFS,45,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,Property attributed 2026-11-09: posted to the dedicated 8143 S Sangamon St Operations account.,false,true
 189677121,"September 11, 2025",VRBO,VRBO  |  PAYMENT,117.68,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 189668661,"September 11, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  LEAVW3H34Y,490.46,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
 189657996,"September 11, 2025",OSC - RISK SECURE,"Purchase from OSC - RISK SECURE  |  Address: KENNESAW, GA, US  |  **4225",-525.54,Operating Expenses,Rental Dwelling,,9902 Garfield Ave,,,false,true
@@ -11604,7 +11608,6 @@ BaselaneId,Date,Merchant,Description,Amount,Type,Category,Sub-category,Property,
 181564882,"August 12, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  IJYO6JLDTD,726.11,Revenue,Short Term Rents,,86 Madison Ave,,,false,true
 181564879,"August 12, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  IJYO6JLDTD,990.31,Revenue,Short Term Rents,,84 Madison Ave,,"Platform attribution 2026-11-05: Airbnb payout G-JWDM6EDV4ILR6 sent 08/11/2025, Transfer to Lychee LFTY0431 DAO LLC, Checking 2073 (USD); complete reservation/component cohort HMAMWS4YXX totals 990.31. Unique matching posted bank settlement 181564879. Beneficiary 84 Madison Ave; property attribution only, existing cash and category preserved; no new fee, payable or repeated allocation.",false,true
 181564865,"August 12, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  IJYO6JLDTD,455.66,Revenue,Short Term Rents,,88 Madison Ave,,,false,true
-181556398,"August 12, 2025",STRIPE,STRIPE  |  8NRGJ9 LFS,35,Revenue,Fees & Other Revenue,,8143 S Sangamon St.,,Property attributed 2026-11-09: posted to the dedicated 8143 S Sangamon St Operations account.,false,true
 181556373,"August 12, 2025",STRIPE,STRIPE  |  8NR0M5 REN,1575,Revenue,Long Term Rents,,8143 S Sangamon St.,,,false,true
 181534296,"August 12, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  TQGWG3CX77,961.27,Revenue,Short Term Rents,,90 Madison Ave,,,false,true
 181534280,"August 12, 2025",AIRBNB PAYMENTS,AIRBNB PAYMENTS  |  TQGWG3CX77,349.04,Revenue,Short Term Rents,,84 Madison Ave,,"Platform attribution 2026-11-05: Airbnb payout G-GCKAI4XNN5KIW sent 08/09/2025, Transfer to Lychee LFTY0431 DAO LLC, Checking 2073 (USD); complete reservation/component cohort HMMBTRY2Y9 totals 349.04. Unique matching posted bank settlement 181534280. Beneficiary 84 Madison Ave; property attribution only, existing cash and category preserved; no new fee, payable or repeated allocation.",false,true
